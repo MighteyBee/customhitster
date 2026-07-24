@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+<h2>Guess the Song!</h2>
+
+<audio controls id="player"></audio>
+
+<script>
+
+const params = new URLSearchParams(window.location.search);
+
+const id = params.get("id");
+
+const audio = document.getElementById("player");
+
+audio.src = "audio/" + id + ".mp3";
+
+</script>
+
+</body>
+</html>
