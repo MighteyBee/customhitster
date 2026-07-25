@@ -1,19 +1,30 @@
 {
     "001": {
-        "title": "Bohemian Rhapsody",
-        "artist": "Queen",
-        "year": "1975"
+        "file": "Alanis Morisette - You Oughta Know.mp3"
     },
 
-    "002": {
-        "title": "Billie Jean",
-        "artist": "Michael Jackson",
-        "year": "1982"
+   "002": {
+        "file": "Billy Joel - Movin Out.mp3"
     },
 
     "003": {
-        "title": "Take On Me",
-        "artist": "a-ha",
-        "year": "1985"
+        "file": "Billy Joel - Vienna.mp3"
+    },
+
+   "004": {
+        "file": "Björk - All Is Full Of Love.mp3"
+    },
+
+    "005": {
+        "file": "Björk - Bachelorette.mp3"
+    },
+
+    "006": {
+        "file": "Carly Symon - Coming Around Again.mp3"
+    },
+
+    "007": {
+        "file": "Cher - The Shoop Shoop Song.mp3"
     }
+
 }

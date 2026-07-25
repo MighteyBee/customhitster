@@ -35,31 +35,25 @@ const id = params.get("id");
 
 const player = document.getElementById("player");
 
-player.src = "audio/" + id + ".mp3";
-
 fetch("data/songs.json")
 .then(response => response.json())
 .then(songs => {
 
+    const song = songs[id];
+
+    if (!song) {
+        alert("Song not found!");
+        return;
+    }
+
+    player.src = "audio/" + song.file;
+
     document.getElementById("revealButton").addEventListener("click", () => {
-
-        const song = songs[id];
-
-        if(!song){
-
-            alert("Song not found!");
-
-            return;
-
-        }
 
         document.getElementById("songInfo").style.display = "block";
 
-        document.getElementById("title").textContent = song.title;
-
-        document.getElementById("artist").textContent = "Artist: " + song.artist;
-
-        document.getElementById("year").textContent = "Year: " + song.year;
+        document.getElementById("title").textContent = song.file;
+    
 
     });
 
