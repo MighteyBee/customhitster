@@ -7,11 +7,31 @@
 
 <body>
 
-<h1>Welcome!</h1>
+<h1>My Hitster</h1>
 
-<a href="player.html?id=001">
-Play Card 001
-</a>
+<button id="shuffleButton">
+🎵 Shuffle Song
+</button>
+
+<script>
+
+fetch("data/songs.json")
+.then(response => response.json())
+.then(songs => {
+
+    const ids = Object.keys(songs);
+
+    document.getElementById("shuffleButton").addEventListener("click", () => {
+
+        const randomId = ids[Math.floor(Math.random() * ids.length)];
+
+        window.location.href = "player.html?id=" + randomId;
+
+    });
+
+});
+
+</script>
 
 </body>
 
