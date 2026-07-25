@@ -1,0 +1,19 @@
+{
+    "001": {
+        "title": "Bohemian Rhapsody",
+        "artist": "Queen",
+        "year": "1975"
+    },
+
+    "002": {
+        "title": "Billie Jean",
+        "artist": "Michael Jackson",
+        "year": "1982"
+    },
+
+    "003": {
+        "title": "Take On Me",
+        "artist": "a-ha",
+        "year": "1985"
+    }
+}

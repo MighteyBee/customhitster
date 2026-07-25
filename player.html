@@ -1,11 +1,31 @@
 <!DOCTYPE html>
 <html>
 
+<head>
+    <title>Guess the Song</title>
+</head>
+
 <body>
 
 <h2>Guess the Song!</h2>
 
 <audio controls id="player"></audio>
+
+<br><br>
+
+<button id="revealButton">
+Reveal Song
+</button>
+
+<div id="songInfo" style="display:none; margin-top:20px;">
+
+    <h3 id="title"></h3>
+
+    <p id="artist"></p>
+
+    <p id="year"></p>
+
+</div>
 
 <script>
 
@@ -13,11 +33,40 @@ const params = new URLSearchParams(window.location.search);
 
 const id = params.get("id");
 
-const audio = document.getElementById("player");
+const player = document.getElementById("player");
 
-audio.src = "audio/" + id + ".mp3";
+player.src = "audio/" + id + ".mp3";
+
+fetch("data/songs.json")
+.then(response => response.json())
+.then(songs => {
+
+    document.getElementById("revealButton").addEventListener("click", () => {
+
+        const song = songs[id];
+
+        if(!song){
+
+            alert("Song not found!");
+
+            return;
+
+        }
+
+        document.getElementById("songInfo").style.display = "block";
+
+        document.getElementById("title").textContent = song.title;
+
+        document.getElementById("artist").textContent = "Artist: " + song.artist;
+
+        document.getElementById("year").textContent = "Year: " + song.year;
+
+    });
+
+});
 
 </script>
 
 </body>
+
 </html>
