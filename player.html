@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Guess the Song</title>
+    <title>Custom Hitster</title>
 </head>
 
 <body>
@@ -13,51 +13,140 @@
 
 <br><br>
 
-<button id="revealButton">
-Reveal Song
-</button>
+<button id="revealButton">Reveal Song</button>
+<button id="shuffleButton">🎲 Shuffle</button>
 
 <div id="songInfo" style="display:none; margin-top:20px;">
 
     <h3 id="title"></h3>
-
     <p id="artist"></p>
-
     <p id="year"></p>
 
 </div>
 
 <script>
 
-const params = new URLSearchParams(window.location.search);
+//////////////////////////////////////////////////////
+// Variables
+//////////////////////////////////////////////////////
 
-const id = params.get("id");
+let songs = {};
+let currentId = null;
 
 const player = document.getElementById("player");
 
-fetch("data/songs.json")
-.then(response => response.json())
-.then(songs => {
+const revealButton = document.getElementById("revealButton");
+const shuffleButton = document.getElementById("shuffleButton");
+
+const songInfo = document.getElementById("songInfo");
+const title = document.getElementById("title");
+const artist = document.getElementById("artist");
+const year = document.getElementById("year");
+
+//////////////////////////////////////////////////////
+// Initialization
+//////////////////////////////////////////////////////
+
+init();
+
+async function init() {
+
+    const response = await fetch("data/songs.json");
+
+    songs = await response.json();
+
+    currentId = new URLSearchParams(window.location.search).get("id");
+
+    // If no ID was provided, choose a random song
+    if (!currentId || !songs[currentId]) {
+        currentId = getRandomSongId();
+    }
+
+    loadSong(currentId);
+
+    revealButton.addEventListener("click", revealSong);
+    shuffleButton.addEventListener("click", shuffleSong);
+
+}
+
+//////////////////////////////////////////////////////
+// Load Song
+//////////////////////////////////////////////////////
+
+function loadSong(id) {
 
     const song = songs[id];
 
-    if (!song) {
-        alert("Song not found!");
-        return;
-    }
+    currentId = id;
+
+    hideReveal();
+
+    player.pause();
 
     player.src = "audio/" + song.file;
 
-    document.getElementById("revealButton").addEventListener("click", () => {
+    player.load();
 
-        document.getElementById("songInfo").style.display = "block";
+    // Update URL without reloading the page
+    history.replaceState({}, "", "player.html?id=" + id);
 
-        document.getElementById("title").textContent = song.file;
-    
+}
 
-    });
+//////////////////////////////////////////////////////
+// Reveal Song
+//////////////////////////////////////////////////////
 
-});
+function revealSong() {
+
+    const song = songs[currentId];
+
+    title.textContent = song.file;
+    artist.textContent = "Artist: " + song.artist;
+    year.textContent = "Year: " + song.year;
+
+    songInfo.style.display = "block";
+
+}
+
+//////////////////////////////////////////////////////
+// Hide Reveal
+//////////////////////////////////////////////////////
+
+function hideReveal() {
+
+    songInfo.style.display = "none";
+
+}
+
+//////////////////////////////////////////////////////
+// Shuffle Song
+//////////////////////////////////////////////////////
+
+function shuffleSong() {
+
+    let randomId;
+
+    do {
+
+        randomId = getRandomSongId();
+
+    } while (randomId === currentId && Object.keys(songs).length > 1);
+
+    loadSong(randomId);
+
+}
+
+//////////////////////////////////////////////////////
+// Random Song
+//////////////////////////////////////////////////////
+
+function getRandomSongId() {
+
+    const ids = Object.keys(songs);
+
+    return ids[Math.floor(Math.random() * ids.length)];
+
+}
 
 </script>
 
