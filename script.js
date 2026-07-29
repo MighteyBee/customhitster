@@ -18,8 +18,7 @@ const year = document.getElementById("year");
 const progress = document.getElementById("progress");
 
 const artistGuess = document.getElementById("artistGuess");
-const artistList = document.getElementById("artistList");
-
+const autocompleteList = document.getElementById("autocompleteList");
 //////////////////////////////////////////////////////
 // Initialization
 //////////////////////////////////////////////////////
@@ -89,25 +88,45 @@ player.ontimeupdate = () => {
 
 };
 
-function populateArtistList() {
 
-    artistList.innerHTML = "";
+function populateArtistList() {
+    // No need to populate a datalist anymore
+}
+
+// Add this function to handle autocomplete
+artistGuess.addEventListener("input", function() {
+    const input = this.value.toLowerCase();
+    autocompleteList.innerHTML = "";
+
+    if (input.length < 2) {
+        return; // Only show suggestions after 2 characters
+    }
 
     const uniqueArtists = [...new Set(
         Object.values(songs).map(song => song.artist)
     )].sort();
 
-    uniqueArtists.forEach(name => {
+    const matches = uniqueArtists.filter(artist =>
+        artist.toLowerCase().includes(input)
+    );
 
-        const option = document.createElement("option");
-
-        option.value = name;
-
-        artistList.appendChild(option);
-
+    matches.forEach(match => {
+        const item = document.createElement("div");
+        item.textContent = match;
+        item.addEventListener("click", function() {
+            artistGuess.value = match;
+            autocompleteList.innerHTML = "";
+        });
+        autocompleteList.appendChild(item);
     });
+});
 
-}
+// Close the autocomplete list when clicking outside
+document.addEventListener("click", function(e) {
+    if (e.target !== artistGuess) {
+        autocompleteList.innerHTML = "";
+    }
+});
 
 //////////////////////////////////////////////////////
 // Reveal Song

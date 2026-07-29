@@ -219,3 +219,36 @@ input{
     margin-bottom:20px;
 
 }
+
+.autocomplete-items {
+    position: absolute;
+    border: 1px solid #d1d5db;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    top: 100%;
+    left: 0;
+    right: 0;
+    max-height: 200px;
+    overflow-y: auto;
+    background: var(--card);
+    color: var(--text);
+    border-radius: 0 0 12px 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.autocomplete-items div {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #4B5563;
+}
+
+.autocomplete-items div:hover {
+    background: var(--primary);
+    color: white;
+}
+
+.autocomplete-active {
+    background: var(--primaryHover) !important;
+    color: white !important;
+}
