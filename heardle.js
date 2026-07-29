@@ -114,36 +114,40 @@ function submitGuess() {
     if (currentTry > totalTries) return;
 
     const song = songs[currentId];
-    const guessedArtist = artistGuess.value.trim().toLowerCase();
-    const guessedSong = songGuess.value.trim().toLowerCase();
-    const correctArtist = song.artist.toLowerCase();
-    const correctSong = song.song.toLowerCase();
+    const guessedArtist = artistGuess.value.trim();
+    const guessedSong = songGuess.value.trim();
+    const correctArtist = song.artist;
+    const correctSong = song.song;
 
-    let artistCorrect = guessedArtist === correctArtist;
-    let songCorrect = guessedSong === correctSong;
+    let artistCorrect = guessedArtist.toLowerCase() === correctArtist.toLowerCase();
+    let songCorrect = guessedSong.toLowerCase() === correctSong.toLowerCase();
 
-    let resultText = "";
+    let resultText = `${guessedArtist} - ${guessedSong}`;
     let resultClass = "wrong";
 
     if (artistCorrect && songCorrect) {
-        resultText = `✅ ${song.artist} - ${song.song}`;
+
         resultClass = "correct";
         revealSong();
+
+        player.currentTime = 0;
+        player.play().catch(error => {
+            console.log("Autoplay prevented: ", error);
+        });
     } else if (artistCorrect || songCorrect) {
-        resultText = `⚠️ ${artistCorrect ? song.artist : guessedArtist} - ${songCorrect ? song.song : guessedSong}`;
         resultClass = "partial";
-    } else {
-        resultText = `❌ ${guessedArtist} - ${guessedSong}`;
     }
+    
+     document.getElementById(`guessResult${currentTry}`).textContent = resultText;
+     document.getElementById(`guessResult${currentTry}`).className = `guessResult ${resultClass}`;
 
-    document.getElementById(`guessResult${currentTry}`).textContent = resultText;
-    document.getElementById(`guessResult${currentTry}`).className = `guessResult ${resultClass}`;
+    // Clear input fields
+    artistGuess.value = "";
+    songGuess.value = "";
 
-    if (resultClass === "correct") {
-        revealSong();
-    } else {
-        artistGuess.value = "";
-        songGuess.value = "";
+    // Auto-skip to the next try
+    if (resultClass !== "correct") {
+        moveToNextTry();
     }
 }
 

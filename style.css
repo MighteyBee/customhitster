@@ -2,223 +2,151 @@
    Colour Palette
 ========================== */
 
-:root{
-
-    --background:#1F2937;
-
-    --card:#374151;
-
-    --primary:#10B981;
-
-    --primaryHover:#059669;
-
-    --text:white;
-
+:root {
+    --background: #1F2937;
+    --card: #374151;
+    --primary: #10B981;
+    --primaryHover: #059669;
+    --text: white;
 }
 
 /* ==========================
    Page
 ========================== */
 
-body{
-
-    margin:0;
-
-    background:var(--background);
-
-    font-family:Arial,Helvetica,sans-serif;
-
-    color:var(--text);
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-    min-height:100vh;
-
-    padding:20px;
-
+body {
+    margin: 0;
+    background: var(--background);
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
 }
 
 /* ==========================
    Main Card
 ========================== */
 
-.gameCard{
-
-    width:100%;
-
-    max-width:500px;
-
-    background:var(--card);
-
-    padding:30px;
-
-    border-radius:25px;
-
-    box-shadow:0 20px 60px rgba(0,0,0,.35);
-
+.gameCard {
+    width: 100%;
+    max-width: 500px;
+    background: var(--card);
+    padding: 30px;
+    border-radius: 25px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
 }
 
 /* ==========================
    Heading
 ========================== */
 
-h2{
-
-    text-align:center;
-
-    font-size:2rem;
-
-    margin-bottom:30px;
-
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
 }
 
 /* ==========================
    Buttons
 ========================== */
 
-button{
-
-    width:100%;
-
-    padding:18px;
-
-    margin-top:15px;
-
-    border:none;
-
-    border-radius:15px;
-
-    background:var(--primary);
-
-    color:white;
-
-    font-size:1.2rem;
-
-    font-weight:bold;
-
-    cursor:pointer;
-
-    transition:.2s;
-
+button {
+    width: 100%;
+    padding: 18px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 15px;
+    background: var(--primary);
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
 }
 
-button:hover{
-
-    background:var(--primaryHover);
-
-    transform:translateY(-2px);
-
+button:hover {
+    background: var(--primaryHover);
+    transform: translateY(-2px);
 }
 
-button:active{
-
-    transform:scale(.97);
-
+button:active {
+    transform: scale(0.97);
 }
 
 /* ==========================
    Play / Pause Buttons
 ========================== */
 
-.playerButtons{
-
-    display:flex;
-
-    gap:15px;
-
-    margin-bottom:20px;
-
+.playerButtons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
 }
 
-.playerButtons button{
-
-    flex:1;
-
+.playerButtons button {
+    flex: 1;
 }
 
 /* ==========================
    Progress Bar
 ========================== */
 
-progress{
-
-    width:100%;
-
-    height:12px;
-
-    margin-bottom:20px;
-
+progress {
+    width: 100%;
+    height: 12px;
+    margin-bottom: 20px;
+    border-radius: 5px;
 }
 
 /* ==========================
    Song Reveal
 ========================== */
 
-#songInfo{
-
-    display:none;
-
-    margin-top:25px;
-
-    background:#4B5563;
-
-    padding:20px;
-
-    border-radius:18px;
-
-    text-align:center;
-
+#songInfo {
+    display: none;
+    margin-top: 25px;
+    background: #4B5563;
+    padding: 20px;
+    border-radius: 18px;
+    text-align: center;
 }
 
-#title{
-
-    font-size:1.7rem;
-
+#title {
+    font-size: 1.7rem;
 }
 
-#artist,#year{
-
-    font-size:1.2rem;
-
+#artist, #year {
+    font-size: 1.2rem;
 }
 
-/* Artist input */
+/* ==========================
+   Input Fields
+========================== */
 
-label{
-
-    display:block;
-
-    margin-top:20px;
-
-    margin-bottom:8px;
-
-    text-align:left;
-
-    font-weight:bold;
-
+label {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 8px;
+    text-align: left;
+    font-weight: bold;
 }
 
-input{
-
-    width:100%;
-
-    padding:16px;
-
-    border-radius:12px;
-
-    border:none;
-
-    font-size:1rem;
-
-    box-sizing:border-box;
-
-    margin-bottom:20px;
-
+input {
+    width: 100%;
+    padding: 16px;
+    border-radius: 12px;
+    border: none;
+    font-size: 1rem;
+    box-sizing: border-box;
+    margin-bottom: 20px;
 }
+
+/* ==========================
+   Autocomplete
+========================== */
 
 .autocomplete-items {
     position: absolute;
@@ -253,6 +181,10 @@ input{
     color: white !important;
 }
 
+/* ==========================
+   Score Box
+========================== */
+
 #scoreBox {
     margin-top: 20px;
     background: #4B5563;
@@ -266,6 +198,10 @@ input{
     margin: 0;
     font-size: 1.5rem;
 }
+
+/* ==========================
+   Heardle Mode
+========================== */
 
 .heardleTries {
     display: flex;
@@ -286,20 +222,7 @@ input{
     border-radius: 5px;
 }
 
-.guessInput {
-    display: flex;
-    gap: 10px;
-}
-
-.guessInput input {
-    flex: 1;
-    padding: 8px;
-    border-radius: 8px;
-    border: none;
-    font-size: 0.9rem;
-}
-
-guessResult {
+.guessResult {
     font-size: 0.9rem;
     padding: 5px;
     border-radius: 5px;
@@ -321,6 +244,10 @@ guessResult {
     background-color: #EF4444; /* Red */
     color: white;
 }
+
+/* ==========================
+   Button Group
+========================== */
 
 .buttonGroup {
     display: flex;
