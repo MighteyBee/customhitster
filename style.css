@@ -299,6 +299,29 @@ input{
     font-size: 0.9rem;
 }
 
+guessResult {
+    font-size: 0.9rem;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.correct {
+    background-color: #10B981; /* Green */
+    color: white;
+}
+
+.partial {
+    background-color: #F59E0B; /* Yellow */
+    color: black;
+}
+
+.wrong {
+    background-color: #EF4444; /* Red */
+    color: white;
+}
+
 .buttonGroup {
     display: flex;
     gap: 10px;

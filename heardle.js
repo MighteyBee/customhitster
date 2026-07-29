@@ -6,12 +6,18 @@ const totalTries = 6;
 
 const player = document.getElementById("player");
 const playButton = document.getElementById("playButton");
+const submitButton = document.getElementById("submitButton");
 const skipButton = document.getElementById("skipButton");
 const shuffleButton = document.getElementById("shuffleButton");
 
 const songInfo = document.getElementById("songInfo");
 const title = document.getElementById("title");
 const artistElement = document.getElementById("artist");
+
+const artistGuess = document.getElementById("artistGuess");
+const songGuess = document.getElementById("songGuess");
+const autocompleteArtistList = document.getElementById("autocompleteArtistList");
+const autocompleteSongList = document.getElementById("autocompleteSongList");
 
 const trySegments = [1, 2, 5, 5, 5, 100]; // Seconds for each try
 
@@ -29,36 +35,23 @@ async function init() {
     loadSong(currentId);
 
     playButton.onclick = () => playCurrentTry();
-    skipButton.onclick = () => moveToNextTry();
+    submitButton.onclick = submitGuess;
+    skipButton.onclick = moveToNextTry;
     shuffleButton.onclick = shuffleSong;
 
-    // Initialize autocomplete for all inputs
-    for (let i = 1; i <= totalTries; i++) {
-        const artistGuess = document.getElementById(`artistGuess${i}`);
-        const songGuess = document.getElementById(`songGuess${i}`);
-        const autocompleteArtistList = document.getElementById(`autocompleteArtistList${i}`);
-        const autocompleteSongList = document.getElementById(`autocompleteSongList${i}`);
+    // Initialize autocomplete
+    artistGuess.addEventListener("input", () => {
+        handleAutocomplete(artistGuess, autocompleteArtistList, "artist");
+    });
 
-        artistGuess.addEventListener("input", () => {
-            handleAutocomplete(artistGuess, autocompleteArtistList, "artist");
-        });
-
-        songGuess.addEventListener("input", () => {
-            handleAutocomplete(songGuess, autocompleteSongList, "song");
-        });
-    }
+    songGuess.addEventListener("input", () => {
+        handleAutocomplete(songGuess, autocompleteSongList, "song");
+    });
 
     // Close dropdowns when clicking outside
     document.addEventListener("click", (e) => {
-        for (let i = 1; i <= totalTries; i++) {
-            const artistGuess = document.getElementById(`artistGuess${i}`);
-            const songGuess = document.getElementById(`songGuess${i}`);
-            const autocompleteArtistList = document.getElementById(`autocompleteArtistList${i}`);
-            const autocompleteSongList = document.getElementById(`autocompleteSongList${i}`);
-
-            if (e.target !== artistGuess) autocompleteArtistList.innerHTML = "";
-            if (e.target !== songGuess) autocompleteSongList.innerHTML = "";
-        }
+        if (e.target !== artistGuess) autocompleteArtistList.innerHTML = "";
+        if (e.target !== songGuess) autocompleteSongList.innerHTML = "";
     });
 }
 
@@ -71,6 +64,16 @@ function loadSong(id) {
     player.pause();
     player.src = "audio/" + song.file;
     player.load();
+
+    // Clear previous guesses and results
+    for (let i = 1; i <= totalTries; i++) {
+        document.getElementById(`progress${i}`).value = 0;
+        document.getElementById(`guessResult${i}`).textContent = "";
+        document.getElementById(`guessResult${i}`).className = "guessResult";
+    }
+
+    artistGuess.value = "";
+    songGuess.value = "";
 
     history.replaceState({}, "", `heardle.html?id=${id}`);
 }
@@ -105,6 +108,43 @@ function playCurrentTry() {
     };
 
     player.addEventListener("timeupdate", updateProgress);
+}
+
+function submitGuess() {
+    if (currentTry > totalTries) return;
+
+    const song = songs[currentId];
+    const guessedArtist = artistGuess.value.trim().toLowerCase();
+    const guessedSong = songGuess.value.trim().toLowerCase();
+    const correctArtist = song.artist.toLowerCase();
+    const correctSong = song.song.toLowerCase();
+
+    let artistCorrect = guessedArtist === correctArtist;
+    let songCorrect = guessedSong === correctSong;
+
+    let resultText = "";
+    let resultClass = "wrong";
+
+    if (artistCorrect && songCorrect) {
+        resultText = `✅ ${song.artist} - ${song.song}`;
+        resultClass = "correct";
+        revealSong();
+    } else if (artistCorrect || songCorrect) {
+        resultText = `⚠️ ${artistCorrect ? song.artist : guessedArtist} - ${songCorrect ? song.song : guessedSong}`;
+        resultClass = "partial";
+    } else {
+        resultText = `❌ ${guessedArtist} - ${guessedSong}`;
+    }
+
+    document.getElementById(`guessResult${currentTry}`).textContent = resultText;
+    document.getElementById(`guessResult${currentTry}`).className = `guessResult ${resultClass}`;
+
+    if (resultClass === "correct") {
+        revealSong();
+    } else {
+        artistGuess.value = "";
+        songGuess.value = "";
+    }
 }
 
 function moveToNextTry() {

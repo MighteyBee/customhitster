@@ -12,69 +12,52 @@
 
         <audio id="player"></audio>
 
-        <button id="playButton">▶ Play</button>
-        <button id="skipButton">⏭ Skip</button>
-        <button id="shuffleButton">Shuffle</button>
-
-
         <div class="heardleTries">
             <div class="try" id="try1">
                 <progress id="progress1" value="0" max="1"></progress>
-                <div class="guessInput">
-                    <input type="text" id="artistGuess1" placeholder="Artist..." autocomplete="off">
-                    <input type="text" id="songGuess1" placeholder="Song..." autocomplete="off">
-                    <div id="autocompleteArtistList1" class="autocomplete-items"></div>
-                    <div id="autocompleteSongList1" class="autocomplete-items"></div>
-                </div>
+                <div class="guessResult" id="guessResult1"></div>
             </div>
             <div class="try" id="try2">
                 <progress id="progress2" value="0" max="2"></progress>
-                <div class="guessInput">
-                    <input type="text" id="artistGuess2" placeholder="Artist..." autocomplete="off">
-                    <input type="text" id="songGuess2" placeholder="Song..." autocomplete="off">
-                    <div id="autocompleteArtistList2" class="autocomplete-items"></div>
-                    <div id="autocompleteSongList2" class="autocomplete-items"></div>
-                </div>
+                <div class="guessResult" id="guessResult2"></div>
             </div>
             <div class="try" id="try3">
                 <progress id="progress3" value="0" max="5"></progress>
-                <div class="guessInput">
-                    <input type="text" id="artistGuess3" placeholder="Artist..." autocomplete="off">
-                    <input type="text" id="songGuess3" placeholder="Song..." autocomplete="off">
-                    <div id="autocompleteArtistList3" class="autocomplete-items"></div>
-                    <div id="autocompleteSongList3" class="autocomplete-items"></div>
-                </div>
+                <div class="guessResult" id="guessResult3"></div>
             </div>
             <div class="try" id="try4">
                 <progress id="progress4" value="0" max="5"></progress>
-                <div class="guessInput">
-                    <input type="text" id="artistGuess4" placeholder="Artist..." autocomplete="off">
-                    <input type="text" id="songGuess4" placeholder="Song..." autocomplete="off">
-                    <div id="autocompleteArtistList4" class="autocomplete-items"></div>
-                    <div id="autocompleteSongList4" class="autocomplete-items"></div>
-                </div>
+                <div class="guessResult" id="guessResult4"></div>
             </div>
             <div class="try" id="try5">
                 <progress id="progress5" value="0" max="5"></progress>
-                <div class="guessInput">
-                    <input type="text" id="artistGuess5" placeholder="Artist..." autocomplete="off">
-                    <input type="text" id="songGuess5" placeholder="Song..." autocomplete="off">
-                    <div id="autocompleteArtistList5" class="autocomplete-items"></div>
-                    <div id="autocompleteSongList5" class="autocomplete-items"></div>
-                </div>
+                <div class="guessResult" id="guessResult5"></div>
             </div>
             <div class="try" id="try6">
                 <progress id="progress6" value="0" max="100"></progress>
-                <div class="guessInput">
-                    <input type="text" id="artistGuess6" placeholder="Artist..." autocomplete="off">
-                    <input type="text" id="songGuess6" placeholder="Song..." autocomplete="off">
-                    <div id="autocompleteArtistList6" class="autocomplete-items"></div>
-                    <div id="autocompleteSongList6" class="autocomplete-items"></div>
-                </div>
+                <div class="guessResult" id="guessResult6"></div>
             </div>
         </div>
 
-        
+        <div style="position: relative;">
+            <label for="artistGuess">Artist Guess</label>
+            <input type="text" id="artistGuess" placeholder="Type the artist..." autocomplete="off">
+            <div id="autocompleteArtistList" class="autocomplete-items"></div>
+        </div>
+
+        <div style="position: relative;">
+            <label for="songGuess">Song Title Guess</label>
+            <input type="text" id="songGuess" placeholder="Type the song title..." autocomplete="off">
+            <div id="autocompleteSongList" class="autocomplete-items"></div>
+        </div>
+
+        <div class="buttonGroup">
+            <button id="playButton">▶ Play</button>
+            <button id="submitButton">✅ Submit</button>
+            <button id="skipButton">⏭ Skip</button>
+            <button id="shuffleButton">🔀 Shuffle</button>
+        </div>
+
         <div id="songInfo">
             <h3 id="title"></h3>
             <p id="artist"></p>
