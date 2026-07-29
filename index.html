@@ -17,6 +17,9 @@
 <button id="shuffleButton">
  Shuffle Song
 </button>
+ <button id="heardleButton">
+ My Heardle
+</button>
 
 <script>
 
@@ -31,13 +34,13 @@ fetch("data/songs.json")
         const randomId = ids[Math.floor(Math.random() * ids.length)];
 
         window.location.href = "player.html?id=" + randomId;
-
     });
 
-});
-
-</script>
-
+                document.getElementById("heardleButton").addEventListener("click", () => {
+                    const randomId = ids[Math.floor(Math.random() * ids.length)];
+                    window.location.href = "heardle.html?id=" + randomId;
+                });
+            });
+    </script>
 </body>
-
 </html>
