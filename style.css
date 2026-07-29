@@ -252,3 +252,17 @@ input{
     background: var(--primaryHover) !important;
     color: white !important;
 }
+
+#scoreBox {
+    margin-top: 20px;
+    background: #4B5563;
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+#scoreBox h3 {
+    margin: 0;
+    font-size: 1.5rem;
+}

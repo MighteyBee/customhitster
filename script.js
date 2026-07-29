@@ -5,6 +5,8 @@
 
 let songs = {};
 let currentId = null;
+let score = 0;
+const scoreElement = document.getElementById("score");
 
 const player = document.getElementById("player");
 
@@ -154,10 +156,26 @@ function revealSong() {
 
     const song = songs[currentId];
 
-    title.textContent = song.song;
-    artist.textContent = "Artist: " + song.artist;
-    
+   const guessedArtist = artistGuess.value.trim().toLowerCase();
+    const guessedSong = songGuess.value.trim().toLowerCase();
+    const correctArtist = song.artist.toLowerCase();
+    const correctSong = song.song.toLowerCase();
 
+    // Check guesses and update score
+    let pointsEarned = 0;
+    if (guessedArtist === correctArtist) {
+        pointsEarned += 10;
+    }
+    if (guessedSong === correctSong) {
+        pointsEarned += 10;
+    }
+
+    score += pointsEarned;
+    scoreElement.textContent = score;
+
+    // Display the correct answer
+    title.textContent = "Song: " + song.song;
+    artist.textContent = "Artist: " + song.artist;
     songInfo.style.display = "block";
 
 }
@@ -187,6 +205,7 @@ function shuffleSong() {
     } while (randomId === currentId && Object.keys(songs).length > 1);
 
     loadSong(randomId);
+    
 
 }
 
