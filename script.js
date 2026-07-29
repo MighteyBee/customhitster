@@ -9,6 +9,8 @@ let score = 0;
 const scoreElement = document.getElementById("score");
 
 const player = document.getElementById("player");
+const playButton = document.getElementById("playButton");
+const pauseButton = document.getElementById("pauseButton");
 
 const revealButton = document.getElementById("revealButton");
 const shuffleButton = document.getElementById("shuffleButton");
@@ -66,12 +68,17 @@ function loadSong(id) {
     hideReveal();
 
     artistGuess.value = "";
+    songGuess.value = "";
 
     player.pause();
 
     player.src = "audio/" + song.file;
 
     player.load();
+
+    player.play().catch(error => {
+        console.log("Autoplay prevented: ", error);
+    });
 
     // Update URL without reloading the page
     history.replaceState({}, "", "player.html?id=" + id);
@@ -141,12 +148,7 @@ function handleAutocomplete(inputElement, autocompleteList, field) {
     });
 }
 
-// Close the autocomplete list when clicking outside
-document.addEventListener("click", function(e) {
-    if (e.target !== artistGuess) {
-        autocompleteList.innerHTML = "";
-    }
-});
+
 
 //////////////////////////////////////////////////////
 // Reveal Song
