@@ -39,8 +39,6 @@ async function init() {
 
     songs = await response.json();
 
-    populateArtistList();
-
     currentId = new URLSearchParams(window.location.search).get("id");
 
     // If no ID was provided, choose a random song
@@ -53,6 +51,9 @@ async function init() {
     revealButton.addEventListener("click", revealSong);
     shuffleButton.addEventListener("click", shuffleSong);
 
+    playButton.onclick = () => player.play();
+    pauseButton.onclick = () => player.pause();
+
 }
 
 //////////////////////////////////////////////////////
@@ -62,33 +63,21 @@ async function init() {
 function loadSong(id) {
 
     const song = songs[id];
-
     currentId = id;
 
     hideReveal();
-
     artistGuess.value = "";
     songGuess.value = "";
 
     player.pause();
-
     player.src = "audio/" + song.file;
-
     player.load();
-
-    player.play().catch(error => {
-        console.log("Autoplay prevented: ", error);
-    });
 
     // Update URL without reloading the page
     history.replaceState({}, "", "player.html?id=" + id);
 
 
 }
-
-playButton.onclick = () => player.play();
-
-pauseButton.onclick = () => player.pause();
 
 player.ontimeupdate = () => {
 
@@ -157,8 +146,7 @@ function handleAutocomplete(inputElement, autocompleteList, field) {
 function revealSong() {
 
     const song = songs[currentId];
-
-   const guessedArtist = artistGuess.value.trim().toLowerCase();
+    const guessedArtist = artistGuess.value.trim().toLowerCase();
     const guessedSong = songGuess.value.trim().toLowerCase();
     const correctArtist = song.artist.toLowerCase();
     const correctSong = song.song.toLowerCase();
@@ -187,9 +175,7 @@ function revealSong() {
 //////////////////////////////////////////////////////
 
 function hideReveal() {
-
     songInfo.style.display = "none";
-
 }
 
 //////////////////////////////////////////////////////
@@ -199,15 +185,14 @@ function hideReveal() {
 function shuffleSong() {
 
     let randomId;
-
     do {
 
         randomId = getRandomSongId();
-
     } while (randomId === currentId && Object.keys(songs).length > 1);
 
     loadSong(randomId);
-    
+     artistGuess.value = "";
+     songGuess.value = "";
 
 }
 
