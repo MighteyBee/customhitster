@@ -6,12 +6,12 @@ const totalTries = 6;
 
 const player = document.getElementById("player");
 const playButton = document.getElementById("playButton");
-const revealButton = document.getElementById("revealButton");
+const skipButton = document.getElementById("skipButton");
 const shuffleButton = document.getElementById("shuffleButton");
 
 const songInfo = document.getElementById("songInfo");
 const title = document.getElementById("title");
-const artist = document.getElementById("artist");
+const artistElement = document.getElementById("artist");
 
 const trySegments = [1, 2, 5, 5, 5, 100]; // Seconds for each try
 
@@ -29,7 +29,7 @@ async function init() {
     loadSong(currentId);
 
     playButton.onclick = () => playCurrentTry();
-    revealButton.onclick = revealSong;
+    skipButton.onclick = () => moveToNextTry();
     shuffleButton.onclick = shuffleSong;
 
     // Initialize autocomplete for all inputs
@@ -46,12 +46,20 @@ async function init() {
         songGuess.addEventListener("input", () => {
             handleAutocomplete(songGuess, autocompleteSongList, "song");
         });
+    }
 
-        document.addEventListener("click", (e) => {
+    // Close dropdowns when clicking outside
+    document.addEventListener("click", (e) => {
+        for (let i = 1; i <= totalTries; i++) {
+            const artistGuess = document.getElementById(`artistGuess${i}`);
+            const songGuess = document.getElementById(`songGuess${i}`);
+            const autocompleteArtistList = document.getElementById(`autocompleteArtistList${i}`);
+            const autocompleteSongList = document.getElementById(`autocompleteSongList${i}`);
+
             if (e.target !== artistGuess) autocompleteArtistList.innerHTML = "";
             if (e.target !== songGuess) autocompleteSongList.innerHTML = "";
-        });
-    }
+        }
+    });
 }
 
 function loadSong(id) {
@@ -68,7 +76,10 @@ function loadSong(id) {
 }
 
 function playCurrentTry() {
-    if (currentTry > totalTries) return;
+    if (currentTry > totalTries) {
+        revealSong();
+        return;
+    }
 
     const song = songs[currentId];
     const startTime = trySegments.slice(0, currentTry - 1).reduce((a, b) => a + b, 0);
@@ -96,10 +107,19 @@ function playCurrentTry() {
     player.addEventListener("timeupdate", updateProgress);
 }
 
+function moveToNextTry() {
+    if (currentTry < totalTries) {
+        currentTry++;
+        playCurrentTry();
+    } else {
+        revealSong();
+    }
+}
+
 function revealSong() {
     const song = songs[currentId];
     title.textContent = "Song: " + song.song;
-    artist.textContent = "Artist: " + song.artist;
+    artistElement.textContent = "Artist: " + song.artist;
     songInfo.style.display = "block";
 }
 
