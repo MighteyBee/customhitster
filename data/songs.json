@@ -1,1761 +1,1892 @@
 {
     "001": {
-        "file": "Alanis Morisette - You Oughta Know.mp3"
+        "artist": "Alanis Morissette",
+        "song": "You Oughta Know",
+        "file": "Alanis Morissette - You Oughta Know.mp3"
     },
-
-   "002": {
+    "002": {
+        "artist": "Billy Joel",
+        "song": "Movin' Out",
         "file": "Billy Joel - Movin Out.mp3"
     },
-
     "003": {
+        "artist": "Billy Joel",
+        "song": "Vienna",
         "file": "Billy Joel - Vienna.mp3"
     },
-
-   "004": {
+    "004": {
+        "artist": "Björk",
+        "song": "All Is Full Of Love",
         "file": "Björk - All Is Full Of Love.mp3"
     },
-
     "005": {
+        "artist": "Björk",
+        "song": "Bachelorette",
         "file": "Björk - Bachelorette.mp3"
     },
-
     "006": {
+        "artist": "Carly Simon",
+        "song": "Coming Around Again",
         "file": "Carly Symon - Coming Around Again.mp3"
     },
-
     "007": {
+        "artist": "Cher",
+        "song": "The Shoop Shoop Song",
         "file": "Cher - The Shoop Shoop Song.mp3"
     },
-
     "008": {
+        "artist": "Ekova",
+        "song": "Temoina",
         "file": "Ekova - Temoina"
     },
-
-     "009": {
+    "009": {
+        "artist": "Talk Talk",
+        "song": "Such A Shame",
         "file": "Talk Talk - Such A Shame"
     },
-
-     "010": {
+    "010": {
+        "artist": "The Moody Blues",
+        "song": "Your Wildest Dream",
         "file": "The Moody Blues - Your Wildest Dream"
     },
-
-     "011": {
+    "011": {
+        "artist": "The Psychedelic Furs",
+        "song": "Love My Way",
         "file": "The Psychedelic Furs - Love My Way"
     },
-
-     "012": {
+    "012": {
+        "artist": "Tina Turner",
+        "song": "What's Love",
         "file": "Tina Turner - Whats Love"
     },
-
-     "013": {
+    "013": {
+        "artist": "Vangelis",
+        "song": "Conquest of Paradise",
         "file": "Vangelis - Conquest of Paradise"
     },
-
-     "014": {
+    "014": {
+        "artist": "Whitney Houston",
+        "song": "My Love Is Your Love",
         "file": "Whitney Houston - My Love Is Your Love"
     },
-
-     "015": {
+    "015": {
+        "artist": "Youssou N'Dour & Neneh Cherry",
+        "song": "7 Seconds",
         "file": "Youssou NDour Neneh Cherry - 7 Seconds"
     },
-
-     "016": {
+    "016": {
+        "artist": "Yusuf Cat Stevens",
+        "song": "Father and Son",
         "file": "Yusuf Cat Stevens - Father and Son"
     },
-
-     "017": {
+    "017": {
+        "artist": "Enya",
+        "song": "Storms in Africa",
         "file": "Enya - Storms in Africa.mp3"
     },
-
-     "018": {
+    "018": {
+        "artist": "Fleetwood Mac",
+        "song": "Seven Wonders",
         "file": "Fleetwood Mac - Seven Wonders.mp3"
     },
-
-     "019": {
+    "019": {
+        "artist": "Madonna",
+        "song": "Secret Garden",
         "file": "Madonna - Secret Garden.mp3"
     },
-
-     "020": {
+    "020": {
+        "artist": "Massive Attack",
+        "song": "Sly",
         "file": "Massive Attack - Sly.mp3"
     },
-
-     "021": {
+    "021": {
+        "artist": "Mott The Hoople",
+        "song": "All The Young Dudes",
         "file": "Mott The Hoople - All The Young Dudes.mp3"
     },
-
-
-     "022": {
+    "022": {
+        "artist": "Patti Smith",
+        "song": "Because The Night",
         "file": "Patti Smith - Because The Night.mp3"
     },
-
-
-     "023": {
+    "023": {
+        "artist": "Peter Gabriel",
+        "song": "Blood Of Eden",
         "file": "Peter Gabriel - Blood Of Eden.mp3"
     },
-
-
-     "024": {
+    "024": {
+        "artist": "Pink Floyd",
+        "song": "Breathe",
         "file": "Pink Floyd - Breathe.mp3"
     },
-
-
-     "025": {
+    "025": {
+        "artist": "Rah Band",
+        "song": "Messages From The Stars",
         "file": "Rah Band - Messages From The Stars.mp3"
     },
-
-
-     "026": {
+    "026": {
+        "artist": "Ramones",
+        "song": "Blitzkrieg Bop",
         "file": "Ramones Blitzkrieg Bop.mp3"
     },
-
-
-     "027": {
+    "027": {
+        "artist": "Sade",
+        "song": "Love Is Stronger Than Pride",
         "file": "Sade - Love Is Stronger Than Pride.mp3"
     },
-
-
-     "028": {
+    "028": {
+        "artist": "Shania Twain",
+        "song": "That Don't Impress Me Much",
         "file": "Shania Twain - That Dont Impress Me Much.mp3"
     },
-
-
-     "029": {
+    "029": {
+        "artist": "Sinead O'Connor",
+        "song": "Mandinka",
         "file": "Sinead OConnor - Mandinka.mp3"
     },
-
-
-     "030": {
+    "030": {
+        "artist": "Siouxsie and the Banshees",
+        "song": "Spellbound",
         "file": "Siousxie and the Banshees - Spellbound.mp3"
     },
-
-
-     "031": {
+    "031": {
+        "artist": "Smoke City",
+        "song": "Underwater Love",
         "file": "Smoke City - Underwater Love.mp3"
     },
-
-
-     "032": {
+    "032": {
+        "artist": "SNAP!",
+        "song": "Mary had a little lamb",
         "file": "SNAP - Mary had a little lamb.mp3"
     },
-
-
-     "033": {
+    "033": {
+        "artist": "Soul II Soul",
+        "song": "Back To Life",
         "file": "Soul II Soul - Back To Life.mp3"
     },
-
-
-     "034": {
+    "034": {
+        "artist": "Talk Talk",
+        "song": "Life's what you make it",
         "file": "Talk Talk - Lifes what you make it.mp3"
     },
-
-
-     "035": {
+    "035": {
+        "artist": "The Police",
+        "song": "Synchronicity II",
         "file": "The Police - Synchronicity II.mp3"
     },
-
-
-     "036": {
+    "036": {
+        "artist": "Tina Turner",
+        "song": "Private Dancer",
         "file": "Tina Turner - Private Dancer.mp3"
     },
-
-
-     "037": {
+    "037": {
+        "artist": "George Harrison",
+        "song": "I'd Have You Anytime",
         "file": "George Harrison - I'D Have You Anytime.mp3"
     },
-
-
-     "038": {
+    "038": {
+        "artist": "Go West",
+        "song": "King of Wishful Thinking",
         "file": "Go West- King of Wishful Thinking.mp3"
     },
-
-
-     "039": {
+    "039": {
+        "artist": "Grace Jones",
+        "song": "La Vie En Rose",
         "file": "Grace Jones - La Vie En Rose.mp3"
     },
-
-
-     "040": {
+    "040": {
+        "artist": "Heart",
+        "song": "Barracuda",
         "file": "Heart - Barracuda.mp3"
     },
-
-
-     "041": {
+    "041": {
+        "artist": "Icehouse",
+        "song": "Hey Little Girl",
         "file": "ICEHOUSE - Hey Little Girl.mp3"
     },
-
-
-     "042": {
+    "042": {
+        "artist": "Icehouse",
+        "song": "Electric Blue",
         "file": "ICEHOUSE _ Electric Blue.mp3"
     },
-
-
-     "043": {
+    "043": {
+        "artist": "Joni Mitchell",
+        "song": "Ladies of the Canyon",
         "file": "Joni Mitchell - Ladies of the Canyon.mp3"
     },
-
-
-     "044": {
+    "044": {
+        "artist": "Joy Division",
+        "song": "Love Will Tear Us Apart",
         "file": "Joy Division - Love Will Tear Us Apart.mp3"
     },
-
-
-     "045": {
+    "045": {
+        "artist": "Kate Bush",
+        "song": "Delius",
         "file": "Kate Bush - Delius.mp3"
     },
-
-
-     "046": {
+    "046": {
+        "artist": "Kate Bush",
+        "song": "The Big Sky",
         "file": "Kate Bush - The Big Sky.mp3"
     },
-
-
-     "047": {
+    "047": {
+        "artist": "Kim Carnes",
+        "song": "Bette Davis Eyes",
         "file": "Kim Carnes - Bette Davis Eyes.mp3"
     },
-
-
-     "048": {
+    "048": {
+        "artist": "Kylie Minogue",
+        "song": "In Your Eyes",
         "file": "Kylie Minogue - In Your Eyes.mp3"
     },
-
-
-     "049": {
+    "049": {
+        "artist": "Lisa Stansfield",
+        "song": "All Around The World",
         "file": "Lisa Stanfield - All Around The World.mp3"
     },
-
-
-     "050": {
+    "050": {
+        "artist": "Marillion",
+        "song": "Lavender",
         "file": "Marillion - Lavender.mp3"
     },
-
-
-     "051": {
+    "051": {
+        "artist": "Mary J. Blige",
+        "song": "Real Love",
         "file": "Mary J Blige - Real Love.mp3"
     },
-
-
-     "052": {
+    "052": {
+        "artist": "Massive Attack",
+        "song": "Unfinished Sympathy",
         "file": "Massive Attack - Unfinished Sympathy.mp3"
     },
-
-
-     "053": {
+    "053": {
+        "artist": "Michael Jackson",
+        "song": "Human Nature",
         "file": "Michael Jackson - Human Nature.mp3"
     },
-
-
-     "054": {
+    "054": {
+        "artist": "Mike Oldfield",
+        "song": "To France",
         "file": "Mike Oldfield - To France.mp3"
     },
-
-
-     "055": {
+    "055": {
+        "artist": "Rose Royce",
+        "song": "I'm wishing on a star",
         "file": "Rose Royce - Im wishing on a star.mp3"
     },
-
-
-     "056": {
+    "056": {
+        "artist": "Sonique",
+        "song": "It Feels So Good",
         "file": "Sonique - It Feels So Good.mp3"
     },
-
-
-     "057": {
+    "057": {
+        "artist": "Crosby, Stills, Nash & Young",
+        "song": "Helplessly Hoping",
         "file": "Crosby, Stills, Nash - Helplessly Hoping.mp3"
     },
-
-
-     "058": {
+    "058": {
+        "artist": "Crystal Waters",
+        "song": "Gypsy Woman",
         "file": "Crystal Waters - Gypsy Woman.mp3"
     },
-
-
-     "059": {
+    "059": {
+        "artist": "Cyndi Lauper",
+        "song": "True Colors",
         "file": "Cyndi Lauper - True Colors.mp3"
     },
-
-
-     "060": {
+    "060": {
+        "artist": "David Bowie",
+        "song": "Ashes To Ashes",
         "file": "David Bowie - Ashes To Ashes.mp3"
     },
-
-
-     "061": {
+    "061": {
+        "artist": "Dead Can Dance",
+        "song": "Yulanga",
         "file": "Dead Can Dance - Yulanga.mp3"
     },
-
-
-     "062": {
+    "062": {
+        "artist": "Depeche Mode",
+        "song": "Here Is The House",
         "file": "Depeche Mode - Here Is The House.mp3"
     },
-
-
-     "063": {
+    "063": {
+        "artist": "Don McLean",
+        "song": "And I Love You So",
         "file": "Don McLean - And I Love You So.mp3"
     },
-
-
-     "064": {
+    "064": {
+        "artist": "Donna Lewis",
+        "song": "I Love You Always Forever",
         "file": "Donna Lewis - I Love You Always Forever.mp3"
     },
-
-
-     "065": {
+    "065": {
+        "artist": "Duran Duran",
+        "song": "Shelter",
         "file": "Duran Duran - Shelter.mp3"
     },
-
-
-     "066": {
+    "066": {
+        "artist": "Foyer Des Arts",
+        "song": "Wissenswertes über Erlangen",
         "file": "Foyer Des Arts - Wissenswertes über Erlangen.mp3"
     },
-
-
-     "067": {
+    "067": {
+        "artist": "Grace Jones",
+        "song": "I've Seen That Face Before",
         "file": "Grace Jones - Ive Seen That Face Before.mp3"
     },
-
-
-     "068": {
+    "068": {
+        "artist": "Janet Jackson",
+        "song": "Empty",
         "file": "Janet Jackson - Empty.mp3"
     },
-
-
-     "069": {
+    "069": {
+        "artist": "RAH Band",
+        "song": "Clouds Across The Moon",
         "file": "RAH Band - Clouds Across The Moon.mp3"
     },
-
-
-     "070": {
+    "070": {
+        "artist": "Scotch",
+        "song": "Disco Band",
         "file": "Scotch - Disco Band.mp3"
     },
-
-
-     "071": {
+    "071": {
+        "artist": "Paul Anka",
+        "song": "It's My Life",
         "file": "Paul Anka - It's My Life.mp3"
     },
-
-
-     "072": {
+    "072": {
+        "artist": "Off",
+        "song": "Electrica Salsa Baba",
         "file": "Off - Electrica Salsa Baba.mp3"
     },
-
-
-     "073": {
+    "073": {
+        "artist": "Justin Timberlake",
+        "song": "Señorita",
         "file": "Justin Timberlake - Señorita .mp3"
     },
-
-
-     "074": {
+    "074": {
+        "artist": "Justin Timberlake",
+        "song": "Rock Your Body",
         "file": "Justin Timberlake - Rock Your Body .mp3"
     },
-
-
-     "075": {
+    "075": {
+        "artist": "Juliane Werding",
+        "song": "Am Tag als Conny Kramer starb",
         "file": "Juliane Werding - Am Tag als Conny Kramer starb.mp3"
     },
-
-
-     "076": {
+    "076": {
+        "artist": "Joy Division",
+        "song": "Disorder",
         "file": "Joy Division - Disorder.mp3"
     },
-
-
-     "077": {
+    "077": {
+        "artist": "Joi",
+        "song": "Prem",
         "file": "Joi - Prem.mp3"
     },
-
-
-     "078": {
+    "078": {
+        "artist": "Joi",
+        "song": "Journey",
         "file": "Joi - Journey.mp3"
     },
-
-
-     "079": {
+    "079": {
+        "artist": "John Barry Orchestra",
+        "song": "James Bond Theme (From Dr. No Soundtrack - Remastered 2003)",
         "file": "John Barry Orchestra - James Bond Theme (From _Dr. No_ Soundtrack _ Remastered 2003).mp3"
     },
-
-
-     "080": {
+    "080": {
+        "artist": "Joe Jackson",
+        "song": "Steppin' Out",
         "file": "Joe Jackson - Steppin' Out.mp3"
     },
-
-
-     "081": {
+    "081": {
+        "artist": "Jessica Pratt",
+        "song": "Better Hate",
         "file": "Jessica Pratt - Better Hate.mp3"
     },
-
-
-     "082": {
+    "082": {
+        "artist": "Jessica Pratt",
+        "song": "Life Is",
         "file": "Jessica Pratt - _Life Is_ .mp3"
     },
-
-
-     "083": {
+    "083": {
+        "artist": "Jefferson Airplane",
+        "song": "White Rabbit",
         "file": "Jefferson Airplane -White Rabbit-.mp3"
     },
-
-
-     "084": {
+    "084": {
+        "artist": "Jean-Michel Jarre",
+        "song": "Oxygene, Pt. 4",
         "file": "Jean-Michel Jarre - Oxygene, Pt. 4.mp3"
     },
-
-
-     "085": {
+    "085": {
+        "artist": "Jamiroquai",
+        "song": "Cosmic Girl (Remastered 2013)",
         "file": "Jamiroquai - Cosmic Girl (Remastered 2013).mp3"
     },
-
-
-     "086": {
+    "086": {
+        "artist": "Isaac Hayes",
+        "song": "Theme From Shaft (1971)",
         "file": "Isaac Hayes - Theme From Shaft (1971).mp3"
     },
-
-
-     "087": {
+    "087": {
+        "artist": "INXS",
+        "song": "Never Tear Us Apart",
         "file": "INXS - Never Tear Us Apart.mp3"
     },
-
-
-     "088": {
+    "088": {
+        "artist": "Iggy Pop",
+        "song": "Lust For Life",
         "file": "Iggy Pop - Lust For Life.mp3"
     },
-
-
-     "089": {
+    "089": {
+        "artist": "Huey Lewis & The News",
+        "song": "Hip To Be Square",
         "file": "Huey Lewis & The News - Hip To Be Square.mp3"
     },
-
-
-     "090": {
+    "090": {
+        "artist": "Hubert Kah",
+        "song": "Angel 07 (Video 1985)",
         "file": "Hubert Kah - Angel 07 (Video 1985).mp3"
     },
-
-
-     "091": {
+    "091": {
+        "artist": "Howard Jones",
+        "song": "What Is Love",
         "file": "Howard Jones - What Is Love.mp3"
     },
-
-
-     "092": {
+    "092": {
+        "artist": "Hot Chocolate",
+        "song": "You Sexy Thing (original)",
         "file": "Hot Chocolate- You Sexy Thing (original).mp3"
     },
-
-
-     "093": {
+    "093": {
+        "artist": "Hot Chocolate",
+        "song": "Every 1's A Winner (ZDF Disco, 12.06.1978)",
         "file": "Hot Chocolate - Every 1s A Winner (ZDF Disco, 12.06.1978).mp3"
     },
-
-
-     "094": {
+    "094": {
+        "artist": "Hot Chocolate",
+        "song": "Emma",
         "file": "Hot Chocolate - Emma.mp3"
     },
-
-
-     "095": {
+    "095": {
+        "artist": "Hildegard Knef",
+        "song": "Für mich, soll's rote Rosen regnen",
         "file": "Hildegard Knef - Für mich, soll's rote Rosen regnen.mp3"
     },
-
-
-     "096": {
+    "096": {
+        "artist": "Hildegard Knef",
+        "song": "Das ist Berlin",
         "file": "Hildegard Kneef - Das ist Berlin.mp3"
     },
-
-
-     "097": {
+    "097": {
+        "artist": "Harry Nilsson",
+        "song": "One",
         "file": "Harry Nilsson - One.mp3"
     },
-
-
-     "098": {
+    "098": {
+        "artist": "Hamid Baroudi",
+        "song": "Salama",
         "file": "Hamid Baroudi - Salama.mp3"
     },
-
-
-     "099": {
+    "099": {
+        "artist": "Grover Washington Jr.",
+        "song": "Just the Two of Us (feat. Bill Withers)",
         "file": "Grover Washington Jr. - Just the Two of Us (feat. Bill Withers).mp3"
     },
-
-
-     "100": {
+    "100": {
+        "artist": "Gotan Project",
+        "song": "Epoca (La Revancha del Tango)",
         "file": "Gotan Project - Epoca (La Revancha del Tango).mp3"
     },
-
-
-     "101": {
+"101": {
+        "artist": "Gilbert O'Sullivan",
+        "song": "Alone Again (original version)",
         "file": "Gilbert O'Sullivan - Alone Again (original version).mp3"
     },
-
-
-     "102": {
+    "102": {
+        "artist": "George Michael",
+        "song": "Freedom! '90 (Remastered)",
         "file": "George Michael - Freedom! '90 (Remastered).mp3"
     },
-
-
-     "103": {
+    "103": {
+        "artist": "George Michael",
+        "song": "Fastlove",
         "file": "George Michael - Fastlove .mp3"
     },
-
-
-     "104": {
+    "104": {
+        "artist": "George McCrae",
+        "song": "Rock Your Baby Extended Version Remastered (1974)",
         "file": "George McCrae Rock Your Baby Extended Version Remastered (1974).mp3"
     },
-
-
-     "105": {
+    "105": {
+        "artist": "Genesis",
+        "song": "I Can't Dance",
         "file": "Genesis - I Can't Dance .mp3"
     },
-
-
-     "106": {
+    "106": {
+        "artist": "Gary Numan",
+        "song": "Cars HD",
         "file": "Gary Numan - Cars HD.mp3"
     },
-
-
-     "107": {
+    "107": {
+        "artist": "Frl. Menke",
+        "song": "Tretboot in Seenot (Single Version)",
         "file": "Frl. Menke - Tretboot in Seenot (Single Version).mp3"
     },
-
-
-     "108": {
+    "108": {
+        "artist": "Frankie Goes To Hollywood",
+        "song": "Relax",
         "file": "Frankie Goes To Hollywood - Relax .mp3"
     },
-
-
-     "109": {
+    "109": {
+        "artist": "Frank Zander",
+        "song": "Hier kommt Kurt",
         "file": "Frank Zander - Hier kommt Kurt.mp3"
     },
-
-
-     "110": {
+    "110": {
+        "artist": "Frank Sinatra",
+        "song": "I've got you under my skin",
         "file": "Frank Sinatra- I've got you under my skin.mp3"
     },
-
-
-     "111": {
+    "111": {
+        "artist": "Frank Sinatra",
+        "song": "Theme From New York, New York (2008 Remastered)",
         "file": "Frank Sinatra - Theme From New York, New York (2008 Remastered).mp3"
     },
-
-
-     "112": {
+    "112": {
+        "artist": "Frank Sinatra",
+        "song": "Strangers In The Night (2008 Remastered)",
         "file": "Frank Sinatra - Strangers In The Night (2008 Remastered).mp3"
     },
-
-
-     "113": {
+    "113": {
+        "artist": "Frank Sinatra",
+        "song": "My Way (2008 Remastered)",
         "file": "Frank Sinatra - My Way (2008 Remastered).mp3"
     },
-
-
-     "114": {
+    "114": {
+        "artist": "Four Tops",
+        "song": "Reach Out I’ll Be There",
         "file": "Four Tops - Reach Out I’ll Be There.mp3"
     },
-
-
-     "115": {
+    "115": {
+        "artist": "Fleetwood Mac",
+        "song": "Everywhere",
         "file": "Fleetwood Mac - Everywhere .mp3"
     },
-
-
-     "116": {
+    "116": {
+        "artist": "Fleetwood Mac",
+        "song": "Dreams (2004 Remaster)",
         "file": "Fleetwood Mac - Dreams (2004 Remaster).mp3"
     },
-
-
-     "117": {
+    "117": {
+        "artist": "Eurythmics, Annie Lennox, Dave Stewart",
+        "song": "Here Comes The Rain Again (Remastered)",
         "file": "Eurythmics, Annie Lennox, Dave Stewart - Here Comes The Rain Again (Remastered).mp3"
     },
-
-     "118": {
+    "118": {
+        "artist": "Esther & Abi Ofarim",
+        "song": "Freight Train",
         "file": "Esther & Abi Ofarim - Freight Train.mp3"
     },
-
-     "119": {
+    "119": {
+        "artist": "Erykah Badu",
+        "song": "On & On",
         "file": "Erykah Badu - On & On.mp3"
     },
-
-     "120": {
+    "120": {
+        "artist": "EROS RAMAZZOTTI & TINA TURNER",
+        "song": "COSAS DE LA VIDA",
         "file": "EROS RAMAZZOTTI TINA TURNER - COSAS DE LA VIDA.mp3"
     },
-
-     "121": {
+    "121": {
+        "artist": "Elton John",
+        "song": "Rocket Man",
         "file": "Elton John - Rocket Man .mp3"
     },
-
-     "122": {
+    "122": {
+        "artist": "Elton John",
+        "song": "Goodbye Yellow Brick Road (Remastered 2014)",
         "file": "Elton John - Goodbye Yellow Brick Road (Remastered 2014).mp3"
     },
-
-     "123": {
+    "123": {
+        "artist": "Elis Regina & Tom Jobim",
+        "song": "Aguas de Março",
         "file": "Elis Regina & Tom Jobim -  Aguas de Março.mp3"
     },
-
-     "124": {
+    "124": {
+        "artist": "Elis Regina",
+        "song": "O Bêbado e a Equilibrista",
         "file": "Elis Regina - O Bêbado e a Equilibrista.mp3"
     },
-
-     "125": {
+    "125": {
+        "artist": "Electric Light Orchestra",
+        "song": "Livin' Thing",
         "file": "Electric Light Orchestra - Livin' Thing.mp3"
     },
-
-     "126": {
+    "126": {
+        "artist": "Earth, Wind & Fire",
+        "song": "Let's Groove",
         "file": "Earth, Wind & Fire - Let's Groove.mp3"
     },
-
-     "127": {
+    "127": {
+        "artist": "Dusty Springfield",
+        "song": "You Don't Have To Say You Love Me",
         "file": "Dusty Springfield - You Don't Have To Say You Love Me.mp3"
     },
-
-     "128": {
+    "128": {
+        "artist": "Dusty Springfield",
+        "song": "Spooky",
         "file": "Dusty Springfield - Spooky.mp3"
     },
-
-     "129": {
+    "129": {
+        "artist": "Dusty Springfield",
+        "song": "In private",
         "file": "Dusty Springfield - In private.mp3"
     },
-
-     "130": {
+    "130": {
+        "artist": "Dusty Springfield",
+        "song": "Breakfast in Bed",
         "file": "Dusty Springfield - Breakfast in Bed.mp3"
     },
-
-     "131": {
+    "131": {
+        "artist": "Duran Duran",
+        "song": "Ordinary World",
         "file": "Duran Duran - Ordinary World .mp3"
     },
-
-     "132": {
+    "132": {
+        "artist": "Duran Duran",
+        "song": "Hungry like the Wolf",
         "file": "Duran Duran - Hungry like the Wolf .mp3"
     },
-
-     "133": {
+    "133": {
+        "artist": "Duran Duran",
+        "song": "The Chauffeur",
         "file": "Duran Duran  - The Chauffeur_.mp3"
     },
-
-     "134": {
+    "134": {
+        "artist": "Donovan",
+        "song": "Sunshine Superman (Audio)",
         "file": "Donovan - Sunshine Superman (Audio).mp3"
     },
-
-     "135": {
+    "135": {
+        "artist": "Donovan",
+        "song": "Hurdy Gurdy Man",
         "file": "Donovan - Hurdy Gurdy Man .mp3"
     },
-
-     "136": {
+    "136": {
+        "artist": "Dire Straits",
+        "song": "Sultans Of Swing",
         "file": "Dire Straits - Sultans Of Swing .mp3"
     },
-
-     "137": {
+    "137": {
+        "artist": "Dionne Warwick",
+        "song": "Walk on By",
         "file": "Dionne Warwick - Walk on By.mp3"
     },
-
-     "138": {
+    "138": {
+        "artist": "Deniece Williams",
+        "song": "Let's Hear It for the Boy",
         "file": "Deniece Williams - Let's Hear It for the Boy .mp3"
     },
-
-     "139": {
+    "139": {
+        "artist": "DeBarge",
+        "song": "Rhythm Of The Night",
         "file": "DeBarge - Rhythm Of The Night .mp3"
     },
-
-     "140": {
+    "140": {
+        "artist": "David Bowie",
+        "song": "Life On Mars",
         "file": "David Bowie - Life On Mars_ .mp3"
     },
-
-     "141": {
+    "141": {
+        "artist": "Daft Punk",
+        "song": "Digital Love",
         "file": "Daft Punk - Digital Love .mp3"
     },
-
-     "142": {
+    "142": {
+        "artist": "Culture Club",
+        "song": "Do You Really Want To Hurt Me",
         "file": "Culture Club - Do You Really Want To Hurt Me.mp3"
     },
-
-     "143": {
+    "143": {
+        "artist": "Crowded House",
+        "song": "Don't Dream It's Over",
         "file": "Crowded House - Don't Dream It's Over .mp3"
     },
-
-     "144": {
+    "144": {
+        "artist": "Christopher Cross",
+        "song": "Ride Like the Wind",
         "file": "Christopher Cross - Ride Like the Wind.mp3"
     },
-
-     "145": {
+    "145": {
+        "artist": "Chris Isaak",
+        "song": "Wicked Game",
         "file": "Chris Isaak - Wicked Game.mp3"
     },
-
-     "146": {
+    "146": {
+        "artist": "Camouflage",
+        "song": "The Great Commandment",
         "file": "Camouflage -  The Great Commandment.mp3"
     },
-
-     "147": {
+    "147": {
+        "artist": "Bryan Ferry",
+        "song": "Slave To Love",
         "file": "Bryan Ferry - Slave To Love.mp3"
     },
-
-     "148": {
+    "148": {
+        "artist": "Bryan Ferry",
+        "song": "Mamouna",
         "file": "Bryan Ferry - Mamouna.mp3"
     },
-
-     "149": {
+    "149": {
+        "artist": "Bryan Ferry",
+        "song": "Don't Want To Know",
         "file": "Bryan Ferry - Don't Want To Know  .mp3"
     },
-
-     "150": {
+    "150": {
+        "artist": "Bryan Adams",
+        "song": "Run To You",
         "file": "Bryan Adams - Run To You.mp3"
     },
-
-     "151": {
+    "151": {
+        "artist": "Neil Diamond",
+        "song": "Brooklyn Roads",
         "file": "Brooklyn Roads Neil Diamond (1968).mp3"
     },
-
-     "152": {
+    "152": {
+        "artist": "Booker T. & The MG's",
+        "song": "Green Onions",
         "file": "Booker T. & The MG's - Green Onions .mp3"
     },
-
-     "153": {
+    "153": {
+        "artist": "Bobby Hebb",
+        "song": "Sunny",
         "file": "Bobby Hebb - Sunny.mp3"
     },
-
-     "154": {
+    "154": {
+        "artist": "Blondie",
+        "song": "Heart Of Glass",
         "file": "Blondie - Heart Of Glass.mp3"
     },
-
-     "155": {
+    "155": {
+        "artist": "Black",
+        "song": "Wonderful Life",
         "file": "Black - Wonderful Life.mp3"
     },
-
-     "156": {
+    "156": {
+        "artist": "Björk",
+        "song": "Hunter",
         "file": "björk _ hunter .mp3"
     },
-
-     "157": {
+    "157": {
+        "artist": "Billy Swan",
+        "song": "I Can Help",
         "file": "Billy Swan I Can Help.mp3"
     },
-
-     "158": {
+    "158": {
+        "artist": "Bill Withers",
+        "song": "Use me",
         "file": "Bill Withers - Use me.mp3"
     },
-
-     "159": {
+    "159": {
+        "artist": "Bill Withers",
+        "song": "Lovely Day",
         "file": "Bill Withers - Lovely Day .mp3"
     },
-
-     "160": {
+    "160": {
+        "artist": "Bill Withers",
+        "song": "Lean on Me",
         "file": "Bill Withers - Lean on Me.mp3"
     },
-
-     "161": {
+    "161": {
+        "artist": "Bill Withers",
+        "song": "Grandma's Hands",
         "file": "Bill Withers - Grandma's Hands .mp3"
     },
-
-     "162": {
+    "162": {
+        "artist": "Bill Withers",
+        "song": "Ain't No Sunshine",
         "file": "Bill Withers - Ain't No Sunshine.mp3"
     },
-
-     "163": {
+    "163": {
+        "artist": "Bert Kaempfert And His Orchestra",
+        "song": "A Swingin' Safari",
         "file": "Bert Kaempfert And His Orchestra_ A Swingin' Safari.mp3"
     },
-
-     "164": {
+    "164": {
+        "artist": "Bee Gees",
+        "song": "How Deep Is Your Love",
         "file": "Bee Gees - How Deep Is Your Love .mp3"
     },
-
-     "165": {
+    "165": {
+        "artist": "Barry White",
+        "song": "Never never gonna give you up",
         "file": "Barry White - Never never gonna give you up.mp3"
     },
-
-     "166": {
+    "166": {
+        "artist": "Barry White",
+        "song": "My First My Last My Everything",
         "file": "Barry White - My First My Last My Everything.mp3"
     },
-
-     "167": {
+    "167": {
+        "artist": "Barry White",
+        "song": "What Am I Gonna Do With You",
         "file": "Barry White  -  What Am I Gonna Do With You.mp3"
     },
-
-     "169": {
+    "169": {
+        "artist": "Anne Clark",
+        "song": "Our Darkness",
         "file": "Anne Clark -  Our Darkness.mp3"
     },
-
-     "170": {
+    "170": {
+        "artist": "Amy Winehouse",
+        "song": "You Know I'm No Good",
         "file": "Amy Winehouse - You Know I'm No Good.mp3"
     },
-
-     "171": {
+    "171": {
+        "artist": "Amy Winehouse",
+        "song": "Tears Dry On Their Own",
         "file": "Amy Winehouse - Tears Dry On Their Own.mp3"
     },
-
-     "172": {
+    "172": {
+        "artist": "Amy Winehouse",
+        "song": "Rehab",
         "file": "Amy Winehouse - Rehab.mp3"
     },
-
-     "173": {
+    "173": {
+        "artist": "Amy Winehouse",
+        "song": "Me & Mr Jones",
         "file": "Amy Winehouse - Me & Mr Jones.mp3"
     },
-
-     "174": {
+    "174": {
+        "artist": "Amy Winehouse",
+        "song": "Back To Black",
         "file": "Amy Winehouse - Back To Black.mp3"
     },
-
-     "175": {
+    "175": {
+        "artist": "America",
+        "song": "A Horse With No Name",
         "file": "America - A Horse With No Name.mp3"
     },
-
-     "176": {
+    "176": {
+        "artist": "Everly Brothers",
+        "song": "All I Have To Do Is Dream",
         "file": "All I Have To Do Is Dream - Everly Brothers.mp3"
     },
-
-     "177": {
+    "177": {
+        "artist": "Alison Moyet",
+        "song": "Love Resurrection",
         "file": "Alison Moyet - Love Resurrection.mp3"
     },
-
-     "178": {
+    "178": {
+        "artist": "Alexandra",
+        "song": "Schwarze Balalaika",
         "file": "Alexandra - Schwarze Balalaika.mp3"
     },
-
-     "179": {
+    "179": {
+        "artist": "Al Jarreau",
+        "song": "Trouble In Paradise (1983)",
         "file": "Al Jarreau ~Trouble In Paradise (1983).mp3"
     },
-
-     "180": {
+    "180": {
+        "artist": "Al Jarreau",
+        "song": "Mornin'",
         "file": "Al Jarreau - Mornin' .mp3"
     },
-
-     "181": {
+    "181": {
+        "artist": "AIR",
+        "song": "Kelly Watch the Stars",
         "file": "AIR - Kelly Watch the Stars.mp3"
     },
-
-     "182": {
+    "182": {
+        "artist": "Achim Reichel",
+        "song": "Halt die Welt an (Für immer glücklich mehr geht nicht)",
         "file": "Achim Reichel - Halt die Welt an (Für immer glücklich mehr geht nicht).mp3"
     },
-
-     "183": {
+    "183": {
+        "artist": "Achim Reichel",
+        "song": "Fliegende Pferde",
         "file": "Achim Reichel - Fliegende Pferde.mp3"
     },
-
-     "184": {
+    "184": {
+        "artist": "ABC",
+        "song": "The Look Of Love",
         "file": "ABC - The Look Of Love.mp3"
     },
-
-     "185": {
+    "185": {
+        "artist": "10cc",
+        "song": "I'm Not In Love",
         "file": "10cc - I'm Not In Love.mp3"
     },
-
-     "186": {
+    "186": {
+        "artist": "Suzanne Vega",
+        "song": "Tom's Diner",
         "file": "Suzanne Vega - Toms Diner .mp3"
     },
-
-     "187": {
+    "187": {
+        "artist": "Supertramp",
+        "song": "The Logical Song (Remastered 2010)",
         "file": "Supertramp -The Logical Song  (Remastered 2010).mp3"
     },
-
-     "188": {
+    "188": {
+        "artist": "Supertramp",
+        "song": "It's Raining Again",
         "file": "Supertramp - It's Raining Again.mp3"
     },
-
-     "189": {
+    "189": {
+        "artist": "Supertramp",
+        "song": "Dreamer",
         "file": "Supertramp - Dreamer.mp3"
     },
-
-     "190": {
+    "190": {
+        "artist": "Supertramp",
+        "song": "Breakfast in America",
         "file": "Supertramp - Breakfast in America (Written & Composed by Roger Hodgson).mp3"
     },
-
-     "191": {
+    "191": {
+        "artist": "SUPERMAX",
+        "song": "Lovemachine",
         "file": "SUPERMAX - Lovemachine.mp3"
     },
-
-     "192": {
+    "192": {
+        "artist": "Sting",
+        "song": "Fields Of Gold (Live From Lake House, Wiltshire, England, 1993)",
         "file": "Sting - Fields Of Gold (Live From Lake House, Wiltshire, England, 1993).mp3"
     },
-
-     "193": {
+    "193": {
+        "artist": "Stevie Wonder",
+        "song": "Send One Your Love",
         "file": "Stevie Wonder - Send One Your Love.mp3"
     },
-
-     "194": {
+    "194": {
+        "artist": "Stevie Wonder",
+        "song": "My Cherie Amour",
         "file": "Stevie Wonder - My Cherie Amour.mp3"
     },
-
-     "195": {
+    "195": {
+        "artist": "Stevie Wonder",
+        "song": "Earth's Creation",
         "file": "Stevie Wonder - Earth's Creation.mp3"
     },
-
-     "196": {
+    "196": {
+        "artist": "Stevie Nicks",
+        "song": "Edge of Seventeen",
         "file": "Stevie Nicks - Edge of Seventeen .mp3"
     },
-
-     "197": {
+    "197": {
+        "artist": "Steve Miller Band",
+        "song": "Abracadabra",
         "file": "Steve Miller Band - Abracadabra .mp3"
     },
-
-     "198": {
+    "198": {
+        "artist": "Stefan Gwildis",
+        "song": "sie läßt mich nicht mehr los",
         "file": "Stefan Gwildis -sie läßt mich nicht mehr los.mp3"
     },
-
-     "199": {
+    "199": {
+        "artist": "Steely Dan",
+        "song": "Reelin' in the Years",
         "file": "Steely Dan - Reelin' in the Years.mp3"
     },
-
-     "200": {
+    "200": {
+        "artist": "Steely Dan",
+        "song": "Hey Nineteen",
         "file": "Steely Dan - Hey Nineteen.mp3"
     },
-
-     "201": {
+    "201": {
+        "artist": "Stealers Wheel",
+        "song": "Stuck In The Middle With You",
         "file": "Stealers Wheel - Stuck In The Middle With You.mp3"
     },
-
-     "202": {
+    "202": {
+        "artist": "Spandau Ballet",
+        "song": "Gold (HD Remastered)",
         "file": "Spandau Ballet - Gold (HD Remastered).mp3"
     },
-
-     "203": {
+    "203": {
+        "artist": "Smash",
+        "song": "Konstablerwache (Orginal Mix)",
         "file": "Smash - Konstablerwache (Orginal Mix).mp3"
     },
-
-     "204": {
+    "204": {
+        "artist": "Simple Minds",
+        "song": "Don't You (Forget About Me)",
         "file": "Simple Minds - Don't You (Forget About Me).mp3"
     },
-
-     "205": {
+    "205": {
+        "artist": "Shocking Blue",
+        "song": "Venus",
         "file": "Shocking Blue - Venus .mp3"
     },
-
-     "206": {
+    "206": {
+        "artist": "Sharon Jones & The Dap-Kings",
+        "song": "Nobody's Baby",
         "file": "Sharon Jones & The Dap-Kings - Nobody's Baby.mp3"
     },
-
-     "207": {
+    "207": {
+        "artist": "Sharon Jones & The Dap-Kings",
+        "song": "100 Days, 100 Nights",
         "file": "Sharon Jones & The Dap-Kings - 100 Days, 100 Nights.mp3"
     },
-
-     "208": {
+    "208": {
+        "artist": "Shaggy",
+        "song": "It Wasn't Me",
         "file": "Shaggy - It Wasn't Me.mp3"
     },
-
-     "209": {
+    "209": {
+        "artist": "Shaggy",
+        "song": "Hey Sexy Lady ft. Brian & Tony Gold",
         "file": "Shaggy - Hey Sexy Lady ft. Brian & Tony Gold.mp3"
     },
-
-     "210": {
+    "210": {
+        "artist": "Shaggy",
+        "song": "Boombastic",
         "file": "Shaggy - Boombastic .mp3"
     },
-
-     "211": {
+    "211": {
+        "artist": "Shaggy",
+        "song": "Angel ft. Rayvon",
         "file": "Shaggy - Angel ft. Rayvon.mp3"
     },
-
-     "212": {
+    "212": {
+        "artist": "Serge Gainsbourg",
+        "song": "Ballade de Melody Nelson (Howie B Remix)",
         "file": "Serge Gainsbourg - Ballade de Melody Nelson (Howie B Remix).mp3"
     },
-
-     "213": {
+    "213": {
+        "artist": "Seeed",
+        "song": "Riddim No. 1",
         "file": "Seeed - Riddim No. 1 .mp3"
     },
-
-     "214": {
+    "214": {
+        "artist": "Seeed",
+        "song": "Music Monks",
         "file": "Seeed - Music Monks .mp3"
     },
-
-     "215": {
+    "215": {
+        "artist": "Seeed",
+        "song": "Dickes B",
         "file": "Seeed - Dickes B .mp3"
     },
-
-     "216": {
+    "216": {
+        "artist": "Seeed",
+        "song": "Dancehall Caballeros",
         "file": "Seeed - Dancehall Caballeros .mp3"
     },
-
-     "217": {
+    "217": {
+        "artist": "Seeed",
+        "song": "Aufstehn",
         "file": "Seeed - Aufstehn .mp3"
     },
-
-     "218": {
+    "218": {
+        "artist": "Seal",
+        "song": "The Beginning",
         "file": "Seal - The Beginning.mp3"
     },
-
-     "219": {
+    "219": {
+        "artist": "Seal",
+        "song": "Kiss From A Rose",
         "file": "Seal - Kiss From A Rose .mp3"
     },
-
-     "220": {
+    "220": {
+        "artist": "Seal",
+        "song": "Killer",
         "file": "Seal - Killer.mp3"
     },
-
-     "221": {
+    "221": {
+        "artist": "Seal",
+        "song": "Crazy",
         "file": "Seal - Crazy .mp3"
     },
-
-     "222": {
+    "222": {
+        "artist": "Scott Walker, The Walker Brothers",
+        "song": "The Sun Ain't Gonna Shine Anymore",
         "file": "Scott Walker_ The Walker Brothers - The Sun Ain't Gonna Shine Anymore.mp3"
     },
-
-     "223": {
+    "223": {
+        "artist": "Scott Walker",
+        "song": "Copenhagen",
         "file": "Scott Walker - Copenhagen.mp3"
     },
-
-     "224": {
+    "224": {
+        "artist": "Santana",
+        "song": "Oye Como Va",
         "file": "Santana - Oye Como Va .mp3"
     },
-
-     "225": {
+    "225": {
+        "artist": "Santana",
+        "song": "Maria Maria ft. The Product G&B",
         "file": "Santana - Maria Maria  ft. The Product G&B.mp3"
     },
-
-     "226": {
+    "226": {
+        "artist": "Santana",
+        "song": "Black Magic Woman",
         "file": "Santana - Black Magic Woman.mp3"
     },
-
-     "227": {
+    "227": {
+        "artist": "Sananda Maitreya",
+        "song": "Sign Your Name",
         "file": "Sananda Maitreya - Sign Your Name.mp3"
     },
-
-     "228": {
+    "228": {
+        "artist": "Saga",
+        "song": "Wind Him Up",
         "file": "Saga - Wind Him Up.mp3"
     },
-
-     "229": {
+    "229": {
+        "artist": "Saga",
+        "song": "Wildest Dreams - 1987",
         "file": "Saga - Wildest Dreams - 1987.mp3"
     },
-
-     "230": {
+    "230": {
+        "artist": "Saga",
+        "song": "The Flyer",
         "file": "Saga - The Flyer.mp3"
     },
-
-
-     "231": {
+    "231": {
+        "artist": "SAGA",
+        "song": "On The Loose",
         "file": "SAGA - On The Loose.mp3"
     },
-
-
-     "232": {
+    "232": {
+        "artist": "Ryan Paris",
+        "song": "Dolce Vita - Lyrics Video",
         "file": "Ryan Paris - Dolce Vita  - Lyrics Video.mp3"
     },
-
-
-     "234": {
+    "234": {
+        "artist": "Roxy Music",
+        "song": "More Than This",
         "file": "Roxy Music - More Than This.mp3"
     },
-
-
-     "235": {
+    "235": {
+        "artist": "Robert Palmer",
+        "song": "Johnny and Mary",
         "file": "Robert Palmer - Johnny and Mary.mp3"
     },
-
-
-     "236": {
+    "236": {
+        "artist": "Robbie Williams",
+        "song": "Supreme",
         "file": "Robbie Williams - Supreme.mp3"
     },
-
-
-     "237": {
+    "237": {
+        "artist": "Robbie Williams",
+        "song": "Rock DJ",
         "file": "Robbie Williams - Rock DJ.mp3"
     },
-
-
-     "238": {
+    "238": {
+        "artist": "Gotan Project",
+        "song": "Queremos Paz",
         "file": "Queremos Paz by Gotan Project.mp3"
     },
-
-
-     "239": {
+    "239": {
+        "artist": "Queen",
+        "song": "Radio Ga Ga (Remastered 2011)",
         "file": "Queen - Radio Ga Ga (Remastered 2011).mp3"
     },
-
-
-     "240": {
+    "240": {
+        "artist": "Prince and the Revolution",
+        "song": "Kiss",
         "file": "Prince and the Revolution - Kiss .mp3"
     },
-
-
-     "241": {
+    "241": {
+        "artist": "Portishead",
+        "song": "Sour Times",
         "file": "Portishead - Sour Times.mp3"
     },
-
-
-     "242": {
+    "242": {
+        "artist": "Portishead",
+        "song": "Numb",
         "file": "Portishead - Numb.mp3"
     },
-
-
-     "243": {
+    "243": {
+        "artist": "Portishead",
+        "song": "Mysterons",
         "file": "Portishead - Mysterons.mp3"
     },
-
-
-     "244": {
+    "244": {
+        "artist": "Portishead",
+        "song": "Machine Gun",
         "file": "Portishead - Machine Gun.mp3"
     },
-
-
-     "245": {
+    "245": {
+        "artist": "Portishead",
+        "song": "Glory Box",
         "file": "Portishead - Glory Box.mp3"
     },
-
-
-     "246": {
+    "246": {
+        "artist": "Philip Bailey, Phil Collins",
+        "song": "Easy Lover",
         "file": "Philip Bailey, Phil Collins - Easy Lover.mp3"
     },
-
-
-     "247": {
+    "247": {
+        "artist": "Peter Gabriel",
+        "song": "Sledgehammer",
         "file": "Peter Gabriel - Sledgehammer.mp3"
     },
-
-
-     "248": {
+    "248": {
+        "artist": "Peter Gabriel",
+        "song": "In Your Eyes",
         "file": "Peter Gabriel - In Your Eyes.mp3"
     },
-
-
-     "249": {
+    "249": {
+        "artist": "Paul Young",
+        "song": "Wherever I Lay My Hat (That's My Home)",
         "file": "Paul Young - Wherever I Lay My Hat (That's My Home).mp3"
     },
-
-
-     "250": {
+    "250": {
+        "artist": "Paul Young",
+        "song": "Don't Dream It's Over",
         "file": "Paul Young - Don't Dream It's Over .mp3"
     },
-
-
-     "251": {
+    "251": {
+        "artist": "Paul Simon",
+        "song": "50 Ways to Leave Your Lover",
         "file": "Paul Simon - 50 Ways to Leave Your Lover .mp3"
     },
-
-
-     "252": {
+    "252": {
+        "artist": "Paul Anka",
+        "song": "Everybody Hurts cover",
         "file": "Paul Anka - Everybody Hurts cover.mp3"
     },
-
-
-     "253": {
+    "253": {
+        "artist": "Paul Anka",
+        "song": "Can't Get Used To Losing You",
         "file": "Paul Anka - Can't Get Used To Losing You.mp3"
     },
-
-
-     "254": {
+    "254": {
+        "artist": "Patti Page",
+        "song": "Old Cape Cod",
         "file": "Patti Page - Old Cape Cod.mp3"
     },
-
-
-     "255": {
+    "255": {
+        "artist": "Pat Benatar",
+        "song": "Love Is A Battlefield",
         "file": "Pat Benatar - Love Is A Battlefield .mp3"
     },
-
-
-     "256": {
+    "256": {
+        "artist": "Pat Boone",
+        "song": "Speedy Gonzalez",
         "file": "Pat  Boone  -  Speedy   Gonzalez.mp3"
     },
-
-
-     "257": {
+    "257": {
+        "artist": "Paolo Conte",
+        "song": "Via Con Me",
         "file": "Paolo Conte - Via Con Me.mp3"
     },
-
-
-     "258": {
+    "258": {
+        "artist": "Paolo Conte",
+        "song": "Un Gelato Al Limon",
         "file": "Paolo Conte - Un Gelato Al Limon.mp3"
     },
-
-
-     "259": {
+    "259": {
+        "artist": "Nina Simone",
+        "song": "Sinnerman (Audio)",
         "file": "Nina Simone - Sinnerman (Audio).mp3"
     },
-
-
-     "260": {
+    "260": {
+        "artist": "Nina Simone",
+        "song": "My Way",
         "file": "Nina Simone - My Way.mp3"
     },
-
-
-     "261": {
+    "261": {
+        "artist": "Nico",
+        "song": "The Fairest of the Seasons",
         "file": "Nico - The Fairest of the Seasons.mp3"
     },
-
-
-     "262": {
+    "262": {
+        "artist": "New Order",
+        "song": "Blue Monday 88",
         "file": "New Order - Blue Monday 88 .mp3"
     },
-
-
-     "263": {
+    "263": {
+        "artist": "Neil Diamond",
+        "song": "Song Song Blue (Stereo!)",
         "file": "Neil Diamond - Song Song Blue (Stereo!).mp3"
     },
-
-
-     "264": {
+    "264": {
+        "artist": "Neil Diamond",
+        "song": "Forever in Blue Jeans (Stereo!)",
         "file": "Neil Diamond - Forever in Blue Jeans (Stereo!).mp3"
     },
-
-
-     "265": {
+    "265": {
+        "artist": "Neil Diamond",
+        "song": "I Am... I Said",
         "file": "Neil Diamond  _I Am... I Said_.mp3"
     },
-
-
-     "266": {
+    "266": {
+        "artist": "Mr. Mister",
+        "song": "Kyrie",
         "file": "Mr. Mister - Kyrie .mp3"
     },
-
-
-     "267": {
+    "267": {
+        "artist": "Mr. Mister",
+        "song": "Broken Wings",
         "file": "Mr. Mister - Broken Wings .mp3"
     },
-
-
-     "268": {
+    "268": {
+        "artist": "Moby, Go",
+        "song": "1991",
         "file": "Moby, Go - 1991.mp3"
     },
-
-
-     "269": {
+    "269": {
+        "artist": "Moby",
+        "song": "Porcelain",
         "file": "Moby - 'Porcelain' .mp3"
     },
-
-
-     "270": {
+    "270": {
+        "artist": "Moby",
+        "song": "Natural Blues",
         "file": "Moby - Natural Blues .mp3"
     },
-
-
-     "271": {
+    "271": {
+        "artist": "Mike Oldfield",
+        "song": "Moonlight Shadow (Remastered 2013)",
         "file": "Mike Oldfield - Moonlight Shadow (Remastered 2013).mp3"
     },
-
-
-     "272": {
+    "272": {
+        "artist": "Michael Jackson",
+        "song": "Heaven Can Wait",
         "file": "Michael Jackson - Heaven Can Wait .mp3"
     },
-
-
-     "273": {
+    "273": {
+        "artist": "Massive Attack, Elizabeth Fraser",
+        "song": "Teardrop",
         "file": "Massive Attack, Elizabeth Fraser - Teardrop.mp3"
     },
-
-
-     "274": {
+    "274": {
+        "artist": "Massive Attack",
+        "song": "Angel",
         "file": "Massive Attack - Angel.mp3"
     },
-
-
-     "275": {
+    "275": {
+        "artist": "Marvin Gaye",
+        "song": "What's Going On",
         "file": "Marvin Gaye - What's Going On.mp3"
     },
-
-
-     "276": {
+    "276": {
+        "artist": "Marvin Gaye",
+        "song": "Mercy Mercy Me (The Ecology)",
         "file": "Marvin Gaye - Mercy Mercy Me (The Ecology).mp3"
     },
-
-
-     "277": {
+    "277": {
+        "artist": "Martha & The Vandellas",
+        "song": "Dancing in the Streets",
         "file": "Martha & The Vandellas _Dancing in the Streets_.mp3"
     },
-
-
-     "278": {
+    "278": {
+        "artist": "Manfred Mann",
+        "song": "Blinded by the Light",
         "file": "Manfred Mann - Blinded by the Light.mp3"
     },
-
-
-     "279": {
+    "279": {
+        "artist": "Madonna",
+        "song": "Drowned World (Substitute For Love)",
         "file": "Madonna - Drowned World _ Substitute For Love .mp3"
     },
-
-
-     "280": {
+    "280": {
+        "artist": "Madness",
+        "song": "Our House",
         "file": "Madness - Our House.mp3"
     },
-
-
-     "281": {
+    "281": {
+        "artist": "M People",
+        "song": "Moving on Up",
         "file": "M People - Moving on Up .mp3"
     },
-
-
-     "282": {
+    "282": {
+        "artist": "M",
+        "song": "Pop Muzik",
         "file": "M - Pop Muzik.mp3"
     },
-
-
-     "283": {
+    "283": {
+        "artist": "Lou Reed",
+        "song": "Walk on the Wild Side",
         "file": "Lou Reed - Walk on the Wild Side .mp3"
     },
-
-
-     "284": {
+    "284": {
+        "artist": "Los Bravos",
+        "song": "Black Is Black",
         "file": "Los Bravos - Black Is Black.mp3"
     },
-
-
-     "285": {
+    "285": {
+        "artist": "Locust",
+        "song": "Your Selfish Ways",
         "file": "Locust - Your Selfish Ways.mp3"
     },
-
-
-     "286": {
+    "286": {
+        "artist": "Locust",
+        "song": "Just Like You",
         "file": "Locust - Just Like You.mp3"
     },
-
-
-     "287": {
+    "287": {
+        "artist": "Living In A Box",
+        "song": "Living In A Box",
         "file": "Living In A Box - Living In A Box .mp3"
     },
-
-
-     "288": {
+    "288": {
+        "artist": "Lil' Louis, The World",
+        "song": "French Kiss (The Original Underground Mix)",
         "file": "Lil' Louis, The World - French Kiss (The Original Underground Mix).mp3"
     },
-
-
-     "289": {
+    "289": {
+        "artist": "Level 42",
+        "song": "Lessons In Love",
         "file": "Level 42 - Lessons In Love.mp3"
     },
-
-
-     "290": {
+    "290": {
+        "artist": "Lenny Kravitz",
+        "song": "It Ain't Over 'Til It's Over",
         "file": "Lenny Kravitz - It Ain't Over 'Til It's Over .mp3"
     },
-
-
-     "291": {
+    "291": {
+        "artist": "Lenny Kravitz",
+        "song": "Fly Away",
         "file": "Lenny Kravitz - Fly Away .mp3"
     },
-
-
-     "292": {
+    "292": {
+        "artist": "Laid Back",
+        "song": "Sunshine Reggae",
         "file": "Laid Back - Sunshine Reggae.mp3"
     },
-
-
-     "293": {
+    "293": {
+        "artist": "Korgis",
+        "song": "Everybody's Got To Learn Sometime",
         "file": "Korgis - Everybody's Got To Learn Sometime.mp3"
     },
-
-
-     "294": {
+    "294": {
+        "artist": "Kool & The Gang",
+        "song": "Get Down On It",
         "file": "Kool & The Gang - Get Down On It.mp3"
     },
-
-
-     "295": {
+    "295": {
+        "artist": "Kim Wilde",
+        "song": "You Keep Me Hangin' On",
         "file": "Kim Wilde - You Keep Me Hangin' On.mp3"
     },
-
-
-     "296": {
+    "296": {
+        "artist": "Kate Bush",
+        "song": "Moving",
         "file": "Kate Bush - Moving.mp3"
     },
-
-
-     "297": {
+    "297": {
+        "artist": "Kate Bush",
+        "song": "Cloudbusting - Official Music Video",
         "file": "Kate Bush - Cloudbusting - Official Music Video.mp3"
     },
-
-
-     "298": {
+    "298": {
+        "artist": "Kajagoogoo",
+        "song": "Too Shy",
         "file": "Kajagoogoo - Too Shy .mp3"
     },
-
-
-     "299": {
+    "299": {
+        "artist": "Beach Boys",
+        "song": "Let's Go Away For Awhile",
         "file": "Beach Boys - Let's Go Away For Awhile.mp3"
     },
-
-
-     "300": {
+    "300": {
+        "artist": "Alexandra",
+        "song": "Mein Freund der Baum",
         "file": "Alexandra - Mein Freund der Baum.mp3"
     },
-
-
-     "301": {
+    "301": {
+        "artist": "Zucchero & Paul Young",
+        "song": "Senza una donna (Without a woman)",
         "file": "Zucchero & Paul Young - Senza una donna (Without a woman).mp3"
     },
-
-
-     "302": {
+    "302": {
+        "artist": "Zager & Evans",
+        "song": "In the Year 2525",
         "file": "Zager & Evans - In the Year 2525.mp3"
     },
-
-
-     "303": {
+    "303": {
+        "artist": "Whitney Houston",
+        "song": "I'm Every Woman",
         "file": "Whitney Houston - I'm Every Woman.mp3"
     },
-
-
-     "304": {
+    "304": {
+        "artist": "Wang Chung",
+        "song": "Dance Hall Days",
         "file": "Wang Chung - Dance Hall Days.mp3"
     },
-
-
-     "305": {
+    "305": {
+        "artist": "Van Morrison",
+        "song": "Moondance",
         "file": "Van Morrison - Moondance.mp3"
     },
-
-
-     "306": {
+    "306": {
+        "artist": "Van Morrison",
+        "song": "Into The Mystic",
         "file": "Van Morrison - Into The Mystic.mp3"
     },
-
-
-     "307": {
+    "307": {
+        "artist": "Van Morrison",
+        "song": "Brown Eyed Girl",
         "file": "Van Morrison - Brown Eyed Girl.mp3"
     },
-
-
-     "308": {
+    "308": {
+        "artist": "Urge Overkill",
+        "song": "Girl You'll Be a Woman Soon",
         "file": "Urge Overkill - Girl You'll Be a Woman Soon.mp3"
     },
-
-
-     "309": {
+    "309": {
+        "artist": "UB40 Featuring Chrissie Hynde",
+        "song": "I Got You Babe",
         "file": "UB40 Featuring Chrissie Hynde - I Got You Babe .mp3"
     },
-
-
-     "310": {
+    "310": {
+        "artist": "UB40",
+        "song": "Red Red Wine",
         "file": "UB40 - Red Red Wine.mp3"
     },
-
-
-     "311": {
+    "311": {
+        "artist": "UB40",
+        "song": "Kingston Town",
         "file": "UB40 - Kingston Town.mp3"
     },
-
-
-     "312": {
+    "312": {
+        "artist": "UB40",
+        "song": "Higher Ground",
         "file": "UB40 - Higher Ground.mp3"
     },
-
-
-     "313": {
+    "313": {
+        "artist": "U2",
+        "song": "With Or Without You",
         "file": "U2 - With Or Without You.mp3"
     },
-
-
-     "314": {
+    "314": {
+        "artist": "U2",
+        "song": "Where The Streets Have No Name",
         "file": "U2 - Where The Streets Have No Name.mp3"
     },
-
-
-     "315": {
+    "315": {
+        "artist": "U2",
+        "song": "Pride (In The Name Of Love)",
         "file": "U2 - Pride (In The Name Of Love).mp3"
     },
-
-
-     "316": {
+    "316": {
+        "artist": "U2",
+        "song": "I Still Haven't Found What I'm Looking For",
         "file": "U2 - I Still Haven't Found What I'm Looking For.mp3"
     },
-
-
-     "317": {
+    "317": {
+        "artist": "Tosca",
+        "song": "My First",
         "file": "Tosca - My First.mp3"
     },
-
-
-     "318": {
+    "318": {
+        "artist": "Tosca",
+        "song": "Elitsa",
         "file": "Tosca - Elitsa.mp3"
     },
-
-
-     "319": {
+    "319": {
+        "artist": "Torfrock",
+        "song": "Rollo der Wikinger",
         "file": "Torfrock er -Rollo der Wikinger.mp3"
     },
-
-
-     "320": {
+    "320": {
+        "artist": "Torfrock",
+        "song": "Presslufthammer B-B-Bernhard",
         "file": "Torfrock - Presslufthammer B-B-Bernhard.mp3"
     },
-
-
-     "321": {
+    "321": {
+        "artist": "Torfrock",
+        "song": "Beinhart",
         "file": "Torfrock - Beinhart.mp3"
     },
-
-
-     "322": {
+    "322": {
+        "artist": "Tom Waits",
+        "song": "Hope I don't fall in love with you",
         "file": "Tom Waits - Hope I don't fall in love with you.mp3"
     },
-
-
-     "323": {
+    "323": {
+        "artist": "Tom Jones, Mousse T.",
+        "song": "Sexbomb",
         "file": "Tom Jones, Mousse T. - Sexbomb.mp3"
     },
-
-
-     "324": {
+    "324": {
+        "artist": "Tom Jones",
+        "song": "What's New Pussycat",
         "file": "Tom Jones - What's New Pussycat_.mp3"
     },
-
-
-     "325": {
+    "325": {
+        "artist": "Tom Jones",
+        "song": "It's Not Unusual",
         "file": "Tom Jones - It's Not Unusual.mp3"
     },
-
-
-     "326": {
+    "326": {
+        "artist": "TLC",
+        "song": "Waterfalls",
         "file": "TLC - Waterfalls.mp3"
     },
-
-
-     "327": {
+    "327": {
+        "artist": "Thompson Twins",
+        "song": "Hold Me Now",
         "file": "Thompson Twins - Hold Me Now.mp3"
     },
-
-
-     "328": {
+    "328": {
+        "artist": "Thompson Twins",
+        "song": "Doctor! Doctor!",
         "file": "Thompson Twins - Doctor! Doctor!.mp3"
     },
-
-
-     "329": {
+    "329": {
+        "artist": "Thievery Corporation",
+        "song": "Depth of My Soul ft. Shana Halligan",
         "file": "Thievery Corporation - Depth of My Soul ft. Shana Halligan.mp3"
     },
-
-
-     "330": {
+    "330": {
+        "artist": "The Zombies",
+        "song": "Time Of The Season",
         "file": "The Zombies - Time Of The Season.mp3"
     },
-
-
-     "331": {
+    "331": {
+        "artist": "The Yardbirds",
+        "song": "For Your Love",
         "file": "The Yardbirds - For Your Love.mp3"
     },
-
-
-     "332": {
+    "332": {
+        "artist": "Alison Moyet",
+        "song": "The windmills of your mind",
         "file": "The windmills of your mind - Alison Moyet.mp3"
     },
-
-
-     "333": {
+    "333": {
+        "artist": "Unknown",
+        "song": "The Way It Is",
         "file": "The Way It Is.mp3"
     },
-
-
-     "334": {
+    "334": {
+        "artist": "The Temptations",
+        "song": "My Girl",
         "file": "The Temptations - My Girl.mp3"
     },
-
-
-     "335": {
+    "335": {
+        "artist": "The Stranglers",
+        "song": "Golden Brown",
         "file": "The Stranglers - Golden Brown.mp3"
     },
-
-
-     "336": {
+    "336": {
+        "artist": "The Stooges",
+        "song": "I Wanna Be Your Dog",
         "file": "The Stooges - I Wanna Be Your Dog.mp3"
     },
-
-
-     "337": {
+    "337": {
+        "artist": "The Shirelles",
+        "song": "Mama Said",
         "file": "The Shirelles - Mama Said.mp3"
     },
-
-
-     "338": {
+    "338": {
+        "artist": "The Rolling Stones",
+        "song": "Start Me Up (Remastered 2009)",
         "file": "The Rolling Stones - Start Me Up (Remastered 2009).mp3"
     },
-
-
-     "339": {
+    "339": {
+        "artist": "The Rolling Stones",
+        "song": "Gimme Shelter",
         "file": "The Rolling Stones - Gimme Shelter.mp3"
     },
-
-
-     "340": {
+    "340": {
+        "artist": "The Rolling Stones",
+        "song": "Angie",
         "file": "The Rolling Stones - Angie.mp3"
     },
-
-
-     "341": {
+    "341": {
+        "artist": "The Police",
+        "song": "Wrapped Around Your Finger",
         "file": "The Police - Wrapped Around Your Finger.mp3"
     },
-
-
-     "342": {
+    "342": {
+        "artist": "The Police",
+        "song": "Message In A Bottle",
         "file": "The Police - Message In A Bottle.mp3"
     },
-
-
-     "343": {
+    "343": {
+        "artist": "The Police",
+        "song": "Don't Stand So Close To Me",
         "file": "The Police - Don't Stand So Close To Me.mp3"
     },
-
-
-     "344": {
+    "344": {
+        "artist": "The Moody Blues",
+        "song": "Nights In White Satin",
         "file": "The Moody Blues - Nights In White Satin.mp3"
     },
-
-
-     "345": {
+    "345": {
+        "artist": "The Moody Blues",
+        "song": "Legend Of A Mind",
         "file": "The Moody Blues - Legend Of A Mind.mp3"
     },
-
-
-     "346": {
+    "346": {
+        "artist": "The Last Shadow Puppets, Alex Turner, Miles Kane",
+        "song": "In My Room",
         "file": "The Last Shadow Puppets, Alex Turner, Miles Kane - In My Room.mp3"
     },
-
-
-     "347": {
+    "347": {
+        "artist": "The Last Shadow Puppets",
+        "song": "Standing Next to Me",
         "file": "The Last Shadow Puppets - Standing Next to Me .mp3"
     },
-
-
-     "348": {
+    "348": {
+        "artist": "The Kinks",
+        "song": "I go to sleep demo",
         "file": "The Kinks - I go to sleep demo.mp3"
     },
-
-
-     "349": {
+    "349": {
+        "artist": "The Everly Brothers",
+        "song": "Crying In The Rain",
         "file": "The Everly Brothers - Crying In The Rain.mp3"
     },
-
-
-     "350": {
+    "350": {
+        "artist": "The Doors",
+        "song": "The Crystal Ship (New Stereo Mix)",
         "file": "The Doors - The Crystal Ship (New Stereo Mix).mp3"
     },
-
-
-     "351": {
+    "351": {
+        "artist": "The Doors",
+        "song": "Strange Days (New Stereo Mix)",
         "file": "The Doors - Strange Days (New Stereo Mix).mp3"
     },
-
-
-     "352": {
+    "352": {
+        "artist": "The Doors",
+        "song": "Break on Through (To the Other Side)",
         "file": "The Doors - Break on Through (To the Other Side).mp3"
     },
-
-
-     "353": {
+    "353": {
+        "artist": "The Cure",
+        "song": "Lullaby (Remastered)",
         "file": "The Cure - Lullaby (Remastered).mp3"
     },
-
-
-     "354": {
+    "354": {
+        "artist": "The Byrds",
+        "song": "Turn! Turn! Turn!",
         "file": "The Byrds - Turn! Turn! Turn!.mp3"
     },
-
-
-     "355": {
+    "355": {
+        "artist": "The Box Tops",
+        "song": "The Letter (Upbeat 1967)",
         "file": "The Box Tops - The Letter (Upbeat 1967).mp3"
     },
-
-
-     "356": {
+    "356": {
+        "artist": "The Black Seeds",
+        "song": "Slingshot",
         "file": "The Black Seeds - Slingshot .mp3"
     },
-
-
-     "357": {
+    "357": {
+        "artist": "The Black Seeds",
+        "song": "Come to Me (Reggae_Funk)",
         "file": "The Black Seeds - Come to Me _ Reggae_Funk.mp3"
     },
-
-
-     "358": {
+    "358": {
+        "artist": "The Beatles",
+        "song": "Strawberry Fields Forever",
         "file": "The Beatles - The Beatles - Strawberry Fields Forever .mp3"
     },
-
-
-     "359": {
+    "359": {
+        "artist": "The Beatles",
+        "song": "Taxman (Remastered 2009)",
         "file": "The Beatles - Taxman (Remastered 2009).mp3"
     },
-
-
-     "360": {
+    "360": {
+        "artist": "The Beach Boys",
+        "song": "Good Vibrations (Remastered)",
         "file": "The Beach Boys. Good Vibrations (Remastered).mp3"
     },
-
-
-     "361": {
+    "361": {
+        "artist": "The 5th Dimension",
+        "song": "One Less Bell To Answer",
         "file": "The 5th Dimension - One Less Bell To Answer .mp3"
     },
-
-
-     "362": {
+    "362": {
+        "artist": "Texas",
+        "song": "Summer Son",
         "file": "Texas - Summer Son .mp3"
     },
-
-
-     "363": {
+    "363": {
+        "artist": "Texas",
+        "song": "Say What You Want",
         "file": "Texas - Say What You Want .mp3"
     },
-
-
-     "364": {
+    "364": {
+        "artist": "Texas",
+        "song": "Inner Smile",
         "file": "Texas - Inner Smile .mp3"
     },
-
-
-     "365": {
+    "365": {
+        "artist": "Texas",
+        "song": "I Don't Want A Lover",
         "file": "Texas - I Don't Want A Lover.mp3"
     },
-
-
-     "366": {
+    "366": {
+        "artist": "Tears For Fears",
+        "song": "The Hurting",
         "file": "Tears For Fears - The Hurting.mp3"
     },
-
-
-     "367": {
+    "367": {
+        "artist": "Tears For Fears",
+        "song": "Pale Shelter",
         "file": "Tears For Fears - Pale Shelter.mp3"
     },
-
-
-     "368": {
+    "368": {
+        "artist": "Tears For Fears",
+        "song": "Mr. Pessimist",
         "file": "Tears For Fears - Mr. Pessimist.mp3"
     },
-
-
-     "369": {
+    "369": {
+        "artist": "Tears For Fears",
+        "song": "Head Over Heels",
         "file": "Tears For Fears - Head Over Heels.mp3"
     },
-
-
-     "370": {
+    "370": {
+        "artist": "Tears For Fears",
+        "song": "Elemental",
         "file": "Tears For Fears - Elemental.mp3"
     },
-
-
-     "371": {
+    "371": {
+        "artist": "Tears For Fears",
+        "song": "Brian Wilson Said",
         "file": "Tears For Fears - Brian Wilson Said.mp3"
     },
-
-
-     "372": {
+    "372": {
+        "artist": "Tears For Fears",
+        "song": "Break It Down Again",
         "file": "Tears For Fears - Break It Down Again.mp3"
     },
-
-
-     "373": {
+    "373": {
+        "artist": "Talking Heads",
+        "song": "This Must Be the Place (Naive Melody)",
         "file": "Talking Heads - This Must Be the Place (Naive Melody).mp3"
     },
-
-
-     "374": {
+    "374": {
+        "artist": "Talking Heads",
+        "song": "Psycho Killer",
         "file": "Talking Heads - Psycho Killer.mp3"
     },
-
-
-     "375": {
+    "375": {
+        "artist": "Talking Heads",
+        "song": "Once in a Lifetime",
         "file": "Talking Heads - Once in a Lifetime .mp3"
     },
-
-
-     "376": {
+    "376": {
+        "artist": "Talking Heads",
+        "song": "Burning Down the House",
         "file": "Talking Heads - Burning Down the House .mp3"
     },
-
-
-     "377": {
+    "377": {
+        "artist": "Talk Talk",
+        "song": "It's My Life (1997 Remaster)",
         "file": "Talk Talk - It's My Life (1997 Remaster).mp3"
     },
-
-
-     "378": {
+    "378": {
+        "artist": "T. Rex",
+        "song": "Hot Love (1971) HD 0815007",
         "file": "T. Rex - Hot Love (1971) HD 0815007.mp3"
     },
-
-
-     "379": {
+    "379": {
+        "artist": "Joe Cocker & Jennifer Warnes",
+        "song": "Up Where We Belong",
         "file": "Joe Cocker & Jennifer Warnes -Up Where We Belong .mp3"
     },
-
-
-
-     "380": {
+    "380": {
+        "artist": "Isaac Hayes",
+        "song": "Walk on by",
         "file": "Isaac Hayes -Walk on by.mp3"
     }
-
-
 }

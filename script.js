@@ -17,6 +17,9 @@ const artist = document.getElementById("artist");
 const year = document.getElementById("year");
 const progress = document.getElementById("progress");
 
+const artistGuess = document.getElementById("artistGuess");
+const artistList = document.getElementById("artistList");
+
 //////////////////////////////////////////////////////
 // Initialization
 //////////////////////////////////////////////////////
@@ -28,6 +31,8 @@ async function init() {
     const response = await fetch("data/songs.json");
 
     songs = await response.json();
+
+    populateArtistList();
 
     currentId = new URLSearchParams(window.location.search).get("id");
 
@@ -55,6 +60,8 @@ function loadSong(id) {
 
     hideReveal();
 
+    artistGuess.value = "";
+
     player.pause();
 
     player.src = "audio/" + song.file;
@@ -63,6 +70,7 @@ function loadSong(id) {
 
     // Update URL without reloading the page
     history.replaceState({}, "", "player.html?id=" + id);
+
 
 }
 
@@ -80,6 +88,26 @@ player.ontimeupdate = () => {
     }
 
 };
+
+function populateArtistList() {
+
+    artistList.innerHTML = "";
+
+    const uniqueArtists = [...new Set(
+        Object.values(songs).map(song => song.artist)
+    )].sort();
+
+    uniqueArtists.forEach(name => {
+
+        const option = document.createElement("option");
+
+        option.value = name;
+
+        artistList.appendChild(option);
+
+    });
+
+}
 
 //////////////////////////////////////////////////////
 // Reveal Song

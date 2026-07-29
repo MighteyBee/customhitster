@@ -186,3 +186,36 @@ progress{
 
 }
 
+/* Artist input */
+
+label{
+
+    display:block;
+
+    margin-top:20px;
+
+    margin-bottom:8px;
+
+    text-align:left;
+
+    font-weight:bold;
+
+}
+
+input{
+
+    width:100%;
+
+    padding:16px;
+
+    border-radius:12px;
+
+    border:none;
+
+    font-size:1rem;
+
+    box-sizing:border-box;
+
+    margin-bottom:20px;
+
+}
