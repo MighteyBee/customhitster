@@ -27,19 +27,17 @@
 
     <progress id="progress" value="0" max="100"></progress>
 
-<label for="artistGuess">Artist Guess</label>
-
-<input
-    type="text"
-    id="artistGuess"
-    list="artistList"
-    placeholder="Type the artist..."
-    autocomplete="off">
 
 <div style="position: relative;">
     <label for="artistGuess">Artist Guess</label>
     <input type="text" id="artistGuess" placeholder="Type the artist..." autocomplete="off">
     <div id="autocompleteList" class="autocomplete-items"></div>
+</div>
+
+<div style="position: relative;">
+    <label for="songGuess">Song Title Guess</label>
+    <input type="text" id="songGuess" placeholder="Type the song title..." autocomplete="off">
+    <div id="autocompleteSongList" class="autocomplete-items"></div>
 </div>
 
     <button id="revealButton">

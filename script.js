@@ -18,7 +18,11 @@ const year = document.getElementById("year");
 const progress = document.getElementById("progress");
 
 const artistGuess = document.getElementById("artistGuess");
-const autocompleteList = document.getElementById("autocompleteList");
+const songGuess = document.getElementById("songGuess");
+
+const autocompleteArtistList = document.getElementById("autocompleteArtistList");
+const autocompleteSongList = document.getElementById("autocompleteSongList");
+
 //////////////////////////////////////////////////////
 // Initialization
 //////////////////////////////////////////////////////
@@ -88,38 +92,52 @@ player.ontimeupdate = () => {
 
 };
 
-
-function populateArtistList() {
-    // No need to populate a datalist anymore
-}
-
-// Add this function to handle autocomplete
+// Add event listeners for both inputs
 artistGuess.addEventListener("input", function() {
-    const input = this.value.toLowerCase();
+    handleAutocomplete(this, autocompleteArtistList, "artist");
+});
+
+songGuess.addEventListener("input", function() {
+    handleAutocomplete(this, autocompleteSongList, "song");
+});
+
+// Close dropdowns when clicking outside
+document.addEventListener("click", function(e) {
+    if (e.target !== artistGuess) {
+        autocompleteArtistList.innerHTML = "";
+    }
+    if (e.target !== songGuess) {
+        autocompleteSongList.innerHTML = "";
+    }
+});
+
+// Generic autocomplete handler
+function handleAutocomplete(inputElement, autocompleteList, field) {
+    const input = inputElement.value.toLowerCase();
     autocompleteList.innerHTML = "";
 
     if (input.length < 2) {
         return; // Only show suggestions after 2 characters
     }
 
-    const uniqueArtists = [...new Set(
-        Object.values(songs).map(song => song.artist)
+    const uniqueValues = [...new Set(
+        Object.values(songs).map(song => song[field])
     )].sort();
 
-    const matches = uniqueArtists.filter(artist =>
-        artist.toLowerCase().includes(input)
+    const matches = uniqueValues.filter(value =>
+        value.toLowerCase().includes(input)
     );
 
     matches.forEach(match => {
         const item = document.createElement("div");
         item.textContent = match;
         item.addEventListener("click", function() {
-            artistGuess.value = match;
+            inputElement.value = match;
             autocompleteList.innerHTML = "";
         });
         autocompleteList.appendChild(item);
     });
-});
+}
 
 // Close the autocomplete list when clicking outside
 document.addEventListener("click", function(e) {
@@ -136,9 +154,9 @@ function revealSong() {
 
     const song = songs[currentId];
 
-    title.textContent = song.file;
+    title.textContent = song.song;
     artist.textContent = "Artist: " + song.artist;
-    year.textContent = "Year: " + song.year;
+    
 
     songInfo.style.display = "block";
 
