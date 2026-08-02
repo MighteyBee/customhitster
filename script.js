@@ -5,7 +5,7 @@
 let songs = {};
 let currentId = null;
 let score = 0;
-let currentDecade = "all"; // Default to all songs
+
 
 const scoreElement = document.getElementById("score");
 
@@ -36,8 +36,9 @@ init();
 
 async function init() {
     // Load default songs (all)
-    await loadSongs(currentDecade);
+    songs = await loadSongs();
 
+    initializeDecadeButtons();
     currentId = new URLSearchParams(window.location.search).get("id");
 
     // If no ID was provided, choose a random song
@@ -53,41 +54,17 @@ async function init() {
     playButton.onclick = () => player.play();
     pauseButton.onclick = () => player.pause();
 
-    // Add event listeners for decade buttons
     document.querySelectorAll(".decadeButton").forEach(button => {
-        button.addEventListener("click", async () => {
-            // Remove active class from all buttons
-            document.querySelectorAll(".decadeButton").forEach(btn => {
-                btn.classList.remove("active");
-            });
-            // Add active class to clicked button
-            button.classList.add("active");
 
-            // Update current decade
-            currentDecade = button.getAttribute("data-decade");
+    button.addEventListener("click", () => {
 
-            // Load songs for the selected decade
-            await loadSongs(currentDecade);
+        changeDecade(button.dataset.decade);
 
-            // Shuffle to a new song from the selected decade
-            shuffleSong();
-        });
     });
+
+});
 }
 
-////////////////////////////////////////////////////////
-// Load Songs
-//////////////////////////////////////////////////////
-
-async function loadSongs(decade) {
-    let filePath = "data/songs.json"; // Default to all songs
-    if (decade !== "all") {
-        filePath = `data/songs${decade}.json`;
-    }
-
-    const response = await fetch(filePath);
-    songs = await response.json();
-}
 
 ////////////////////////////////////////////////////////
 // Load Song
