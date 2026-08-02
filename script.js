@@ -1,4 +1,3 @@
-
 //////////////////////////////////////////////////////
 // Variables
 //////////////////////////////////////////////////////
@@ -6,6 +5,8 @@
 let songs = {};
 let currentId = null;
 let score = 0;
+let currentDecade = "all"; // Default to all songs
+
 const scoreElement = document.getElementById("score");
 
 const player = document.getElementById("player");
@@ -34,10 +35,8 @@ const autocompleteSongList = document.getElementById("autocompleteSongList");
 init();
 
 async function init() {
-
-    const response = await fetch("data/songs.json");
-
-    songs = await response.json();
+    // Load default songs (all)
+    await loadSongs(currentDecade);
 
     currentId = new URLSearchParams(window.location.search).get("id");
 
@@ -54,7 +53,8 @@ async function init() {
     playButton.onclick = () => player.play();
     pauseButton.onclick = () => player.pause();
 
-     document.querySelectorAll(".decadeButton").forEach(button => {
+    // Add event listeners for decade buttons
+    document.querySelectorAll(".decadeButton").forEach(button => {
         button.addEventListener("click", async () => {
             // Remove active class from all buttons
             document.querySelectorAll(".decadeButton").forEach(btn => {
@@ -63,8 +63,10 @@ async function init() {
             // Add active class to clicked button
             button.classList.add("active");
 
-            // Load songs for the selected decade
+            // Update current decade
             currentDecade = button.getAttribute("data-decade");
+
+            // Load songs for the selected decade
             await loadSongs(currentDecade);
 
             // Shuffle to a new song from the selected decade
@@ -73,9 +75,10 @@ async function init() {
     });
 }
 
+////////////////////////////////////////////////////////
+// Load Songs
 //////////////////////////////////////////////////////
-// Load Song
-//////////////////////////////////////////////////////
+
 async function loadSongs(decade) {
     let filePath = "data/songs.json"; // Default to all songs
     if (decade !== "all") {
@@ -86,8 +89,11 @@ async function loadSongs(decade) {
     songs = await response.json();
 }
 
-function loadSong(id) {
+////////////////////////////////////////////////////////
+// Load Song
+//////////////////////////////////////////////////////
 
+function loadSong(id) {
     const song = songs[id];
     currentId = id;
 
@@ -100,20 +106,13 @@ function loadSong(id) {
     player.load();
 
     // Update URL without reloading the page
-    history.replaceState({}, "", "player.html?id=" + id);
-
-
+    history.replaceState({}, "", `player.html?id=${id}`);
 }
 
 player.ontimeupdate = () => {
-
-    if(player.duration){
-
-        progress.value =
-            (player.currentTime / player.duration) * 100;
-
+    if (player.duration) {
+        progress.value = (player.currentTime / player.duration) * 100;
     }
-
 };
 
 // Add event listeners for both inputs
@@ -163,14 +162,11 @@ function handleAutocomplete(inputElement, autocompleteList, field) {
     });
 }
 
-
-
-//////////////////////////////////////////////////////
+////////////////////////////////////////////////////////
 // Reveal Song
 //////////////////////////////////////////////////////
 
 function revealSong() {
-
     const song = songs[currentId];
     const guessedArtist = artistGuess.value.trim().toLowerCase();
     const guessedSong = songGuess.value.trim().toLowerCase();
@@ -193,10 +189,9 @@ function revealSong() {
     title.textContent = "Song: " + song.song;
     artist.textContent = "Artist: " + song.artist;
     songInfo.style.display = "block";
-
 }
 
-//////////////////////////////////////////////////////
+////////////////////////////////////////////////////////
 // Hide Reveal
 //////////////////////////////////////////////////////
 
@@ -204,33 +199,26 @@ function hideReveal() {
     songInfo.style.display = "none";
 }
 
-//////////////////////////////////////////////////////
+////////////////////////////////////////////////////////
 // Shuffle Song
 //////////////////////////////////////////////////////
 
 function shuffleSong() {
-
     let randomId;
     do {
-
         randomId = getRandomSongId();
     } while (randomId === currentId && Object.keys(songs).length > 1);
 
     loadSong(randomId);
-     artistGuess.value = "";
-     songGuess.value = "";
-
+    artistGuess.value = "";
+    songGuess.value = "";
 }
 
-//////////////////////////////////////////////////////
+////////////////////////////////////////////////////////
 // Random Song
 //////////////////////////////////////////////////////
 
 function getRandomSongId() {
-
     const ids = Object.keys(songs);
-
     return ids[Math.floor(Math.random() * ids.length)];
-
 }
-

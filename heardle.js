@@ -2,6 +2,7 @@ let songs = {};
 let currentId = null;
 let currentTry = 1;
 let score = 0;
+let currentDecade = "all"; // Default to all songs
 const totalTries = 6;
 
 const player = document.getElementById("player");
@@ -24,8 +25,8 @@ const trySegments = [1, 2, 5, 5, 5, 22]; // Seconds for each try
 init();
 
 async function init() {
-    const response = await fetch("data/songs.json");
-    songs = await response.json();
+    // Load default songs (all)
+    await loadSongs(currentDecade);
 
     currentId = new URLSearchParams(window.location.search).get("id");
     if (!currentId || !songs[currentId]) {
@@ -53,7 +54,32 @@ async function init() {
         if (e.target !== artistGuess) autocompleteArtistList.innerHTML = "";
         if (e.target !== songGuess) autocompleteSongList.innerHTML = "";
     });
+
+    // Add event listeners for decade buttons
+    document.querySelectorAll(".decadeButton").forEach(button => {
+        button.addEventListener("click", async () => {
+            // Remove active class from all buttons
+            document.querySelectorAll(".decadeButton").forEach(btn => {
+                btn.classList.remove("active");
+            });
+            // Add active class to clicked button
+            button.classList.add("active");
+
+            // Update current decade
+            currentDecade = button.getAttribute("data-decade");
+
+            // Load songs for the selected decade
+            await loadSongs(currentDecade);
+
+            // Shuffle to a new song from the selected decade
+            shuffleSong();
+        });
+    });
 }
+
+////////////////////////////////////////////////////////
+// Load Songs
+//////////////////////////////////////////////////////
 
 async function loadSongs(decade) {
     let filePath = "data/songs.json"; // Default to all songs
@@ -64,6 +90,10 @@ async function loadSongs(decade) {
     const response = await fetch(filePath);
     songs = await response.json();
 }
+
+////////////////////////////////////////////////////////
+// Load Song
+//////////////////////////////////////////////////////
 
 function loadSong(id) {
     const song = songs[id];
@@ -136,10 +166,8 @@ function submitGuess() {
     let resultClass = "wrong";
 
     if (artistCorrect && songCorrect) {
-
         resultClass = "correct";
         revealSong();
-
         player.currentTime = 0;
         player.play().catch(error => {
             console.log("Autoplay prevented: ", error);
@@ -148,8 +176,8 @@ function submitGuess() {
         resultClass = "partial";
     }
 
-     document.getElementById(`guessResult${currentTry}`).textContent = resultText;
-     document.getElementById(`guessResult${currentTry}`).className = `guessResult ${resultClass}`;
+    document.getElementById(`guessResult${currentTry}`).textContent = resultText;
+    document.getElementById(`guessResult${currentTry}`).className = `guessResult ${resultClass}`;
 
     // Clear input fields
     artistGuess.value = "";
