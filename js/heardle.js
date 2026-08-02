@@ -1,3 +1,4 @@
+let currentUpdateFunction = null;
 let currentId = null;
 let currentTry = 1;
 
@@ -118,7 +119,12 @@ function loadSong(id){
 
         document.getElementById(`progress${i}`).value=0;
 
-        document.getElementById(`guessResult${i}`).textContent="";
+       const result =
+        document.getElementById(`guessResult${i}`);
+
+        result.textContent="";
+
+        result.className="guessResult";
 
     }
 
@@ -166,8 +172,15 @@ function playCurrentTry(){
         `progress${currentTry}`
     );
 
+    if(currentUpdateFunction){
 
-    const update=()=>{
+    player.removeEventListener(
+        "timeupdate",
+        currentUpdateFunction
+    );
+
+    }   
+    currentUpdateFunction = ()=>{
 
 
         if(player.currentTime>=end){
@@ -188,11 +201,12 @@ function playCurrentTry(){
 
     };
 
+player.addEventListener(
+    "timeupdate",
+    currentUpdateFunction
+);
 
-    player.addEventListener(
-        "timeupdate",
-        update
-    );
+
 
 }
 
@@ -212,13 +226,22 @@ function shuffleSong(){
 
 
 
-
 function moveToNextTry(){
+
+
+    player.pause();
 
 
     if(currentTry < totalTries){
 
         currentTry++;
+
+        playCurrentTry();
+
+    }
+    else{
+
+        revealSong();
 
     }
 
@@ -231,29 +254,86 @@ function moveToNextTry(){
 function submitGuess(){
 
 
-    const song=getSongs()[currentId];
+    const song = getSongs()[currentId];
+
+
+    const guessedArtist =
+    artistGuess.value.trim();
+
+
+    const guessedSong =
+    songGuess.value.trim();
+
+
+    // Don't submit empty guesses
+    if(guessedArtist === "" && guessedSong === ""){
+        return;
+    }
 
 
     const artistCorrect =
-    artistGuess.value.trim().toLowerCase()
+    guessedArtist.toLowerCase()
     ===
     song.artist.toLowerCase();
 
 
 
     const titleCorrect =
-    songGuess.value.trim().toLowerCase()
+    guessedSong.toLowerCase()
     ===
     song.song.toLowerCase();
 
 
 
+    let resultClass = "wrong";
+
+
     if(artistCorrect && titleCorrect){
 
-        revealSong();
+        resultClass = "correct";
+
+    }
+    else if(artistCorrect || titleCorrect){
+
+        resultClass = "partial";
 
     }
 
+
+
+    const result =
+    document.getElementById(
+        `guessResult${currentTry}`
+    );
+
+
+    result.textContent =
+    `${guessedArtist} - ${guessedSong}`;
+
+
+    result.className =
+    `guessResult ${resultClass}`;
+
+
+
+    artistGuess.value="";
+    songGuess.value="";
+
+
+
+    if(resultClass === "correct"){
+
+        revealSong();
+
+        player.pause();
+
+        return;
+
+    }
+
+
+
+    moveToNextTry();
 
 }
 
