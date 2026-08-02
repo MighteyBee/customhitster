@@ -19,7 +19,7 @@ const songGuess = document.getElementById("songGuess");
 const autocompleteArtistList = document.getElementById("autocompleteArtistList");
 const autocompleteSongList = document.getElementById("autocompleteSongList");
 
-const trySegments = [1, 2, 5, 5, 5, 100]; // Seconds for each try
+const trySegments = [1, 2, 5, 5, 5, 22]; // Seconds for each try
 
 init();
 
@@ -53,6 +53,16 @@ async function init() {
         if (e.target !== artistGuess) autocompleteArtistList.innerHTML = "";
         if (e.target !== songGuess) autocompleteSongList.innerHTML = "";
     });
+}
+
+async function loadSongs(decade) {
+    let filePath = "data/songs.json"; // Default to all songs
+    if (decade !== "all") {
+        filePath = `data/songs${decade}.json`;
+    }
+
+    const response = await fetch(filePath);
+    songs = await response.json();
 }
 
 function loadSong(id) {
@@ -137,7 +147,7 @@ function submitGuess() {
     } else if (artistCorrect || songCorrect) {
         resultClass = "partial";
     }
-    
+
      document.getElementById(`guessResult${currentTry}`).textContent = resultText;
      document.getElementById(`guessResult${currentTry}`).className = `guessResult ${resultClass}`;
 

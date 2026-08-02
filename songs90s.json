@@ -1,0 +1,595 @@
+{
+   "001": {
+        "artist": "Bee Gees",
+        "song": "How Deep Is Your Love",
+        "file": "Bee Gees - How Deep Is Your Love .mp3"
+    },
+    "002": {
+        "artist": "Dusty Springfield",
+        "song": "In Private",
+        "file": "Dusty Springfield - In private.mp3"
+    },
+    "003": {
+        "artist": "Anne Clark",
+        "song": "Our Darkness",
+        "file": "Anne Clark -  Our Darkness.mp3"
+    },
+    "004": {
+        "artist": "Talk Talk",
+        "song": "Such A Shame",
+        "file": "Talk Talk - Such A Shame.mp3"
+    },
+    "005": {
+        "artist": "Massive Attack",
+        "song": "Unfinished Sympathy",
+        "file": "Massive Attack - Unfinished Sympathy.mp3"
+    },
+    "006": {
+        "artist": "Cher",
+        "song": "The Shoop Shoop Song",
+        "file": "Cher - The Shoop Shoop Song.mp3"
+    },
+    "007": {
+        "artist": "Alanis Morissette",
+        "song": "You Oughta Know",
+        "file": "Alanis Morisette - You Oughta Know.mp3"
+    },
+    "008": {
+        "artist": "Björk",
+        "song": "Hunter",
+        "file": "björk _ hunter .mp3"
+    },
+    "009": {
+        "artist": "Björk",
+        "song": "Bachelorette",
+        "file": "Björk - Bachelorette.mp3"
+    },
+    "010": {
+        "artist": "Bryan Ferry",
+        "song": "Don't Want To Know",
+        "file": "Bryan Ferry - Don't Want To Know  .mp3"
+    },
+    "011": {
+        "artist": "Bryan Ferry",
+        "song": "Mamouna",
+        "file": "Bryan Ferry - Mamouna.mp3"
+    },
+    "012": {
+        "artist": "Crystal Waters",
+        "song": "Gypsy Woman",
+        "file": "Crystal Waters - Gypsy Woman.mp3"
+    },
+    "013": {
+        "artist": "Dead Can Dance",
+        "song": "Yulanga",
+        "file": "Dead Can Dance - Yulanga.mp3"
+    },
+    "014": {
+        "artist": "Donna Lewis",
+        "song": "I Love You Always Forever",
+        "file": "Donna Lewis - I Love You Always Forever.mp3"
+    },
+    "015": {
+        "artist": "Duran Duran",
+        "song": "Ordinary World",
+        "file": "Duran Duran - Ordinary World .mp3"
+    },
+    "016": {
+        "artist": "Duran Duran",
+        "song": "Shelter",
+        "file": "Duran Duran - Shelter.mp3"
+    },
+    "017": {
+        "artist": "Ekova",
+        "song": "Temoina",
+        "file": "Ekova - Temoina.mp3"
+    },
+    "018": {
+        "artist": "Eros Ramazzotti & Tina Turner",
+        "song": "Cosas de la Vida",
+        "file": "EROS RAMAZZOTTI TINA TURNER - COSAS DE LA VIDA.mp3"
+    },
+    "019": {
+        "artist": "Erykah Badu",
+        "song": "On & On",
+        "file": "Erykah Badu - On & On.mp3"
+    },
+    "020": {
+        "artist": "Genesis",
+        "song": "I Can't Dance",
+        "file": "Genesis - I Can't Dance .mp3"
+    },
+    "021": {
+        "artist": "George Michael",
+        "song": "Fastlove",
+        "file": "George Michael - Fastlove .mp3"
+    },
+    "022": {
+        "artist": "George Michael",
+        "song": "Freedom! '90",
+        "file": "George Michael - Freedom! '90 (Remastered).mp3"
+    },
+    "023": {
+        "artist": "Go West",
+        "song": "King of Wishful Thinking",
+        "file": "Go West- King of Wishful Thinking.mp3"
+    },
+    "024": {
+        "artist": "Jamiroquai",
+        "song": "Cosmic Girl",
+        "file": "Jamiroquai - Cosmic Girl (Remastered 2013).mp3"
+    },
+    "025": {
+        "artist": "Janet Jackson",
+        "song": "Empty",
+        "file": "Janet Jackson - Empty.mp3"
+    },
+    "026": {
+        "artist": "Kool & The Gang",
+        "song": "Get Down On It",
+        "file": "Kool & The Gang - Get Down On It.mp3"
+    },
+    "027": {
+        "artist": "Lil' Louis & The World",
+        "song": "French Kiss (The Original Underground Mix)",
+        "file": "Lil' Louis, The World - French Kiss (The Original Underground Mix).mp3"
+    },
+    "028": {
+        "artist": "Locust",
+        "song": "Your Selfish Ways",
+        "file": "Locust - Your Selfish Ways.mp3"
+    },
+    "029": {
+        "artist": "Locust",
+        "song": "Just Like You",
+        "file": "Locust - Just Like You.mp3"
+    },
+    "030": {
+        "artist": "Madonna",
+        "song": "Secret Garden",
+        "file": "Madonna - Secret Garden.mp3"
+    },
+    "031": {
+        "artist": "Madonna",
+        "song": "Drowned World (Substitute For Love)",
+        "file": "Madonna - Drowned World _ Substitute For Love .mp3"
+    },
+    "032": {
+        "artist": "Marillion",
+        "song": "Lavender",
+        "file": "Marillion - Lavender.mp3"
+    },
+    "033": {
+        "artist": "Mary J. Blige",
+        "song": "Real Love",
+        "file": "Mary J Blige - Real Love.mp3"
+    },
+    "034": {
+        "artist": "Massive Attack & Elizabeth Fraser",
+        "song": "Teardrop",
+        "file": "Massive Attack, Elizabeth Fraser - Teardrop.mp3"
+    },
+    "035": {
+        "artist": "Massive Attack",
+        "song": "Angel",
+        "file": "Massive Attack - Angel.mp3"
+    },
+    "036": {
+        "artist": "Massive Attack",
+        "song": "Sly",
+        "file": "Massive Attack - Sly.mp3"
+    },
+    "037": {
+        "artist": "Moby & Go",
+        "song": "1991",
+        "file": "Moby, Go - 1991.mp3"
+    },
+    "038": {
+        "artist": "Moby",
+        "song": "Porcelain",
+        "file": "Moby - 'Porcelain' .mp3"
+    },
+    "039": {
+        "artist": "Moby",
+        "song": "Natural Blues",
+        "file": "Moby - Natural Blues .mp3"
+    },
+    "040": {
+        "artist": "M People",
+        "song": "Moving on Up",
+        "file": "M People - Moving on Up .mp3"
+    },
+    "041": {
+        "artist": "M",
+        "song": "Pop Muzik",
+        "file": "M - Pop Muzik.mp3"
+    },
+    "042": {
+        "artist": "Portishead",
+        "song": "Mysterons",
+        "file": "Portishead - Mysterons.mp3"
+    },
+    "043": {
+        "artist": "Portishead",
+        "song": "Sour Times",
+        "file": "Portishead - Sour Times.mp3"
+    },
+    "044": {
+        "artist": "Portishead",
+        "song": "Numb",
+        "file": "Portishead - Numb.mp3"
+    },
+    "045": {
+        "artist": "Portishead",
+        "song": "Glory Box",
+        "file": "Portishead - Glory Box.mp3"
+    },
+    "046": {
+        "artist": "Sade",
+        "song": "Love Is Stronger Than Pride",
+        "file": "Sade - Love Is Stronger Than Pride.mp3"
+    },
+    "047": {
+        "artist": "Santana",
+        "song": "Black Magic Woman",
+        "file": "Santana - Black Magic Woman.mp3"
+    },
+    "048": {
+        "artist": "Santana ft. The Product G&B",
+        "song": "Maria Maria",
+        "file": "Santana - Maria Maria  ft. The Product G&B.mp3"
+    },
+    "049": {
+        "artist": "Seal",
+        "song": "The Beginning",
+        "file": "Seal - The Beginning.mp3"
+    },
+    "050": {
+        "artist": "Seal",
+        "song": "Crazy",
+        "file": "Seal - Crazy .mp3"
+    },
+    "051": {
+        "artist": "Seal",
+        "song": "Killer",
+        "file": "Seal - Killer.mp3"
+    },
+    "052": {
+        "artist": "Seal",
+        "song": "Kiss From A Rose",
+        "file": "Seal - Kiss From A Rose .mp3"
+    },
+    "053": {
+        "artist": "Shania Twain",
+        "song": "That Don't Impress Me Much",
+        "file": "Shania Twain - That Dont Impress Me Much.mp3"
+    },
+    "054": {
+        "artist": "Smoke City",
+        "song": "Underwater Love",
+        "file": "Smoke City - Underwater Love.mp3"
+    },
+    "055": {
+        "artist": "Sonique",
+        "song": "It Feels So Good",
+        "file": "Sonique - It Feels So Good.mp3"
+    },
+    "056": {
+        "artist": "Sting",
+        "song": "Fields Of Gold",
+        "file": "Sting - Fields Of Gold (Live From Lake House, Wiltshire, England, 1993).mp3"
+    },
+    "057": {
+        "artist": "Talk Talk",
+        "song": "Such A Shame",
+        "file": "Talk Talk - Such A Shame.mp3"
+    },
+    "058": {
+        "artist": "Tears For Fears",
+        "song": "Elemental",
+        "file": "Tears For Fears - Elemental.mp3"
+    },
+    "059": {
+        "artist": "Tears For Fears",
+        "song": "Break It Down Again",
+        "file": "Tears For Fears - Break It Down Again.mp3"
+    },
+    "060": {
+        "artist": "Tears For Fears",
+        "song": "Mr. Pessimist",
+        "file": "Tears For Fears - Mr. Pessimist.mp3"
+    },
+    "061": {
+        "artist": "Tears For Fears",
+        "song": "Brian Wilson Said",
+        "file": "Tears For Fears - Brian Wilson Said.mp3"
+    },
+    "062": {
+        "artist": "TLC",
+        "song": "Waterfalls",
+        "file": "TLC - Waterfalls.mp3"
+    },
+    "063": {
+        "artist": "Tom Jones & Mousse T.",
+        "song": "Sexbomb",
+        "file": "Tom Jones, Mousse T. - Sexbomb.mp3"
+    },
+    "064": {
+        "artist": "Torfrock",
+        "song": "Presslufthammer B-B-Bernhard",
+        "file": "Torfrock - Presslufthammer B-B-Bernhard.mp3"
+    },
+    "065": {
+        "artist": "UB40",
+        "song": "Higher Ground",
+        "file": "UB40 - Higher Ground.mp3"
+    },
+    "066": {
+        "artist": "Urge Overkill",
+        "song": "Girl You'll Be a Woman Soon",
+        "file": "Urge Overkill - Girl You'll Be a Woman Soon.mp3"
+    },
+    "067": {
+        "artist": "Vangelis",
+        "song": "Conquest of Paradise",
+        "file": "Vangelis - Conquest of Paradise.mp3"
+    },
+    "068": {
+        "artist": "Whitney Houston",
+        "song": "I'm Every Woman",
+        "file": "Whitney Houston - I'm Every Woman.mp3"
+    },
+    "069": {
+        "artist": "Whitney Houston",
+        "song": "My Love Is Your Love",
+        "file": "Whitney Houston - My Love Is Your Love.mp3"
+    },
+    "070": {
+        "artist": "Youssou N'Dour & Neneh Cherry",
+        "song": "7 Seconds",
+        "file": "Youssou NDour Neneh Cherry - 7 Seconds.mp3"
+    },
+
+
+
+     "071": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "072": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "073": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "074": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "075": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "076": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "077": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "078": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "079": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "080": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "081": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "082": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "083": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "084": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "085": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "086": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "087": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "088": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "089": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "090": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "091": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "092": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "093": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "094": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "095": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "096": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "097": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "098": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "099": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "100": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    }
+
+
+
+}

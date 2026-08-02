@@ -1,0 +1,520 @@
+{
+   "001": {
+        "artist": "David Bowie",
+        "song": "Ashes To Ashes",
+        "file": "David Bowie - Ashes To Ashes.mp3"
+    },
+    "002": {
+        "artist": "Robert Palmer",
+        "song": "Johnny and Mary",
+        "file": "Robert Palmer - Johnny and Mary.mp3"
+    },
+    "003": {
+        "artist": "Joy Division",
+        "song": "Love Will Tear Us Apart",
+        "file": "Joy Division - Love Will Tear Us Apart.mp3"
+    },
+    "004": {
+        "artist": "Kate Bush",
+        "song": "Delius",
+        "file": "Kate Bush - Delius.mp3"
+    },
+    "005": {
+        "artist": "The Police",
+        "song": "Don't Stand So Close To Me",
+        "file": "The Police - Don't Stand So Close To Me.mp3"
+    },
+    "006": {
+        "artist": "Talking Heads",
+        "song": "Once in a Lifetime",
+        "file": "Talking Heads - Once in a Lifetime .mp3"
+    },
+    "007": {
+        "artist": "Steely Dan",
+        "song": "Hey Nineteen",
+        "file": "Steely Dan - Hey Nineteen.mp3"
+    },
+    "008": {
+        "artist": "Siouxsie and the Banshees",
+        "song": "Spellbound",
+        "file": "Siousxie and the Banshees - Spellbound.mp3"
+    },
+    "009": {
+        "artist": "Kim Carnes",
+        "song": "Bette Davis Eyes",
+        "file": "Kim Carnes - Bette Davis Eyes.mp3"
+    },
+    "010": {
+        "artist": "Grace Jones",
+        "song": "I've Seen That Face Before",
+        "file": "Grace Jones - Ive Seen That Face Before.mp3"
+    },
+    "011": {
+        "artist": "Paolo Conte",
+        "song": "Via Con Me",
+        "file": "Paolo Conte - Via Con Me.mp3"
+    },
+    "012": {
+        "artist": "The Rolling Stones",
+        "song": "Start Me Up",
+        "file": "The Rolling Stones - Start Me Up (Remastered 2009).mp3"
+    },
+    "013": {
+        "artist": "Earth, Wind & Fire",
+        "song": "Let's Groove",
+        "file": "Earth, Wind & Fire - Let's Groove.mp3"
+    },
+    "014": {
+        "artist": "The Stranglers",
+        "song": "Golden Brown",
+        "file": "The Stranglers - Golden Brown.mp3"
+    },
+    "015": {
+        "artist": "Hubert Kah",
+        "song": "Angel 07",
+        "file": "Hubert Kah - Angel 07 (Video 1985).mp3"
+    },
+    "016": {
+        "artist": "The Psychedelic Furs",
+        "song": "Love My Way",
+        "file": "The Psychedelic Furs - Love My Way.mp3"
+    },
+    "017": {
+        "artist": "Foyer Des Arts",
+        "song": "Wissenswertes über Erlangen",
+        "file": "Foyer Des Arts - Wissenswertes über Erlangen.mp3"
+    },
+    "018": {
+        "artist": "Steve Miller Band",
+        "song": "Abracadabra",
+        "file": "Steve Miller Band - Abracadabra .mp3"
+    },
+    "019": {
+        "artist": "Supertramp",
+        "song": "It's Raining Again",
+        "file": "Supertramp - It's Raining Again.mp3"
+    },
+    "020": {
+        "artist": "Joe Jackson",
+        "song": "Steppin' Out",
+        "file": "Joe Jackson - Steppin' Out.mp3"
+    },
+    "021": {
+        "artist": "Roxy Music",
+        "song": "More Than This",
+        "file": "Roxy Music - More Than This.mp3"
+    },
+    "022": {
+        "artist": "Duran Duran",
+        "song": "The Chauffeur",
+        "file": "Duran Duran  - The Chauffeur_.mp3"
+    },
+    "023": {
+        "artist": "Duran Duran",
+        "song": "Hungry Like the Wolf",
+        "file": "Duran Duran - Hungry like the Wolf .mp3"
+    },
+    "024": {
+        "artist": "ABC",
+        "song": "The Look Of Love",
+        "file": "ABC - The Look Of Love.mp3"
+    },
+    "025": {
+        "artist": "Culture Club",
+        "song": "Do You Really Want To Hurt Me",
+        "file": "Culture Club - Do You Really Want To Hurt Me.mp3"
+    },
+    "026": {
+        "artist": "Icehouse",
+        "song": "Hey Little Girl",
+        "file": "ICEHOUSE - Hey Little Girl.mp3"
+    },
+    "027": {
+        "artist": "Michael Jackson",
+        "song": "Human Nature",
+        "file": "Michael Jackson - Human Nature.mp3"
+    },
+    "028": {
+        "artist": "Rah Band",
+        "song": "Messages From The Stars",
+        "file": "Rah Band - Messages From The Stars.mp3"
+    },
+    "029": {
+        "artist": "Al Jarreau",
+        "song": "Mornin'",
+        "file": "Al Jarreau - Mornin' .mp3"
+    },
+    "030": {
+        "artist": "Al Jarreau",
+        "song": "Trouble In Paradise",
+        "file": "Al Jarreau ~Trouble In Paradise (1983).mp3"
+    },
+    "031": {
+        "artist": "Kajagoogoo",
+        "song": "Too Shy",
+        "file": "Kajagoogoo - Too Shy .mp3"
+    },
+    "032": {
+        "artist": "Tears For Fears",
+        "song": "The Hurting",
+        "file": "Tears For Fears - The Hurting.mp3"
+    },
+    "033": {
+        "artist": "Tears For Fears",
+        "song": "Pale Shelter",
+        "file": "Tears For Fears - Pale Shelter.mp3"
+    },
+    "034": {
+        "artist": "Talking Heads",
+        "song": "This Must Be the Place (Naive Melody)",
+        "file": "Talking Heads - This Must Be the Place (Naive Melody).mp3"
+    },
+    "035": {
+        "artist": "The Police",
+        "song": "Synchronicity II",
+        "file": "The Police - Synchronicity II.mp3"
+    },
+    "036": {
+        "artist": "Talking Heads",
+        "song": "Burning Down the House",
+        "file": "Talking Heads - Burning Down the House .mp3"
+    },
+    "037": {
+        "artist": "The Police",
+        "song": "Wrapped Around Your Finger",
+        "file": "The Police - Wrapped Around Your Finger.mp3"
+    },
+    "038": {
+        "artist": "Mike Oldfield",
+        "song": "To France",
+        "file": "Mike Oldfield - To France.mp3"
+    },
+    "039": {
+        "artist": "Thompson Twins",
+        "song": "Hold Me Now",
+        "file": "Thompson Twins - Hold Me Now.mp3"
+    },
+    "040": {
+        "artist": "Deniece Williams",
+        "song": "Let's Hear It for the Boy",
+        "file": "Deniece Williams - Let's Hear It for the Boy .mp3"
+    },
+    "041": {
+        "artist": "Wang Chung",
+        "song": "Dance Hall Days",
+        "file": "Wang Chung - Dance Hall Days.mp3"
+    },
+    "042": {
+        "artist": "Queen",
+        "song": "Radio Ga Ga",
+        "file": "Queen - Radio Ga Ga (Remastered 2011).mp3"
+    },
+    "043": {
+        "artist": "Tina Turner",
+        "song": "What's Love",
+        "file": "Tina Turner - Whats Love.mp3"
+    },
+    "044": {
+        "artist": "Tina Turner",
+        "song": "Private Dancer",
+        "file": "Tina Turner - Private Dancer.mp3"
+    },
+    "045": {
+        "artist": "U2",
+        "song": "Pride (In The Name Of Love)",
+        "file": "U2 - Pride (In The Name Of Love).mp3"
+    },
+    "046": {
+        "artist": "Philip Bailey & Phil Collins",
+        "song": "Easy Lover",
+        "file": "Philip Bailey, Phil Collins - Easy Lover.mp3"
+    },
+    "047": {
+        "artist": "Frankie Goes To Hollywood",
+        "song": "Relax",
+        "file": "Frankie Goes To Hollywood - Relax .mp3"
+    },
+    "048": {
+        "artist": "Bryan Adams",
+        "song": "Run To You",
+        "file": "Bryan Adams - Run To You.mp3"
+    },
+    "049": {
+        "artist": "RAH Band",
+        "song": "Clouds Across The Moon",
+        "file": "RAH Band - Clouds Across The Moon.mp3"
+    },
+    "050": {
+        "artist": "Kate Bush",
+        "song": "The Big Sky",
+        "file": "Kate Bush - The Big Sky.mp3"
+    },
+    "051": {
+        "artist": "DeBarge",
+        "song": "Rhythm Of The Night",
+        "file": "DeBarge - Rhythm Of The Night .mp3"
+    },
+    "052": {
+        "artist": "Bryan Ferry",
+        "song": "Slave To Love",
+        "file": "Bryan Ferry - Slave To Love.mp3"
+    },
+    "053": {
+        "artist": "UB40 Featuring Chrissie Hynde",
+        "song": "I Got You Babe",
+        "file": "UB40 Featuring Chrissie Hynde - I Got You Babe .mp3"
+    },
+    "054": {
+        "artist": "Tears For Fears",
+        "song": "Head Over Heels",
+        "file": "Tears For Fears - Head Over Heels.mp3"
+    },
+    "055": {
+        "artist": "Mr. Mister",
+        "song": "Broken Wings",
+        "file": "Mr. Mister - Broken Wings .mp3"
+    },
+    "056": {
+        "artist": "Kate Bush",
+        "song": "The Big Sky",
+        "file": "Kate Bush - The Big Sky.mp3"
+    },
+    "057": {
+        "artist": "Kate Bush",
+        "song": "Cloudbusting",
+        "file": "Kate Bush - Cloudbusting - Official Music Video.mp3"
+    },
+    "058": {
+        "artist": "The Moody Blues",
+        "song": "Your Wildest Dream",
+        "file": "The Moody Blues - Your Wildest Dream.mp3"
+    },
+    "059": {
+        "artist": "Talk Talk",
+        "song": "Life's What You Make It",
+        "file": "Talk Talk - Lifes what you make it.mp3"
+    },
+    "060": {
+        "artist": "Huey Lewis & The News",
+        "song": "Hip To Be Square",
+        "file": "Huey Lewis & The News - Hip To Be Square.mp3"
+    },
+    "061": {
+        "artist": "Kim Wilde",
+        "song": "You Keep Me Hangin' On",
+        "file": "Kim Wilde - You Keep Me Hangin' On.mp3"
+    },
+    "062": {
+        "artist": "Depeche Mode",
+        "song": "Here Is The House",
+        "file": "Depeche Mode - Here Is The House.mp3"
+    },
+    "063": {
+        "artist": "Prince and the Revolution",
+        "song": "Kiss",
+        "file": "Prince and the Revolution - Kiss .mp3"
+    },
+    "064": {
+        "artist": "Peter Gabriel",
+        "song": "Sledgehammer",
+        "file": "Peter Gabriel - Sledgehammer.mp3"
+    },
+    "065": {
+        "artist": "Peter Gabriel",
+        "song": "In Your Eyes",
+        "file": "Peter Gabriel - In Your Eyes.mp3"
+    },
+    "066": {
+        "artist": "Cyndi Lauper",
+        "song": "True Colors",
+        "file": "Cyndi Lauper - True Colors.mp3"
+    },
+    "067": {
+        "artist": "Level 42",
+        "song": "Lessons In Love",
+        "file": "Level 42 - Lessons In Love.mp3"
+    },
+    "068": {
+        "artist": "Black",
+        "song": "Wonderful Life",
+        "file": "Black - Wonderful Life.mp3"
+    },
+    "069": {
+        "artist": "UB40",
+        "song": "Red Red Wine",
+        "file": "UB40 - Red Red Wine.mp3"
+    },
+    "070": {
+        "artist": "INXS",
+        "song": "Never Tear Us Apart",
+        "file": "INXS - Never Tear Us Apart.mp3"
+    },
+    "071": {
+        "artist": "Suzanne Vega",
+        "song": "Tom's Diner",
+        "file": "Suzanne Vega - Toms Diner .mp3"
+    },
+    "072": {
+        "artist": "Hot Chocolate",
+        "song": "Emma",
+        "file": "Hot Chocolate - Emma.mp3"
+    },
+    "073": {
+        "artist": "U2",
+        "song": "I Still Haven't Found What I'm Looking For",
+        "file": "U2 - I Still Haven't Found What I'm Looking For.mp3"
+    },
+    "074": {
+        "artist": "U2",
+        "song": "Where The Streets Have No Name",
+        "file": "U2 - Where The Streets Have No Name.mp3"
+    },
+    "075": {
+        "artist": "U2",
+        "song": "With Or Without You",
+        "file": "U2 - With Or Without You.mp3"
+    },
+    "076": {
+        "artist": "Carly Simon",
+        "song": "Coming Around Again",
+        "file": "Carly Symon - Coming Around Again.mp3"
+    },
+    "077": {
+        "artist": "Fleetwood Mac",
+        "song": "Seven Wonders",
+        "file": "Fleetwood Mac - Seven Wonders.mp3"
+    },
+    "078": {
+        "artist": "Living In A Box",
+        "song": "Living In A Box",
+        "file": "Living In A Box - Living In A Box .mp3"
+    },
+    "079": {
+        "artist": "Zucchero & Paul Young",
+        "song": "Senza una donna (Without a Woman)",
+        "file": "Zucchero & Paul Young - Senza una donna (Without a woman).mp3"
+    },
+    "080": {
+        "artist": "Icehouse",
+        "song": "Electric Blue",
+        "file": "ICEHOUSE _ Electric Blue.mp3"
+    },
+    "081": {
+        "artist": "Sinead O'Connor",
+        "song": "Mandinka",
+        "file": "Sinead OConnor - Mandinka.mp3"
+    },
+    "082": {
+        "artist": "Frank Zander",
+        "song": "Hier kommt Kurt",
+        "file": "Frank Zander - Hier kommt Kurt.mp3"
+    },
+    "083": {
+        "artist": "Camouflage",
+        "song": "The Great Commandment",
+        "file": "Camouflage -  The Great Commandment.mp3"
+    },
+    "084": {
+        "artist": "Enya",
+        "song": "Storms in Africa",
+        "file": "Enya - Storms in Africa.mp3"
+    },
+    "085": {
+        "artist": "Fleetwood Mac",
+        "song": "Everywhere",
+        "file": "Fleetwood Mac - Everywhere .mp3"
+    },
+    "086": {
+        "artist": "Soul II Soul",
+        "song": "Back To Life",
+        "file": "Soul II Soul - Back To Life.mp3"
+    },
+    "087": {
+        "artist": "Lisa Stansfield",
+        "song": "All Around The World",
+        "file": "Lisa Stanfield - All Around The World.mp3"
+    },
+    "088": {
+        "artist": "Texas",
+        "song": "I Don't Want A Lover",
+        "file": "Texas - I Don't Want A Lover.mp3"
+    },
+    "089": {
+        "artist": "UB40",
+        "song": "Kingston Town",
+        "file": "UB40 - Kingston Town.mp3"
+    },
+    "090": {
+        "artist": "The Cure",
+        "song": "Lullaby",
+        "file": "The Cure - Lullaby (Remastered).mp3"
+    },
+    "091": {
+        "artist": "SNAP!",
+        "song": "Mary Had a Little Lamb",
+        "file": "SNAP - Mary had a little lamb.mp3"
+    },
+    "092": {
+        "artist": "Neil Diamond",
+        "song": "Forever in Blue Jeans",
+        "file": "Neil Diamond - Forever in Blue Jeans (Stereo!).mp3"
+    },
+    "093": {
+        "artist": "Off",
+        "song": "Electrica Salsa Baba",
+        "file": "Off - Electrica Salsa Baba.mp3"
+    },
+    "094": {
+        "artist": "Simple Minds",
+        "song": "Don't You (Forget About Me)",
+        "file": "Simple Minds - Don't You (Forget About Me).mp3"
+    },
+    "095": {
+        "artist": "Talk Talk",
+        "song": "It's My Life",
+        "file": "Talk Talk - It's My Life (1997 Remaster).mp3"
+    },
+    "096": {
+        "artist": "Joy Division",
+        "song": "Disorder",
+        "file": "Joy Division - Disorder.mp3"
+    },
+    "097": {
+        "artist": "Laid Back",
+        "song": "Sunshine Reggae",
+        "file": "Laid Back - Sunshine Reggae.mp3"
+    },
+    "098": {
+        "artist": "New Order",
+        "song": "Blue Monday 88",
+        "file": "New Order - Blue Monday 88 .mp3"
+    },
+    "099": {
+        "artist": "Saga",
+        "song": "Wind Him Up",
+        "file": "Saga - Wind Him Up.mp3"
+    },
+    "100": {
+        "artist": "Saga",
+        "song": "Wildest Dreams - 1987",
+        "file": "Saga - Wildest Dreams - 1987.mp3"
+    },
+    "101": {
+        "artist": "Saga",
+        "song": "The Flyer",
+        "file": "Saga - The Flyer.mp3"
+    },
+    "102": {
+        "artist": "SAGA",
+        "song": "On The Loose",
+        "file": "SAGA - On The Loose.mp3"
+    },
+    "103": {
+        "artist": "Alison Moyet",
+        "song": "Love Resurrection",
+        "file": "Alison Moyet - Love Resurrection.mp3"
+    }
+
+
+
+}

@@ -1,0 +1,360 @@
+{
+     "001": {
+        "artist": "The 5th Dimension",
+        "song": "One Less Bell To Answer",
+        "file": "The 5th Dimension - One Less Bell To Answer .mp3"
+    },
+    "002": {
+        "artist": "Joni Mitchell",
+        "song": "Ladies of the Canyon",
+        "file": "Joni Mitchell - Ladies of the Canyon.mp3"
+    },
+    "003": {
+        "artist": "Santana",
+        "song": "Oye Como Va",
+        "file": "Santana - Oye Como Va .mp3"
+    },
+    "004": {
+        "artist": "Don McLean",
+        "song": "And I Love You So",
+        "file": "Don McLean - And I Love You So.mp3"
+    },
+    "005": {
+        "artist": "George Harrison",
+        "song": "I'd Have You Anytime",
+        "file": "George Harrison - I'D Have You Anytime.mp3"
+    },
+    "006": {
+        "artist": "Yusuf Cat Stevens",
+        "song": "Father and Son",
+        "file": "Yusuf Cat Stevens - Father and Son.mp3"
+    },
+    "007": {
+        "artist": "Nina Simone",
+        "song": "My Way",
+        "file": "Nina Simone - My Way.mp3"
+    },
+    "008": {
+        "artist": "Bill Withers",
+        "song": "Ain't No Sunshine",
+        "file": "Bill Withers - Ain't No Sunshine.mp3"
+    },
+    "009": {
+        "artist": "Marvin Gaye",
+        "song": "What's Going On",
+        "file": "Marvin Gaye - What's Going On.mp3"
+    },
+    "010": {
+        "artist": "Marvin Gaye",
+        "song": "Mercy Mercy Me",
+        "file": "Marvin Gaye - Mercy Mercy Me (The Ecology).mp3"
+    },
+    "011": {
+        "artist": "T. Rex",
+        "song": "Hot Love",
+        "file": "T. Rex - Hot Love (1971) HD 0815007.mp3"
+    },
+    "012": {
+        "artist": "David Bowie",
+        "song": "Life On Mars",
+        "file": "David Bowie - Life On Mars_ .mp3"
+    },
+    "013": {
+        "artist": "Mott The Hoople",
+        "song": "All The Young Dudes",
+        "file": "Mott The Hoople - All The Young Dudes.mp3"
+    },
+    "014": {
+        "artist": "Juliane Werding",
+        "song": "Am Tag als Conny Kramer starb",
+        "file": "Juliane Werding - Am Tag als Conny Kramer starb.mp3"
+    },
+    "015": {
+        "artist": "Gilbert O'Sullivan",
+        "song": "Alone Again (Naturally)",
+        "file": "Gilbert O'Sullivan - Alone Again (original version).mp3"
+    },
+    "016": {
+        "artist": "Stealers Wheel",
+        "song": "Stuck In The Middle With You",
+        "file": "Stealers Wheel - Stuck In The Middle With You.mp3"
+    },
+    "017": {
+        "artist": "Elton John",
+        "song": "Rocket Man",
+        "file": "Elton John - Rocket Man .mp3"
+    },
+    "018": {
+        "artist": "Steely Dan",
+        "song": "Reelin' in the Years",
+        "file": "Steely Dan - Reelin' in the Years.mp3"
+    },
+    "019": {
+        "artist": "Lou Reed",
+        "song": "Walk on the Wild Side",
+        "file": "Lou Reed - Walk on the Wild Side .mp3"
+    },
+    "020": {
+        "artist": "Pink Floyd",
+        "song": "Breathe",
+        "file": "Pink Floyd - Breathe.mp3"
+    },
+    "021": {
+        "artist": "Tom Waits",
+        "song": "Hope I Don't Fall in Love with You",
+        "file": "Tom Waits - Hope I don't fall in love with you.mp3"
+    },
+    "022": {
+        "artist": "Elton John",
+        "song": "Goodbye Yellow Brick Road",
+        "file": "Elton John - Goodbye Yellow Brick Road (Remastered 2014).mp3"
+    },
+    "023": {
+        "artist": "Elis Regina & Tom Jobim",
+        "song": "Águas de Março",
+        "file": "Elis Regina & Tom Jobim -  Aguas de Março.mp3"
+    },
+    "024": {
+        "artist": "Crosby, Stills, Nash & Young",
+        "song": "Helplessly Hoping",
+        "file": "Crosby, Stills, Nash - Helplessly Hoping.mp3"
+    },
+    "025": {
+        "artist": "Supertramp",
+        "song": "Dreamer",
+        "file": "Supertramp - Dreamer.mp3"
+    },
+    "026": {
+        "artist": "10cc",
+        "song": "I'm Not In Love",
+        "file": "10cc - I'm Not In Love"
+    },
+    "027": {
+        "artist": "Hot Chocolate",
+        "song": "You Sexy Thing",
+        "file": "Hot Chocolate- You Sexy Thing (original).mp3"
+    },
+    "028": {
+        "artist": "Barry White",
+        "song": "What Am I Gonna Do With You",
+        "file": "Barry White  -  What Am I Gonna Do With You.mp3"
+    },
+    "029": {
+        "artist": "Barry White",
+        "song": "My First, My Last, My Everything",
+        "file": "Barry White - My First My Last My Everything.mp3"
+    },
+    "030": {
+        "artist": "Barry White",
+        "song": "Never, Never Gone Give You Up",
+        "file": "Barry White - Never never gonna give you up.mp3"
+    },
+    "031": {
+        "artist": "Paul Simon",
+        "song": "50 Ways to Leave Your Lover",
+        "file": "Paul Simon - 50 Ways to Leave Your Lover .mp3"
+    },
+    "032": {
+        "artist": "Ramones",
+        "song": "Blitzkrieg Bop",
+        "file": "Ramones Blitzkrieg Bop.mp3"
+    },
+    "033": {
+        "artist": "Manfred Mann's Earth Band",
+        "song": "Blinded by the Light",
+        "file": "Manfred Mann - Blinded by the Light.mp3"
+    },
+    "034": {
+        "artist": "Electric Light Orchestra",
+        "song": "Livin' Thing",
+        "file": "Electric Light Orchestra - Livin' Thing.mp3"
+    },
+    "035": {
+        "artist": "Jean-Michel Jarre",
+        "song": "Oxygène, Pt. 4",
+        "file": "Jean-Michel Jarre - Oxygene, Pt. 4.mp3"
+    },
+    "036": {
+        "artist": "Billy Joel",
+        "song": "Movin' Out",
+        "file": "Billy Joel - Movin Out.mp3"
+    },
+    "037": {
+        "artist": "SUPERMAX",
+        "song": "Lovemachine",
+        "file": "SUPERMAX - Lovemachine.mp3"
+    },
+    "038": {
+        "artist": "Fleetwood Mac",
+        "song": "Dreams",
+        "file": "Fleetwood Mac - Dreams (2004 Remaster).mp3"
+    },
+    "039": {
+        "artist": "Heart",
+        "song": "Barracuda",
+        "file": "Heart - Barracuda.mp3"
+    },
+    "040": {
+        "artist": "Iggy Pop",
+        "song": "Lust For Life",
+        "file": "Iggy Pop - Lust For Life.mp3"
+    },
+    "041": {
+        "artist": "Grace Jones",
+        "song": "La Vie En Rose",
+        "file": "Grace Jones - La Vie En Rose.mp3"
+    },
+    "042": {
+        "artist": "Talking Heads",
+        "song": "Psycho Killer",
+        "file": "Talking Heads - Psycho Killer.mp3"
+    },
+    "043": {
+        "artist": "America",
+        "song": "A Horse With No Name",
+        "file": "America - A Horse With No Name.mp3"
+    },
+    "044": {
+        "artist": "Patti Smith",
+        "song": "Because The Night",
+        "file": "Patti Smith - Because The Night.mp3"
+    },
+    "045": {
+        "artist": "Hot Chocolate",
+        "song": "Every 1’s A Winner",
+        "file": "Hot Chocolate - Every 1’s A Winner (ZDF Disco, 12.06.1978).mp3"
+    },
+    "046": {
+        "artist": "Kate Bush",
+        "song": "Moving",
+        "file": "Kate Bush - Moving.mp3"
+    },
+    "047": {
+        "artist": "Blondie",
+        "song": "Heart Of Glass",
+        "file": "Blondie - Heart Of Glass.mp3"
+    },
+    "048": {
+        "artist": "Dire Straits",
+        "song": "Sultans Of Swing",
+        "file": "Dire Straits - Sultans Of Swing .mp3"
+    },
+    "049": {
+        "artist": "Christopher Cross",
+        "song": "Ride Like the Wind",
+        "file": "Christopher Cross - Ride Like the Wind.mp3"
+    },
+    "050": {
+        "artist": "Supertramp",
+        "song": "Breakfast in America",
+        "file": "Supertramp - Breakfast in America (Written & Composed by Roger Hodgson).mp3"
+    },
+    "051": {
+        "artist": "Supertramp",
+        "song": "The Logical Song",
+        "file": "Supertramp -The Logical Song  (Remastered 2010).mp3"
+    },
+    "052": {
+        "artist": "Gary Numan",
+        "song": "Cars",
+        "file": "Gary Numan - Cars HD.mp3"
+    },
+    "053": {
+        "artist": "The Police",
+        "song": "Message In A Bottle",
+        "file": "The Police - Message In A Bottle.mp3"
+    },
+    "054": {
+        "artist": "Stevie Wonder",
+        "song": "Earth's Creation",
+        "file": "Stevie Wonder - Earth's Creation.mp3"
+    },
+    "055": {
+        "artist": "Stevie Wonder",
+        "song": "Send One Your Love",
+        "file": "Stevie Wonder - Send One Your Love.mp3"
+    },
+    "056": {
+        "artist": "Bill Withers",
+        "song": "Grandma's Hands",
+        "file": "Bill Withers - Grandma's Hands .mp3"
+    },
+    "057": {
+        "artist": "Bill Withers",
+        "song": "Use Me",
+        "file": "Bill Withers - Use me.mp3"
+    },
+    "058": {
+        "artist": "Bill Withers",
+        "song": "Lean on Me",
+        "file": "Bill Withers - Lean on Me.mp3"
+    },
+    "059": {
+        "artist": "Bill Withers",
+        "song": "Lovely Day",
+        "file": "Bill Withers - Lovely Day .mp3"
+    },
+    "060": {
+        "artist": "Grover Washington Jr. & Bill Withers",
+        "song": "Just the Two of Us",
+        "file": "Grover Washington Jr. - Just the Two of Us (feat. Bill Withers).mp3"
+    },
+    "061": {
+        "artist": "Neil Diamond",
+        "song": "I Am... I Said",
+        "file": "Neil Diamond  _I Am... I Said_.mp3"
+    },
+    "062": {
+        "artist": "Neil Diamond",
+        "song": "Forever in Blue Jeans",
+        "file": "Neil Diamond - Forever in Blue Jeans (Stereo!).mp3"
+    },
+    "063": {
+        "artist": "Neil Diamond",
+        "song": "Song Song Blue",
+        "file": "Neil Diamond - Song Song Blue (Stereo!).mp3"
+    },
+    "064": {
+        "artist": "Frank Sinatra",
+        "song": "Theme From New York, New York",
+        "file": "Frank Sinatra - Theme From New York, New York (2008 Remastered).mp3"
+    },
+    "065": {
+        "artist": "Elis Regina",
+        "song": "O Bêbado e a Equilibrista",
+        "file": "Elis Regina - O Bêbado e a Equilibrista.mp3"
+    },
+    "066": {
+        "artist": "UB40",
+        "song": "Red Red Wine",
+        "file": "UB40 - Red Red Wine.mp3"
+    },
+    "067": {
+        "artist": "Paolo Conte",
+        "song": "Un Gelato Al Limon",
+        "file": "Paolo Conte - Un Gelato Al Limon.mp3"
+    },
+    "068": {
+        "artist": "Hildegard Knef",
+        "song": "Das ist Berlin",
+        "file": "Hildegard Kneef - Das ist Berlin.mp3"
+    },
+    "069": {
+        "artist": "The Rolling Stones",
+        "song": "Angie",
+        "file": "The Rolling Stones - Angie.mp3"
+    },
+
+    
+    "070": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    }
+
+    
+
+    
+
+
+}

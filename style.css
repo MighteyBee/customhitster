@@ -276,3 +276,36 @@ input {
 .buttonGroup button:active {
     transform: scale(0.97);
 }
+
+.decadeButtons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.decadeButton {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 8px;
+    background: var(--primary);
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.decadeButton:hover {
+    background: var(--primaryHover);
+    transform: translateY(-2px);
+}
+
+.decadeButton:active {
+    transform: scale(0.97);
+}
+
+.decadeButton.active {
+    background: var(--primaryHover);
+    box-shadow: 0 0 0 2px white, 0 0 0 4px var(--primary);
+}

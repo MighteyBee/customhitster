@@ -54,11 +54,37 @@ async function init() {
     playButton.onclick = () => player.play();
     pauseButton.onclick = () => player.pause();
 
+     document.querySelectorAll(".decadeButton").forEach(button => {
+        button.addEventListener("click", async () => {
+            // Remove active class from all buttons
+            document.querySelectorAll(".decadeButton").forEach(btn => {
+                btn.classList.remove("active");
+            });
+            // Add active class to clicked button
+            button.classList.add("active");
+
+            // Load songs for the selected decade
+            currentDecade = button.getAttribute("data-decade");
+            await loadSongs(currentDecade);
+
+            // Shuffle to a new song from the selected decade
+            shuffleSong();
+        });
+    });
 }
 
 //////////////////////////////////////////////////////
 // Load Song
 //////////////////////////////////////////////////////
+async function loadSongs(decade) {
+    let filePath = "data/songs.json"; // Default to all songs
+    if (decade !== "all") {
+        filePath = `data/songs${decade}.json`;
+    }
+
+    const response = await fetch(filePath);
+    songs = await response.json();
+}
 
 function loadSong(id) {
 
@@ -207,3 +233,4 @@ function getRandomSongId() {
     return ids[Math.floor(Math.random() * ids.length)];
 
 }
+

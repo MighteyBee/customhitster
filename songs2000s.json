@@ -1,0 +1,797 @@
+{
+    "001": {
+        "artist": "Thievery Corporation",
+        "song": "Depth of My Soul",
+        "file": "audio/Thievery Corporation - Depth of My Soul ft. Shana Halligan.mp3"
+    },
+
+
+    "002": {
+        "artist": "Shaggy",
+        "song": "Boombastic",
+        "file": "audio/Shaggy - Boombastic .mp3"
+    },
+
+
+    "003": {
+        "artist": "The Last Shadow Puppets, Alex Turner, Miles Kane",
+        "song": "In My Room",
+        "file": "audio/The Last Shadow Puppets, Alex Turner, Miles Kane - In My Room.mp3"
+    },
+
+
+
+    "004": {
+        "artist": "The Last Shadow Puppets",
+        "song": "Standing Next to Me",
+        "file": "audio/The Last Shadow Puppets - Standing Next to Me .mp3"
+    },
+
+
+    "005": {
+        "artist": "The Black Seeds",
+        "song": "Come to Me",
+        "file": "audio/The Black Seeds - Come to Me _ Reggae_Funk.mp3"
+    },
+
+
+
+    "006": {
+        "artist": "The Black Seeds",
+        "song": "Slingshot",
+        "file": "audio/The Black Seeds - Slingshot .mp3"
+    },
+
+
+
+    "007": {
+        "artist": "Jessica Pratt",
+        "song": "Life Is",
+        "file": "audio/Jessica Pratt - _Life Is_ .mp3"
+    },
+
+
+
+    "008": {
+        "artist": "Jessica Pratt",
+        "song": "Better Hate",
+        "file": "audio/Jessica Pratt - Better Hate.mp3"
+    },
+
+
+
+    "009": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+    "010": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+     "011": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "012": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "013": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "014": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "015": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "016": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "017": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "018": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "019": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "020": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "021": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "022": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "023": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "024": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "025": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "026": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "027": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "028": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "029": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "030": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "031": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "032": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "033": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "034": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "035": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "036": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "037": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "038": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "039": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "040": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "041": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "042": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "043": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "044": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "045": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "046": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "047": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "048": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "049": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "050": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "051": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "052": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "053": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "054": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "055": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "056": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "057": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "058": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "059": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "060": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "061": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "062": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "063": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "064": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "065": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "066": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "067": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "068": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "069": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "070": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "071": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "072": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "073": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "074": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "075": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "076": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "077": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "078": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "079": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "080": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "081": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "082": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "083": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "084": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "085": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "086": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "087": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "088": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "089": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "090": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "091": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "092": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "093": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "094": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "095": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "096": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "097": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "098": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "099": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    },
+
+
+
+     "100": {
+        "artist": "",
+        "song": "",
+        "file": ""
+    }
+
+
+
+}

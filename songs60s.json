@@ -1,0 +1,208 @@
+{
+    "001": {
+        "artist": "Booker T. & The MG's",
+        "song": "Green Onions",
+        "file": "Booker T. & The MG's - Green Onions.mp3"
+    },
+    "002": {
+        "artist": "Bert Kaempfert And His Orchestra",
+        "song": "A Swingin' Safari",
+        "file": "Bert Kaempfert And His Orchestra_ A Swingin' Safari.mp3"
+    },
+    "003": {
+        "artist": "The Everly Brothers",
+        "song": "Crying In The Rain",
+        "file": "The Everly Brothers - Crying In The Rain.mp3"
+    },
+    "004": {
+        "artist": "Dionne Warwick",
+        "song": "Walk on By",
+        "file": "Dionne Warwick - Walk on By.mp3"
+    },
+    "005": {
+        "artist": "The Yardbirds",
+        "song": "For Your Love",
+        "file": "The Yardbirds - For Your Love.mp3"
+    },
+    "006": {
+        "artist": "The Kinks",
+        "song": "I Go to Sleep",
+        "file": "The Kinks - I go to sleep demo.mp3"
+    },
+    "007": {
+        "artist": "The Temptations",
+        "song": "My Girl",
+        "file": "The Temptations - My Girl.mp3"
+    },
+    "008": {
+        "artist": "Nina Simone",
+        "song": "Sinnerman",
+        "file": "Nina Simone - Sinnerman (Audio).mp3"
+    },
+    "009": {
+        "artist": "The Byrds",
+        "song": "Turn! Turn! Turn!",
+        "file": "The Byrds - Turn! Turn! Turn!.mp3"
+    },
+    "010": {
+        "artist": "Bobby Hebb",
+        "song": "Sunny",
+        "file": "Bobby Hebb - Sunny.mp3"
+    },
+    "011": {
+        "artist": "Hildegard Knef",
+        "song": "Für mich soll's rote Rosen regnen",
+        "file": "Hildegard Knef - Für mich, soll's rote Rosen regnen.mp3"
+    },
+    "012": {
+        "artist": "Frank Sinatra",
+        "song": "Strangers In The Night",
+        "file": "Frank Sinatra - Strangers In The Night (2008 Remastered).mp3"
+    },
+    "013": {
+        "artist": "Dusty Springfield",
+        "song": "You Don't Have To Say You Love Me",
+        "file": "Dusty Springfield - You Don't Have To Say You Love Me.mp3"
+    },
+    "014": {
+        "artist": "The Beatles",
+        "song": "Taxman",
+        "file": "The Beatles - Taxman (Remastered 2009).mp3"
+    },
+    "015": {
+        "artist": "Donovan",
+        "song": "Sunshine Superman",
+        "file": "Donovan - Sunshine Superman (Audio).mp3"
+    },
+    "016": {
+        "artist": "The Box Tops",
+        "song": "The Letter",
+        "file": "The Box Tops - The Letter (Upbeat 1967).mp3"
+    },
+    "017": {
+        "artist": "Jefferson Airplane",
+        "song": "White Rabbit",
+        "file": "Jefferson Airplane -White Rabbit-.mp3"
+    },
+    "018": {
+        "artist": "The Beatles",
+        "song": "Strawberry Fields Forever",
+        "file": "The Beatles - The Beatles - Strawberry Fields Forever .mp3"
+    },
+    "019": {
+        "artist": "The Beach Boys",
+        "song": "Good Vibrations",
+        "file": "The Beach Boys. Good Vibrations (Remastered).mp3"
+    },
+    "020": {
+        "artist": "Nico",
+        "song": "The Fairest of the Seasons",
+        "file": "Nico - The Fairest of the Seasons.mp3"
+    },
+    "021": {
+        "artist": "Alexandra",
+        "song": "Mein Freund der Baum",
+        "file": "Alexandra - Mein Freund der Baum.mp3"
+    },
+    "022": {
+        "artist": "The Zombies",
+        "song": "Time Of The Season",
+        "file": "The Zombies - Time Of The Season.mp3"
+    },
+    "023": {
+        "artist": "Harry Nilsson",
+        "song": "One",
+        "file": "Harry Nilsson - One.mp3"
+    },
+    "024": {
+        "artist": "The Moody Blues",
+        "song": "Legend Of A Mind",
+        "file": "The Moody Blues - Legend Of A Mind.mp3"
+    },
+    "025": {
+        "artist": "Donovan",
+        "song": "Hurdy Gurdy Man",
+        "file": "Donovan - Hurdy Gurdy Man .mp3"
+    },
+    "026": {
+        "artist": "Dusty Springfield",
+        "song": "Spooky",
+        "file": "Dusty Springfield - Spooky.mp3"
+    },
+    "027": {
+        "artist": "Alexandra",
+        "song": "Schwarze Balalaika",
+        "file": "Alexandra - Schwarze Balalaika.mp3"
+    },
+    "028": {
+        "artist": "Shocking Blue",
+        "song": "Venus",
+        "file": "Shocking Blue - Venus .mp3"
+    },
+    "029": {
+        "artist": "Scott Walker",
+        "song": "Copenhagen",
+        "file": "Scott Walker - Copenhagen.mp3"
+    },
+    "030": {
+        "artist": "Dusty Springfield",
+        "song": "Breakfast in Bed",
+        "file": "Dusty Springfield - Breakfast in Bed.mp3"
+    },
+    "031": {
+        "artist": "Isaac Hayes",
+        "song": "Walk on By",
+        "file": "Isaac Hayes -Walk on by.mp3"
+    },
+    "032": {
+        "artist": "Stevie Wonder",
+        "song": "My Cherie Amour",
+        "file": "Stevie Wonder - My Cherie Amour.mp3"
+    },
+    "033": {
+        "artist": "The Stooges",
+        "song": "I Wanna Be Your Dog",
+        "file": "The Stooges - I Wanna Be Your Dog.mp3"
+    },
+    "034": {
+        "artist": "The Rolling Stones",
+        "song": "Gimme Shelter",
+        "file": "The Rolling Stones - Gimme Shelter.mp3"
+    },
+    "035": {
+        "artist": "Frank Sinatra",
+        "song": "My Way",
+        "file": "Frank Sinatra - My Way (2008 Remastered).mp3"
+    },
+    "036": {
+        "artist": "Frank Sinatra",
+        "song": "I've Got You Under My Skin",
+        "file": "Frank Sinatra- I've got you under my skin.mp3"
+    },
+    "037": {
+        "artist": "Frank Sinatra",
+        "song": "Strangers In The Night",
+        "file": "Frank Sinatra - Strangers In The Night (2008 Remastered).mp3"
+    },
+    "038": {
+        "artist": "The Moody Blues",
+        "song": "Nights In White Satin",
+        "file": "The Moody Blues - Nights In White Satin.mp3"
+    },
+    "039": {
+        "artist": "Pat Boone",
+        "song": "Speedy Gonzalez",
+        "file": "Pat  Boone  -  Speedy   Gonzalez.mp3"
+    },
+    "040": {
+        "artist": "Hildegard Knef",
+        "song": "Für mich soll's rote Rosen regnen",
+        "file": "Hildegard Knef - Für mich, soll's rote Rosen regnen.mp3"
+    },     "041": {
+        "artist": "",
+        "song": "",
+        "file": ""
+
+    }
+}    
+    
