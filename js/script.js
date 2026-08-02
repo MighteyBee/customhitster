@@ -36,9 +36,10 @@ init();
 
 async function init() {
     // Load default songs (all)
-    await loadSongs();
+    await loadSongs("all");
 
     initializeDecadeButtons();
+      updateDecadeButtons();
     currentId = new URLSearchParams(window.location.search).get("id");
 
     // If no ID was provided, choose a random song
