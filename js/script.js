@@ -42,9 +42,9 @@ async function init() {
     currentId = new URLSearchParams(window.location.search).get("id");
 
     // If no ID was provided, choose a random song
-    if (!currentId || !songs[currentId]) {
-        currentId = getRandomSongId();
-    }
+   if (!currentId || !getSongs()[currentId]) {
+    currentId = getRandomSongId();
+}
 
     loadSong(currentId);
 
@@ -64,7 +64,14 @@ async function init() {
 
 function loadSong(id){
 
-    const song = getSongs()[id];
+       const song = getSongs()[id];
+
+
+    if(!song){
+        console.error("Song not found:", id);
+        return;
+    }
+
 
     currentId = id;
 
@@ -200,6 +207,9 @@ function shuffleSong() {
 //////////////////////////////////////////////////////
 
 function getRandomSongId() {
-    const ids = Object.keys(songs);
+
+    const ids = Object.keys(getSongs());
+
     return ids[Math.floor(Math.random() * ids.length)];
+
 }
