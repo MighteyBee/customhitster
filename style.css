@@ -277,6 +277,10 @@ input {
     transform: scale(0.97);
 }
 
+.topControls {
+    margin-bottom:20px;
+}
+
 .decadeButtons {
     display: flex;
     justify-content: center;

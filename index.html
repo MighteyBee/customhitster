@@ -26,7 +26,7 @@
 fetch("data/songs.json")
 .then(response => response.json())
 .then(songs => {
-
+    
     const ids = Object.keys(songs);
 
     document.getElementById("shuffleButton").addEventListener("click", () => {
@@ -38,7 +38,7 @@ fetch("data/songs.json")
 
                 document.getElementById("heardleButton").addEventListener("click", () => {
                     const randomId = ids[Math.floor(Math.random() * ids.length)];
-                    window.location.href = "heardle.html?id=" + randomId;
+                    window.location.href = "heardle.html";
                 });
             });
     </script>
