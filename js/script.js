@@ -2,7 +2,7 @@
 // Variables
 //////////////////////////////////////////////////////
 
-let songs = {};
+
 let currentId = null;
 let score = 0;
 
@@ -36,7 +36,7 @@ init();
 
 async function init() {
     // Load default songs (all)
-    songs = await loadSongs();
+    await loadSongs();
 
     initializeDecadeButtons();
     currentId = new URLSearchParams(window.location.search).get("id");
@@ -125,7 +125,7 @@ function handleAutocomplete(inputElement, autocompleteList, field) {
     }
 
     const uniqueValues = [...new Set(
-        Object.values(songs).map(song => song[field])
+        Object.values(getSongs()).map(song => song[field])
     )].sort();
 
     const matches = uniqueValues.filter(value =>
@@ -148,7 +148,7 @@ function handleAutocomplete(inputElement, autocompleteList, field) {
 //////////////////////////////////////////////////////
 
 function revealSong() {
-    const song = songs[currentId];
+    const song = getSongs()[currentId];
     const guessedArtist = artistGuess.value.trim().toLowerCase();
     const guessedSong = songGuess.value.trim().toLowerCase();
     const correctArtist = song.artist.toLowerCase();
@@ -188,7 +188,7 @@ function shuffleSong() {
     let randomId;
     do {
         randomId = getRandomSongId();
-    } while (randomId === currentId && Object.keys(songs).length > 1);
+    } while (randomId === currentId && Object.keys(getSongs()).length > 1);
 
     loadSong(randomId);
     artistGuess.value = "";
