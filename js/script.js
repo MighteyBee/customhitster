@@ -9,6 +9,7 @@ let score = 0;
 
 const scoreElement = document.getElementById("score");
 
+const backButton = document.getElementById("backButton");
 const player = document.getElementById("player");
 const playButton = document.getElementById("playButton");
 const pauseButton = document.getElementById("pauseButton");
@@ -55,6 +56,9 @@ async function init() {
     playButton.onclick = () => player.play();
     pauseButton.onclick = () => player.pause();
 
+    backButton.onclick = () => {
+    window.location.href = "index.html";
+    };
     
 }
 

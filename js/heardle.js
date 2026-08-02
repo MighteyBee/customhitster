@@ -80,7 +80,10 @@ async function init(){
             "song"
         )
     );
-
+    
+    backButton.onclick = () => {
+    window.location.href = "index.html";
+    };
 }
 
 

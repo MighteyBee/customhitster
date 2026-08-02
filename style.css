@@ -319,3 +319,14 @@ button:disabled {
     cursor: not-allowed;
     transform: none;
 }
+
+#backButton {
+    background: #4B5563;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    padding: 12px;
+}
+
+#backButton:hover {
+    background: #6B7280;
+}

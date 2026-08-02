@@ -12,6 +12,8 @@
 
 <body>
 
+<div class="gameCard menuCard">
+
 <h1>My Hitster</h1>
 
 <button id="shuffleButton">
@@ -20,13 +22,14 @@
  <button id="heardleButton">
  Heardle
 </button>
+</div>
 
 <script>
 
 fetch("data/songs.json")
 .then(response => response.json())
 .then(songs => {
-    
+
     const ids = Object.keys(songs);
 
     document.getElementById("shuffleButton").addEventListener("click", () => {
