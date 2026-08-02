@@ -1,6 +1,7 @@
 let currentUpdateFunction = null;
 let currentId = null;
 let currentTry = 1;
+let gameOver = false;
 
 const totalTries = 6;
 
@@ -99,16 +100,18 @@ function loadSong(id){
 
     currentId = id;
     currentTry = 1;
+    gameOver = false;
 
+    submitButton.disabled = false;
+    skipButton.disabled = false;
 
     hideReveal();
 
 
     player.pause();
+     player.currentTime = 0;
 
-
-    player.src =
-    "audio/" + song.file;
+    player.src = "audio/" + song.file;
 
 
     player.load();
@@ -145,6 +148,15 @@ function loadSong(id){
 
 
 function playCurrentTry(){
+
+       if(gameOver){
+
+        player.currentTime = 0;
+        player.play();
+
+        return;
+
+    }
 
 
     const song=getSongs()[currentId];
@@ -228,6 +240,9 @@ function shuffleSong(){
 
 function moveToNextTry(){
 
+    if(gameOver){
+        return;
+    }
 
     player.pause();
 
@@ -253,6 +268,9 @@ function moveToNextTry(){
 
 function submitGuess(){
 
+    if(gameOver){
+    return;
+    }
 
     const song = getSongs()[currentId];
 
@@ -321,15 +339,32 @@ function submitGuess(){
 
 
 
-    if(resultClass === "correct"){
+ if(resultClass === "correct"){
 
-        revealSong();
 
-        player.pause();
+    gameOver = true;
 
-        return;
 
-    }
+    revealSong();
+
+
+    // Disable further guessing
+    submitButton.disabled = true;
+    skipButton.disabled = true;
+
+
+    // Play full song
+    player.pause();
+
+    player.currentTime = 0;
+
+    player.play();
+
+
+
+    return;
+
+}
 
 
 

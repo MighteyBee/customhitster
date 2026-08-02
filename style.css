@@ -313,3 +313,9 @@ input {
     background: var(--primaryHover);
     box-shadow: 0 0 0 2px white, 0 0 0 4px var(--primary);
 }
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none;
+}
