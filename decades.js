@@ -4,6 +4,16 @@
 
 let currentDecade = "all";
 
+let songs = {};
+let currentDecade = "all";
+
+async function loadSongDatabase(decade){
+   songs = await response.json();
+}
+
+function getSongs(){
+    return songs;
+}
 //////////////////////////////////////////////////////
 // Load Songs
 //////////////////////////////////////////////////////

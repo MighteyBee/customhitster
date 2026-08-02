@@ -54,15 +54,7 @@ async function init() {
     playButton.onclick = () => player.play();
     pauseButton.onclick = () => player.pause();
 
-    document.querySelectorAll(".decadeButton").forEach(button => {
-
-    button.addEventListener("click", () => {
-
-        changeDecade(button.dataset.decade);
-
-    });
-
-});
+    
 }
 
 
@@ -70,20 +62,32 @@ async function init() {
 // Load Song
 //////////////////////////////////////////////////////
 
-function loadSong(id) {
-    const song = songs[id];
+function loadSong(id){
+
+    const song = getSongs()[id];
+
     currentId = id;
 
+
     hideReveal();
-    artistGuess.value = "";
-    songGuess.value = "";
+
+    artistGuess.value="";
+    songGuess.value="";
+
 
     player.pause();
-    player.src = "audio/" + song.file;
+
+    player.src="audio/"+song.file;
+
     player.load();
 
-    // Update URL without reloading the page
-    history.replaceState({}, "", `player.html?id=${id}`);
+
+    history.replaceState(
+        {},
+        "",
+        `player.html?id=${id}`
+    );
+
 }
 
 player.ontimeupdate = () => {

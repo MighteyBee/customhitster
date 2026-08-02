@@ -55,16 +55,7 @@ async function init() {
         if (e.target !== songGuess) autocompleteSongList.innerHTML = "";
     });
 
-    // Add event listeners for decade buttons
-   document.querySelectorAll(".decadeButton").forEach(button => {
-
-    button.addEventListener("click", () => {
-
-        changeDecade(button.dataset.decade);
-
-    });
-
-});
+    
 }
 
 ////////////////////////////////////////////////////////
@@ -72,7 +63,7 @@ async function init() {
 //////////////////////////////////////////////////////
 
 function loadSong(id) {
-    const song = songs[id];
+    const song = getSongs()[currentId];
     currentId = id;
     currentTry = 1;
 
