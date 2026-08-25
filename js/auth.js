@@ -1,5 +1,5 @@
 // auth.js
-
+const supabase = window.supabase;
 
 const loginButton = document.getElementById("loginButton");
 const signupButton = document.getElementById("signupButton");
@@ -13,6 +13,14 @@ const signupForm = document.getElementById("signupForm");
 const loginMessage = document.getElementById("loginMessage");
 const signupMessage = document.getElementById("signupMessage");
 
+
+if (!window.supabase) {
+    console.error("Supabase client not initialized!");
+    document.getElementById("signupMessage").textContent = "Error: Supabase client not initialized.";
+    return;
+}
+
+
 // Back to menu
 document.getElementById("backButton").onclick = () => {
     window.location.href = "index.html";
@@ -22,12 +30,14 @@ document.getElementById("backButton").onclick = () => {
 showSignupButton.onclick = () => {
     loginForm.style.display = "none";
     signupForm.style.display = "block";
+    signupMessage.textContent = ""; // Clear any previous messages
 };
 
 // Show login
 showLoginButton.onclick = () => {
     signupForm.style.display = "none";
     loginForm.style.display = "block";
+    loginMessage.textContent = ""; // Clear any previous messages
 };
 
 // Login
@@ -41,6 +51,7 @@ loginButton.onclick = async () => {
     }
 
     loginButton.disabled = true;
+    loginMessage.textContent = "Logging in...";
 
     try {
         const { data, error } = await supabase.auth.signInWithPassword({
@@ -73,11 +84,15 @@ signupButton.onclick = async () => {
     }
 
     signupButton.disabled = true;
+    signupMessage.textContent = "Creating account...";
 
     try {
         const { data, error } = await supabase.auth.signUp({
             email: email,
-            password: password
+            password: password,
+            options: {
+                emailRedirectTo: "https://mighteybee.github.io/customhitster/login.html"
+            }
         });
 
         if (error) {
@@ -86,8 +101,13 @@ signupButton.onclick = async () => {
             return;
         }
 
+        // Account created successfully
         signupMessage.textContent = "Account created! Please check your email to confirm your account.";
         signupButton.disabled = false;
+
+        // Clear the form
+        document.getElementById("signupEmail").value = "";
+        document.getElementById("signupPassword").value = "";
     } catch (error) {
         signupMessage.textContent = error.message;
         signupButton.disabled = false;
