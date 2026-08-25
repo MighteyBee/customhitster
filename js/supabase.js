@@ -6,4 +6,4 @@ const supabase = window.supabase.createClient(
     SUPABASE_KEY
 );
 
-console.log("Supabase client initialized:", supabaseClient);
+console.log("Supabase client initialized:", supabase);
