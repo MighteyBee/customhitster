@@ -1,3 +1,5 @@
+console.log("account.js loaded");
+
 const loginSection = document.getElementById("loginSection");
 const accountSection = document.getElementById("accountSection");
 
@@ -19,17 +21,28 @@ const accountEmail = document.getElementById("accountEmail");
 const backButton = document.getElementById("backButton");
 
 
-// ================================
-// Check current login
-// ================================
+// ========================================
+// Check that Supabase exists
+// ========================================
+
+console.log("Supabase client:", supabase);
+
+
+// ========================================
+// Check current user
+// ========================================
 
 checkUser();
 
 async function checkUser() {
 
     const {
-        data: { user }
+        data: { user },
+        error
     } = await supabase.auth.getUser();
+
+    console.log("Current user:", user);
+    console.log("getUser error:", error);
 
     if (user) {
         showLoggedIn(user);
@@ -39,16 +52,25 @@ async function checkUser() {
 }
 
 
-// ================================
-// Create account
-// ================================
+// ========================================
+// CREATE ACCOUNT
+// ========================================
 
 signupButton.addEventListener("click", async () => {
+
+    console.log("Create Account clicked");
+
+    signupMessage.textContent = "Creating account...";
+    signupMessage.style.color = "white";
 
     const email = signupEmail.value.trim();
     const password = signupPassword.value;
 
+    console.log("Email:", email);
+    console.log("Password length:", password.length);
+
     if (!email || !password) {
+
         signupMessage.textContent =
             "Please enter an email and password.";
 
@@ -61,25 +83,54 @@ signupButton.addEventListener("click", async () => {
             password: password
         });
 
+    console.log("Signup data:", data);
+    console.log("Signup error:", error);
+
     if (error) {
 
         signupMessage.textContent =
-            error.message;
+            "Error: " + error.message;
+
+        signupMessage.style.color = "#EF4444";
 
         return;
     }
 
-    signupMessage.textContent =
-        "Account created! Check your email to confirm your account.";
+    if (data.user && !data.session) {
+
+        signupMessage.textContent =
+            "Account created! Please check your email and click the confirmation link.";
+
+        signupMessage.style.color = "#10B981";
+
+    } else if (data.user && data.session) {
+
+        signupMessage.textContent =
+            "Account created and logged in!";
+
+        signupMessage.style.color = "#10B981";
+
+        showLoggedIn(data.user);
+
+    } else {
+
+        signupMessage.textContent =
+            "Something unexpected happened. Check the browser console.";
+
+    }
 
 });
 
 
-// ================================
-// Log in
-// ================================
+// ========================================
+// LOGIN
+// ========================================
 
 loginButton.addEventListener("click", async () => {
+
+    console.log("Login clicked");
+
+    loginMessage.textContent = "Logging in...";
 
     const email = loginEmail.value.trim();
     const password = loginPassword.value;
@@ -98,22 +149,32 @@ loginButton.addEventListener("click", async () => {
             password: password
         });
 
+    console.log("Login data:", data);
+    console.log("Login error:", error);
+
     if (error) {
 
         loginMessage.textContent =
             "Login failed: " + error.message;
 
+        loginMessage.style.color = "#EF4444";
+
         return;
     }
+
+    loginMessage.textContent =
+        "Login successful!";
+
+    loginMessage.style.color = "#10B981";
 
     showLoggedIn(data.user);
 
 });
 
 
-// ================================
-// Log out
-// ================================
+// ========================================
+// LOGOUT
+// ========================================
 
 logoutButton.addEventListener("click", async () => {
 
@@ -121,8 +182,10 @@ logoutButton.addEventListener("click", async () => {
         await supabase.auth.signOut();
 
     if (error) {
+
         console.error(error);
         return;
+
     }
 
     showLoggedOut();
@@ -130,17 +193,16 @@ logoutButton.addEventListener("click", async () => {
 });
 
 
-// ================================
+// ========================================
 // UI
-// ================================
+// ========================================
 
 function showLoggedIn(user) {
 
     loginSection.style.display = "none";
     accountSection.style.display = "block";
 
-    accountEmail.textContent =
-        user.email;
+    accountEmail.textContent = user.email;
 }
 
 
@@ -152,9 +214,9 @@ function showLoggedOut() {
 }
 
 
-// ================================
-// Back button
-// ================================
+// ========================================
+// BACK BUTTON
+// ========================================
 
 backButton.addEventListener("click", () => {
 
