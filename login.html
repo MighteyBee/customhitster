@@ -1,91 +1,40 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>My Hitster - Login</title>
-
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
-<div class="gameCard">
-
-    <button id="backButton">
-        ← Back to Menu
-    </button>
-
-    <h2>My Hitster</h2>
-
-    <div id="loginForm">
-
-        <h3>Log In</h3>
-
-        <label for="loginEmail">Email</label>
-        <input
-            type="email"
-            id="loginEmail"
-            placeholder="Your email"
-        >
-
-        <label for="loginPassword">Password</label>
-        <input
-            type="password"
-            id="loginPassword"
-            placeholder="Your password"
-        >
-
-        <button id="loginButton">
-            Log In
-        </button>
-
-        <p id="loginMessage"></p>
-
-        <button id="showSignupButton">
-            Create Account
-        </button>
-
+    <div class="gameCard">
+        <button id="backButton">← Back to Menu</button>
+        <h2>My Hitster</h2>
+        <div id="loginForm">
+            <h3>Log In</h3>
+            <label for="loginEmail">Email</label>
+            <input type="email" id="loginEmail" placeholder="Your email">
+            <label for="loginPassword">Password</label>
+            <input type="password" id="loginPassword" placeholder="Your password">
+            <button id="loginButton">Log In</button>
+            <p id="loginMessage"></p>
+            <button id="showSignupButton">Create Account</button>
+        </div>
+        <div id="signupForm" style="display: none;">
+            <h3>Create Account</h3>
+            <label for="signupEmail">Email</label>
+            <input type="email" id="signupEmail" placeholder="Your email">
+            <label for="signupPassword">Password</label>
+            <input type="password" id="signupPassword" placeholder="Choose a password">
+            <button id="signupButton">Create Account</button>
+            <p id="signupMessage"></p>
+            <button id="showLoginButton">Back to Login</button>
+        </div>
     </div>
 
-
-    <div id="signupForm" style="display: none;">
-
-        <h3>Create Account</h3>
-
-        <label for="signupEmail">Email</label>
-        <input
-            type="email"
-            id="signupEmail"
-            placeholder="Your email"
-        >
-
-        <label for="signupPassword">Password</label>
-        <input
-            type="password"
-            id="signupPassword"
-            placeholder="Choose a password"
-        >
-
-        <button id="signupButton">
-            Create Account
-        </button>
-
-        <p id="signupMessage"></p>
-
-        <button id="showLoginButton">
-            Back to Login
-        </button>
-
-    </div>
-
-</div>
-
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<script src="js/supabase.js"></script>
-<script src="js/auth.js"></script>
-
+    <!-- Include Supabase only once -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="js/supabase.js"></script>
+    <script src="js/auth.js"></script>
 </body>
 </html>
