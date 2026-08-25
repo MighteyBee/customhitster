@@ -337,3 +337,72 @@ button:disabled {
 #backButton:hover {
     background: #6B7280;
 }
+
+.topControls {
+    display: flex;
+    gap: 15px;
+    margin: 10px 0 20px 0;
+}
+
+.topControls button {
+    flex: 1;
+}
+
+
+/* Play */
+
+#playButton {
+    background: var(--primary);
+}
+
+#playButton:hover {
+    background: var(--primaryHover);
+}
+
+
+/* Pause */
+
+#pauseButton {
+    background: #2563EB;
+}
+
+#pauseButton:hover {
+    background: #1D4ED8;
+}
+
+
+/* Reveal */
+
+#revealButton {
+    background: #166534;
+}
+
+#revealButton:hover {
+    background: #14532D;
+}
+
+
+/* Shuffle */
+
+#shuffleButton {
+    background: #A3A500;
+}
+
+#shuffleButton:hover {
+    background: #858700;
+}
+
+@media (max-width: 400px) {
+
+    .playerButtons,
+    .topControls {
+        gap: 10px;
+    }
+
+    .playerButtons button,
+    .topControls button {
+        padding: 15px 8px;
+        font-size: 1rem;
+    }
+
+}
