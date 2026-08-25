@@ -16,6 +16,11 @@
 
 <h1>My Hitster</h1>
 
+ <button id="accountButton">
+        Account
+    </button>
+
+
 <button id="shuffleButton">
  Song Guesser
 </button>
@@ -24,7 +29,14 @@
 </button>
 </div>
 
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="js/supabase.js"></script>
 <script>
+
+document.getElementById("accountButton").addEventListener("click", () => {
+    window.location.href = "account.html";
+});
 
 fetch("data/songs.json")
 .then(response => response.json())
@@ -45,10 +57,10 @@ fetch("data/songs.json")
                 });
             });
     </script>
+
+<script src="js/ui.js"></script>
+<script src="js/script.js"></script>
+
 </body>
-
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<script src="js/supabase.js"></script>
-
 </html>
 
