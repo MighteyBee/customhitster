@@ -1,5 +1,5 @@
 // auth.js
-const supabase = window.supabase.client;
+
 
 const loginButton = document.getElementById("loginButton");
 const signupButton = document.getElementById("signupButton");
