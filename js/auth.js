@@ -17,9 +17,7 @@ const signupMessage = document.getElementById("signupMessage");
 if (!window.supabase) {
     console.error("Supabase client not initialized!");
     document.getElementById("signupMessage").textContent = "Error: Supabase client not initialized.";
-    return;
 }
-
 
 // Back to menu
 document.getElementById("backButton").onclick = () => {
