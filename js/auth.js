@@ -1,6 +1,14 @@
 // auth.js
 
-
+if (typeof window.supabase === 'undefined') {
+    console.error("Supabase client not initialized!");
+    const signupMessage = document.getElementById("signupMessage");
+    if (signupMessage) {
+        signupMessage.textContent = "Error: Supabase client not initialized.";
+    }
+    // Exit early if Supabase is not available
+    throw new Error("Supabase client not initialized");
+}
 const loginButton = document.getElementById("loginButton");
 const signupButton = document.getElementById("signupButton");
 
@@ -18,6 +26,9 @@ if (!window.supabase) {
     console.error("Supabase client not initialized!");
     document.getElementById("signupMessage").textContent = "Error: Supabase client not initialized.";
 }
+
+
+console.log(window.supabase)
 
 // Back to menu
 document.getElementById("backButton").onclick = () => {
