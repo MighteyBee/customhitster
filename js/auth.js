@@ -84,8 +84,37 @@ loginButton.onclick = async () => {
 
 // Create account
 signupButton.onclick = async () => {
+    const username = document.getElementById("signupUsername").value.trim();
+
     const email = document.getElementById("signupEmail").value.trim();
     const password = document.getElementById("signupPassword").value;
+
+ if (!username || !email || !password) {
+
+        signupMessage.textContent =
+            "Please enter a username, email and password.";
+
+        return;
+    }
+
+
+    // Basic username validation
+
+    if (username.length < 3) {
+
+        signupMessage.textContent =
+            "Username must be at least 3 characters long.";
+
+        return;
+    }
+
+
+    signupButton.disabled = true;
+
+    signupMessage.textContent =
+        "Creating account...";
+
+
 
     if (!email || !password) {
         signupMessage.textContent = "Please enter an email and password.";
@@ -114,6 +143,44 @@ signupButton.onclick = async () => {
         signupMessage.textContent = "Account created! Please check your email to confirm your account.";
         signupButton.disabled = false;
 
+if (!data.user) {
+
+        signupMessage.textContent =
+            "Account created, but the user profile could not be created.";
+
+        signupButton.disabled = false;
+
+        return;
+    }
+
+
+    const { error: profileError } =
+        await supabase
+            .from("profiles")
+            .insert({
+                id: data.user.id,
+                username: username,
+                points: 0
+            });
+
+
+    if (profileError) {
+
+        console.error("Profile creation error:", profileError);
+
+        signupMessage.textContent =
+            "Account created, but there was a problem creating your profile.";
+
+        signupButton.disabled = false;
+
+        return;
+    }
+
+
+    console.log("Profile created successfully.");
+
+
+
         // Clear the form
         document.getElementById("signupEmail").value = "";
         document.getElementById("signupPassword").value = "";
@@ -121,4 +188,6 @@ signupButton.onclick = async () => {
         signupMessage.textContent = error.message;
         signupButton.disabled = false;
     }
+
+    
 };
