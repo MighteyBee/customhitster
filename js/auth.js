@@ -63,7 +63,7 @@ loginButton.onclick = async () => {
     loginMessage.textContent = "Logging in...";
 
     try {
-        const { data, error } = await supabase.auth.signInWithPassword({
+        const { data, error } = await supabaseClient.auth.signInWithPassword({
             email: email,
             password: password
         });
