@@ -5,9 +5,26 @@
 
 let currentId = null;
 let score = 0;
+let pointsAwarded = false;
 
 
+let gameMode = "6";
+let currentRound = 1;
+let totalRounds = 6;
+let multiplier = 1.1;
+
+const multiplierElement =
+    document.getElementById("multiplier");
 const scoreElement = document.getElementById("score");
+const modeButtons =
+    document.querySelectorAll(".modeButton");
+
+const currentRoundElement =
+    document.getElementById("currentRound");
+
+const totalRoundsElement =
+    document.getElementById("totalRounds");
+
 
 const backButton = document.getElementById("backButton");
 const player = document.getElementById("player");
@@ -59,7 +76,40 @@ async function init() {
     backButton.onclick = () => {
     window.location.href = "index.html";
     };
-    
+
+
+modeButtons.forEach(button => {
+
+    button.addEventListener("click", () => {
+
+        gameMode = button.dataset.mode;
+
+        if (gameMode === "endless") {
+            totalRounds = Infinity;
+        } else {
+            totalRounds = Number(gameMode);
+        }
+
+        // Start a fresh game
+        currentRound = 1;
+        score = 0;
+        scoreElement.textContent = score;
+
+        modeButtons.forEach(btn => {
+            btn.classList.remove("active");
+        });
+
+        button.classList.add("active");
+
+        updateRoundDisplay();
+
+        loadSong(getRandomSongId());
+
+    });
+
+});
+
+
 }
 
 
@@ -80,7 +130,7 @@ function loadSong(id){
 
     currentId = id;
 
-
+    pointsAwarded = false;
     hideReveal();
 
     artistGuess.value="";
@@ -160,28 +210,80 @@ function handleAutocomplete(inputElement, autocompleteList, field) {
 //////////////////////////////////////////////////////
 
 function revealSong() {
+
+ if (pointsAwarded) {
+    return;
+}
+
+pointsAwarded = true;
+
     const song = getSongs()[currentId];
     const guessedArtist = artistGuess.value.trim().toLowerCase();
     const guessedSong = songGuess.value.trim().toLowerCase();
     const correctArtist = song.artist.toLowerCase();
     const correctSong = song.song.toLowerCase();
 
-    // Check guesses and update score
-    let pointsEarned = 0;
-    if (guessedArtist === correctArtist) {
-        pointsEarned += 10;
-    }
-    if (guessedSong === correctSong) {
-        pointsEarned += 10;
-    }
+  //////////////////////////////////////////////
+    // Calculate points
+    //////////////////////////////////////////////
+let basePoints = 0;
+
+if (guessedArtist === correctArtist) {
+    basePoints += 10;
+}
+
+if (guessedSong === correctSong) {
+    basePoints += 10;
+}
+
+const multiplier = getMultiplier();
+
+const pointsEarned = Math.round(basePoints * multiplier);
+
+
+    //////////////////////////////////////////////
+    // Local score
+    //////////////////////////////////////////////
 
     score += pointsEarned;
+
     scoreElement.textContent = score;
 
+
+    //////////////////////////////////////////////
+    // Save points to Supabase
+    //////////////////////////////////////////////
+
+    if (pointsEarned > 0) {
+        addPoints(pointsEarned);
+    }
+
+   
     // Display the correct answer
     title.textContent = "Song: " + song.song;
     artist.textContent = "Artist: " + song.artist;
     songInfo.style.display = "block";
+}
+
+function getMultiplier() {
+
+    if (gameMode === "6") {
+        return 1.1;
+    }
+
+    if (gameMode === "10") {
+        return 1.5;
+    }
+
+    if (gameMode === "15") {
+        return 1.7;
+    }
+
+    if (gameMode === "endless") {
+        return 1.1 + ((currentRound - 1) * 0.1);
+    }
+
+    return 1;
 }
 
 ////////////////////////////////////////////////////////
@@ -197,14 +299,33 @@ function hideReveal() {
 //////////////////////////////////////////////////////
 
 function shuffleSong() {
+  if (!pointsAwarded) {
+        return;
+    }
+
+    currentRound++;
+
+    if (
+        gameMode !== "endless" &&
+        currentRound > totalRounds
+    ) {
+        endGame();
+        return;
+    }
+
     let randomId;
+
     do {
         randomId = getRandomSongId();
-    } while (randomId === currentId && Object.keys(getSongs()).length > 1);
+
+    } while (
+        randomId === currentId &&
+        Object.keys(getSongs()).length > 1
+    );
 
     loadSong(randomId);
-    artistGuess.value = "";
-    songGuess.value = "";
+
+    updateRoundDisplay();
 }
 
 ////////////////////////////////////////////////////////
@@ -217,4 +338,39 @@ function getRandomSongId() {
 
     return ids[Math.floor(Math.random() * ids.length)];
 
+}
+
+
+
+function updateRoundDisplay() {
+
+     currentRoundElement.textContent =
+        currentRound;
+
+    if (gameMode === "endless") {
+
+        totalRoundsElement.textContent = "∞";
+
+    } else {
+
+        totalRoundsElement.textContent =
+            totalRounds;
+
+    }
+
+    multiplierElement.textContent =
+        getMultiplier().toFixed(1);
+}
+
+function endGame() {
+
+    player.pause();
+
+    revealButton.disabled = true;
+    shuffleButton.disabled = true;
+
+    alert(
+        "Game Over!\n\n" +
+        "Final Score: " + score
+    );
 }

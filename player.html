@@ -43,6 +43,35 @@ All
 2000s
 </button>
 
+<div class="gameModes">
+
+    <button class="modeButton active" data-mode="6">
+        Best of 6
+    </button>
+
+    <button class="modeButton" data-mode="10">
+        Best of 10
+    </button>
+
+    <button class="modeButton" data-mode="15">
+        Best of 15
+    </button>
+
+    <button class="modeButton" data-mode="endless">
+        Endless
+    </button>
+
+</div>
+
+<div id="roundInfo">
+    Round <span id="currentRound">1</span>
+    / <span id="totalRounds">6</span>
+</div>
+
+<div id="multiplierInfo">
+    Multiplier: ×<span id="multiplier">1.1</span>
+</div>
+
 </div>
  <audio id="player"></audio>
 
@@ -83,7 +112,7 @@ All
         </button>
 
         <button id="shuffleButton">
-            Shuffle
+            Next Song
         </button>
 
     </div>
@@ -148,11 +177,33 @@ All
     </div>
 
     
+<div class="miniProfile">
+
+    <span class="profileUsername">
+        Loading...
+    </span>
+
+    <span class="miniProfileDivider">
+        •
+    </span>
+
+    <span class="profilePoints">
+        0
+    </span>
+
+    <span>
+        Points
+    </span>
+
+</div>
+
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script src="js/supabase.js"></script>
+<script src="js/points.js"></script>
 
+<script src="js/profile.js"></script>
 <script src="js/songs.js"></script>
 <script src="js/ui.js"></script>
 <script src="js/script.js"></script>

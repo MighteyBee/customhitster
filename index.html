@@ -16,6 +16,22 @@
 
 <h1>My Hitster</h1>
 
+<div class="profileBox">
+
+    <div class="profileUsername">
+        Loading...
+    </div>
+
+    <div class="profilePoints">
+        0
+    </div>
+
+    <div class="pointsLabel">
+        Points
+    </div>
+
+</div>
+
  <button id="accountButton">
         Account
     </button>
@@ -58,6 +74,39 @@ fetch("data/songs.json")
             });
     </script>
 
+    <script>
+
+loadProfile();
+
+document.getElementById("accountButton").addEventListener("click", () => {
+    window.location.href = "login.html";
+});
+
+fetch("data/songs.json")
+.then(response => response.json())
+.then(songs => {
+
+    const ids = Object.keys(songs);
+
+    document.getElementById("shuffleButton").addEventListener("click", () => {
+
+        const randomId =
+            ids[Math.floor(Math.random() * ids.length)];
+
+        window.location.href = "player.html";
+    });
+
+    document.getElementById("heardleButton").addEventListener("click", () => {
+
+        const randomId =
+            ids[Math.floor(Math.random() * ids.length)];
+
+        window.location.href = "heardle.html";
+    });
+
+});
+
+</script>
 </body>
 </html>
 

@@ -204,7 +204,7 @@ function playCurrentTry(){
 
             player.removeEventListener(
                 "timeupdate",
-                update
+                currentUpdateFunction
             );
 
         }

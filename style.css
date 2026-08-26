@@ -406,3 +406,98 @@ button:disabled {
     }
 
 }
+
+
+/* ==========================
+   Main Menu Profile
+========================== */
+
+.profileBox {
+    background: #4B5563;
+    border-radius: 20px;
+    padding: 25px;
+    margin: 25px 0;
+    text-align: center;
+}
+
+.profileUsername {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.profilePoints {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.pointsLabel {
+    font-size: 1rem;
+    opacity: 0.8;
+    margin-top: 3px;
+}
+
+
+/* ==========================
+   Small Profile
+========================== */
+
+.miniProfile {
+    margin-top: 30px;
+    padding: 12px 15px;
+    background: #4B5563;
+    border-radius: 12px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    font-size: 0.95rem;
+}
+
+.miniProfile .profileUsername {
+    font-size: 1rem;
+}
+
+.miniProfile .profilePoints {
+    font-size: 1rem;
+    margin: 0;
+    font-weight: bold;
+}
+
+.miniProfileDivider {
+    opacity: 0.5;
+}
+
+
+/* ==========================
+   Game Modes
+========================== */
+
+.gameModes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.modeButton {
+    flex: 1 1 120px;
+    padding: 10px;
+    margin-top: 0;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+.modeButton.active {
+    background: var(--primaryHover);
+    box-shadow: 0 0 0 2px white;
+}
+
+#roundInfo {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
