@@ -501,3 +501,54 @@ button:disabled {
     font-size: 1.1rem;
     font-weight: bold;
 }
+
+
+/* ==========================
+   Game Settings
+========================== */
+
+.gameSettings {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.setting {
+    flex: 1;
+}
+
+.setting label {
+    margin-top: 0;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.setting select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 14px 12px;
+    border: none;
+    border-radius: 12px;
+    background: #4B5563;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.setting select:focus {
+    outline: 2px solid var(--primary);
+}
+
+@media (max-width: 500px) {
+
+    .gameSettings {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .setting label {
+        text-align: left;
+    }
+
+}
