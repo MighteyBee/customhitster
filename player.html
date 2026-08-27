@@ -241,5 +241,16 @@
 <script src="js/ui.js"></script>
 <script src="js/script.js"></script>
 
+  <script>
+        document.addEventListener("DOMContentLoaded", async () => {
+            if (typeof window.supabase !== 'undefined') {
+                await loadProfile();
+            } else {
+                console.error("Supabase client not initialized!");
+                document.querySelector(".profileUsername").textContent = "Guest";
+            }
+        });
+    </script>
+
 </body>
 </html>

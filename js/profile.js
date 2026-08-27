@@ -7,18 +7,20 @@ async function loadProfile() {
 
     if (userError || !user) {
         console.log("No logged-in user.");
+          updateProfileDisplay({ username: "Guest", points: 0 });
         return null;
     }
 
     const { data: profile, error: profileError } =
-        await supabase
+        await window.supabase
             .from("profiles")
             .select("username, points")
             .eq("id", user.id)
             .single();
 
-    if (profileError) {
+    if (profileError || !profile) {
         console.error("Could not load profile:", profileError);
+        updateProfileDisplay({ username: "Player", points: 0 });
         return null;
     }
 
@@ -43,7 +45,7 @@ function updateProfileDisplay(profile) {
 
 
     pointsElements.forEach(element => {
-        element.textContent = profile.points;
+        element.textContent = profile.points || 0;
     });
 
 }

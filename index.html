@@ -4,9 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Custom Hitster</title>
-
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -48,65 +46,38 @@
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script src="js/supabase.js"></script>
+<script src="js/profile.js"></script>
 <script>
+ document.addEventListener("DOMContentLoaded", async () => {
+            // Ensure Supabase is initialized
+            if (typeof window.supabase !== 'undefined') {
+                await loadProfile();
+            } else {
+                console.error("Supabase client not initialized!");
+                document.querySelector(".profileUsername").textContent = "Guest";
+            }
 
-document.getElementById("accountButton").addEventListener("click", () => {
-    window.location.href = "login.html";
-});
-
-fetch("data/songs.json")
-.then(response => response.json())
-.then(songs => {
-
-    const ids = Object.keys(songs);
-
-    document.getElementById("shuffleButton").addEventListener("click", () => {
-
-        const randomId = ids[Math.floor(Math.random() * ids.length)];
-
-        window.location.href = "player.html";
-    });
-
-                document.getElementById("heardleButton").addEventListener("click", () => {
-                    const randomId = ids[Math.floor(Math.random() * ids.length)];
-                    window.location.href = "heardle.html";
-                });
+            // Set up button event listeners
+            document.getElementById("accountButton").addEventListener("click", () => {
+                window.location.href = "login.html";
             });
+
+            fetch("data/songs.json")
+                .then(response => response.json())
+                .then(songs => {
+                    const ids = Object.keys(songs);
+
+                    document.getElementById("shuffleButton").addEventListener("click", () => {
+                        const randomId = ids[Math.floor(Math.random() * ids.length)];
+                        window.location.href = "player.html";
+                    });
+
+                    document.getElementById("heardleButton").addEventListener("click", () => {
+                        const randomId = ids[Math.floor(Math.random() * ids.length)];
+                        window.location.href = "heardle.html";
+                    });
+                });
+        });
     </script>
-
-    <script>
-
-loadProfile();
-
-document.getElementById("accountButton").addEventListener("click", () => {
-    window.location.href = "login.html";
-});
-
-fetch("data/songs.json")
-.then(response => response.json())
-.then(songs => {
-
-    const ids = Object.keys(songs);
-
-    document.getElementById("shuffleButton").addEventListener("click", () => {
-
-        const randomId =
-            ids[Math.floor(Math.random() * ids.length)];
-
-        window.location.href = "player.html";
-    });
-
-    document.getElementById("heardleButton").addEventListener("click", () => {
-
-        const randomId =
-            ids[Math.floor(Math.random() * ids.length)];
-
-        window.location.href = "heardle.html";
-    });
-
-});
-
-</script>
 </body>
 </html>
-
