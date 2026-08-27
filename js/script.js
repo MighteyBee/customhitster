@@ -253,10 +253,13 @@ const pointsEarned = Math.round(basePoints * multiplier);
     // Save points to Supabase
     //////////////////////////////////////////////
 
-    if (pointsEarned > 0) {
-        addPoints(pointsEarned);
+   if (pointsEarned > 0) {
+        updatePoints(score).then(success => {
+            if (!success) {
+                console.error("Failed to update points in Supabase.");
+            }
+        });
     }
-
    
     // Display the correct answer
     title.textContent = "Song: " + song.song;

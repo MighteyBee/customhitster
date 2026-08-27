@@ -125,7 +125,7 @@ signupButton.onclick = async () => {
     signupMessage.textContent = "Creating account...";
 
     try {
-        const { data, error } = await supabase.auth.signUp({
+        const {  data: { user }, error: signupError  } = await window.supabase.auth.signUp({
             email: email,
             password: password,
             options: {
@@ -133,8 +133,8 @@ signupButton.onclick = async () => {
             }
         });
 
-        if (error) {
-            signupMessage.textContent = error.message;
+        if (signupError) {
+            signupMessage.textContent = signupError.message;
             signupButton.disabled = false;
             return;
         }
@@ -155,10 +155,10 @@ if (!data.user) {
 
 
     const { error: profileError } =
-        await supabase
+        await window.supabase
             .from("profiles")
             .insert({
-                id: data.user.id,
+                id: user.id,
                 username: username,
                 points: 0
             });
@@ -182,6 +182,7 @@ if (!data.user) {
 
 
         // Clear the form
+         document.getElementById("signupUsername").value = "";
         document.getElementById("signupEmail").value = "";
         document.getElementById("signupPassword").value = "";
     } catch (error) {

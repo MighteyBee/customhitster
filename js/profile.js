@@ -3,7 +3,7 @@ async function loadProfile() {
     const {
         data: { user },
         error: userError
-    } = await supabase.auth.getUser();
+    } = await window.supabase.auth.getUser();
 
     if (userError || !user) {
         console.log("No logged-in user.");
@@ -48,4 +48,26 @@ function updateProfileDisplay(profile) {
         element.textContent = profile.points || 0;
     });
 
+}
+
+async function updatePoints(newPoints) {
+    const { data: { user }, error: userError } = await window.supabase.auth.getUser();
+
+    if (userError || !user) {
+        console.error("No logged-in user.");
+        return false;
+    }
+
+    // Update the user's points
+    const { error: updateError } = await window.supabase
+        .from("profiles")
+        .update({ points: newPoints })
+        .eq("id", user.id);
+
+    if (updateError) {
+        console.error("Could not update points:", updateError);
+        return false;
+    }
+
+    return true;
 }
