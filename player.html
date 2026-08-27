@@ -17,50 +17,29 @@
     ← Back to Menu
 </button>
     <h2> Guess the Song!</h2>
-         <div class="decadeButtons">
+ <div class="gameSettings">
+        <div class="setting">
+    <label for="decadeSelect">Decade</label>
+    <select id="decadeSelect">
+        <option value="all">All</option>
+        <option value="60s">60s</option>
+        <option value="70s">70s</option>
+        <option value="80s">80s</option>
+        <option value="90s">90s</option>
+        <option value="2000s">2000s</option>
+    </select>
+    </div>
 
-<button class="decadeButton" data-decade="all">
-All
-</button>
 
-<button class="decadeButton" data-decade="60s">
-60s
-</button>
-
-<button class="decadeButton" data-decade="70s">
-70s
-</button>
-
-<button class="decadeButton" data-decade="80s">
-80s
-</button>
-
-<button class="decadeButton" data-decade="90s">
-90s
-</button>
-
-<button class="decadeButton" data-decade="2000s">
-2000s
-</button>
-
-<div class="gameModes">
-
-    <button class="modeButton active" data-mode="6">
-        Best of 6
-    </button>
-
-    <button class="modeButton" data-mode="10">
-        Best of 10
-    </button>
-
-    <button class="modeButton" data-mode="15">
-        Best of 15
-    </button>
-
-    <button class="modeButton" data-mode="endless">
-        Endless
-    </button>
-
+    <div class="setting">
+    <label for="modeSelect">Game Mode</label>
+    <select id="modeSelect">
+        <option value="6">Best of 6 (x1.1)</option>
+        <option value="10">Best of 10 (x.2)</option>
+        <option value="15">Best of 15 (x2.5)</option>
+        <option value="endless">Endless</option>
+    </select>
+</div>
 </div>
 
 <div id="roundInfo">
@@ -68,9 +47,6 @@ All
     / <span id="totalRounds">6</span>
 </div>
 
-<div id="multiplierInfo">
-    Multiplier: ×<span id="multiplier">1.1</span>
-</div>
 
 </div>
  <audio id="player"></audio>

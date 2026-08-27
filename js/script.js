@@ -7,7 +7,7 @@ let currentId = null;
 let score = 0;
 let pointsAwarded = false;
 
-
+let selectedDecade = "all";
 let gameMode = "6";
 let currentRound = 1;
 let totalRounds = 6;
@@ -16,9 +16,11 @@ let multiplier = 1.1;
 const multiplierElement =
     document.getElementById("multiplier");
 const scoreElement = document.getElementById("score");
-const modeButtons =
-    document.querySelectorAll(".modeButton");
+const modeSelect =
+    document.getElementById("modeSelect");
 
+const decadeSelect =
+    document.getElementById("decadeSelect");
 const currentRoundElement =
     document.getElementById("currentRound");
 
@@ -56,8 +58,7 @@ async function init() {
     // Load default songs (all)
     await loadSongs("all");
 
-    initializeDecadeButtons();
-      updateDecadeButtons();
+   
     currentId = new URLSearchParams(window.location.search).get("id");
 
     // If no ID was provided, choose a random song
@@ -78,41 +79,39 @@ async function init() {
     };
 
 
-modeButtons.forEach(button => {
+modeSelect.addEventListener("change", () => {
 
-    button.addEventListener("click", () => {
+    gameMode = modeSelect.value;
 
-        gameMode = button.dataset.mode;
+    startNewGame();
 
-        if (gameMode === "endless") {
-            totalRounds = Infinity;
-        } else {
-            totalRounds = Number(gameMode);
-        }
-
-        // Start a fresh game
-        currentRound = 1;
-        score = 0;
-        scoreElement.textContent = score;
-
-        modeButtons.forEach(btn => {
-            btn.classList.remove("active");
-        });
-
-        button.classList.add("active");
-
-        updateRoundDisplay();
-
-        loadSong(getRandomSongId());
-
-    });
+ 
 
 });
-
-
 }
 
+async function startNewGame() {
 
+    // Reset round
+    currentRound = 1;
+
+    // Reset score
+    score = 0;
+    scoreElement.textContent = score;
+    pointsAwarded = false;
+    // Set number of rounds
+    if (gameMode === "endless") {
+        totalRounds = Infinity;
+    } else {
+        totalRounds = Number(gameMode);
+    }
+    await loadSongs(selectedDecade);
+    // Update UI
+    updateRoundDisplay();
+
+    // Get a random song from the selected decade
+    loadSong(getRandomSongId());
+}
 ////////////////////////////////////////////////////////
 // Load Song
 //////////////////////////////////////////////////////
@@ -272,11 +271,11 @@ function getMultiplier() {
     }
 
     if (gameMode === "10") {
-        return 1.5;
+        return 2;
     }
 
     if (gameMode === "15") {
-        return 1.7;
+        return 2.5;
     }
 
     if (gameMode === "endless") {
@@ -335,6 +334,16 @@ function shuffleSong() {
 function getRandomSongId() {
 
     const ids = Object.keys(getSongs());
+
+if (selectedDecade !== "all") {
+
+        availableIds = availableIds.filter(id => {
+
+            return songs[id].decade === selectedDecade;
+
+        });
+
+    }
 
     return ids[Math.floor(Math.random() * ids.length)];
 
