@@ -33,10 +33,17 @@ body {
 .gameCard {
     width: 100%;
     max-width: 500px;
+    box-sizing: border-box;
+
     background: var(--card);
+
     padding: clamp(20px, 4vw, 30px);
+
     border-radius: 25px;
+
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+
+    overflow: visible;
 }
 
 /* ==========================
@@ -392,20 +399,7 @@ button:disabled {
     background: #858700;
 }
 
-@media (max-width: 400px) {
 
-    .playerButtons,
-    .topControls {
-        gap: 10px;
-    }
-
-    .playerButtons button,
-    .topControls button {
-        padding: 15px 8px;
-        font-size: 1rem;
-    }
-
-}
 
 
 /* ==========================
@@ -510,11 +504,14 @@ button:disabled {
 .gameSettings {
     display: flex;
     gap: 15px;
+    width: 100%;
     margin-bottom: 15px;
+    box-sizing: border-box;
 }
 
 .setting {
     flex: 1;
+    min-width: 0;
 }
 
 .setting label {
@@ -526,13 +523,18 @@ button:disabled {
 .setting select {
     width: 100%;
     box-sizing: border-box;
+
     padding: 14px 12px;
+
     border: none;
     border-radius: 12px;
+
     background: #4B5563;
     color: white;
+
     font-size: 1rem;
     font-weight: bold;
+
     cursor: pointer;
 }
 
@@ -540,7 +542,41 @@ button:disabled {
     outline: 2px solid var(--primary);
 }
 
+/* ==========================
+   Guess Fields
+========================== */
+
+.guessField {
+    width: 100%;
+    position: relative;
+}
+
+.autocompleteWrapper {
+    position: relative;
+    width: 100%;
+}
+
+/* ==========================
+   Responsive Layout
+========================== */
+
 @media (max-width: 500px) {
+
+    body {
+        padding: 12px;
+        align-items: flex-start;
+    }
+
+    .gameCard {
+        max-width: 100%;
+        margin-top: 10px;
+        padding: 20px 16px;
+    }
+
+    h2 {
+        font-size: 1.7rem;
+        margin-bottom: 25px;
+    }
 
     .gameSettings {
         flex-direction: column;
@@ -549,6 +585,24 @@ button:disabled {
 
     .setting label {
         text-align: left;
+    }
+
+    .playerButtons {
+        gap: 10px;
+    }
+
+    .playerButtons button {
+        padding: 15px 8px;
+        font-size: 1rem;
+    }
+
+    .topControls {
+        gap: 10px;
+    }
+
+    .topControls button {
+        padding: 15px 8px;
+        font-size: 1rem;
     }
 
 }

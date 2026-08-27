@@ -2,7 +2,7 @@
 <html>
 
 <head>
-     <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Custom Hitster</title>
@@ -13,46 +13,69 @@
 <body>
 
 <div class="gameCard">
+
+    <!-- Back Button -->
     <button id="backButton">
-    ← Back to Menu
-</button>
-    <h2> Guess the Song!</h2>
- <div class="gameSettings">
+        ← Back to Menu
+    </button>
+
+    <h2>Guess the Song!</h2>
+
+
+    <!-- =========================
+         GAME SETTINGS
+    ========================== -->
+
+    <div class="gameSettings">
+
         <div class="setting">
-    <label for="decadeSelect">Decade</label>
-    <select id="decadeSelect">
-        <option value="all">All</option>
-        <option value="60s">60s</option>
-        <option value="70s">70s</option>
-        <option value="80s">80s</option>
-        <option value="90s">90s</option>
-        <option value="2000s">2000s</option>
-    </select>
+            <label for="decadeSelect">
+                Decade
+            </label>
+
+            <select id="decadeSelect">
+                <option value="all">All</option>
+                <option value="60s">60s</option>
+                <option value="70s">70s</option>
+                <option value="80s">80s</option>
+                <option value="90s">90s</option>
+                <option value="2000s">2000s</option>
+            </select>
+        </div>
+
+
+        <div class="setting">
+            <label for="modeSelect">
+                Game Mode
+            </label>
+
+            <select id="modeSelect">
+                <option value="6">Best of 6 (x1.1)</option>
+                <option value="10">Best of 10 (x2)</option>
+                <option value="15">Best of 15 (x2.5)</option>
+                <option value="endless">Endless</option>
+            </select>
+        </div>
+
     </div>
 
 
-    <div class="setting">
-    <label for="modeSelect">Game Mode</label>
-    <select id="modeSelect">
-        <option value="6">Best of 6 (x1.1)</option>
-        <option value="10">Best of 10 (x2)</option>
-        <option value="15">Best of 15 (x2.5)</option>
-        <option value="endless">Endless</option>
-    </select>
-</div>
-</div>
+    <!-- Round Information -->
 
-<div id="roundInfo">
-    Round <span id="currentRound">1</span>
-    / <span id="totalRounds">6</span>
-</div>
+    <div id="roundInfo">
+        Round
+        <span id="currentRound">1</span>
+        /
+        <span id="totalRounds">6</span>
+    </div>
 
 
+    <!-- =========================
+         AUDIO PLAYER
+    ========================== -->
 
- <audio id="player"></audio>
+    <audio id="player"></audio>
 
-
-    <!-- Play / Pause -->
 
     <div class="playerButtons">
 
@@ -67,19 +90,30 @@
     </div>
 
 
-    <progress id="progress" value="0" max="100"></progress>
+    <progress
+        id="progress"
+        value="0"
+        max="100">
+    </progress>
 
 
-    <!-- Score -->
+    <!-- =========================
+         SCORE
+    ========================== -->
 
     <div id="scoreBox">
+
         <h3>
-            Score: <span id="score">0</span>
+            Score:
+            <span id="score">0</span>
         </h3>
+
     </div>
 
 
-    <!-- Reveal / Shuffle -->
+    <!-- =========================
+         REVEAL / NEXT
+    ========================== -->
 
     <div class="topControls">
 
@@ -94,53 +128,67 @@
     </div>
 
 
-    <!-- Artist Guess -->
+    <!-- =========================
+         ARTIST GUESS
+    ========================== -->
 
-    <div style="position: relative;">
+    <div class="guessField">
 
         <label for="artistGuess">
             Artist Guess
         </label>
 
-        <input
-            type="text"
-            id="artistGuess"
-            placeholder="Type the artist..."
-            autocomplete="off"
-        >
+        <div class="autocompleteWrapper">
 
-        <div
-            id="autocompleteArtistList"
-            class="autocomplete-items"
-        ></div>
+            <input
+                type="text"
+                id="artistGuess"
+                placeholder="Type the artist..."
+                autocomplete="off"
+            >
+
+            <div
+                id="autocompleteArtistList"
+                class="autocomplete-items">
+            </div>
+
+        </div>
 
     </div>
 
 
-    <!-- Song Guess -->
+    <!-- =========================
+         SONG GUESS
+    ========================== -->
 
-    <div style="position: relative;">
+    <div class="guessField">
 
         <label for="songGuess">
             Song Title Guess
         </label>
 
-        <input
-            type="text"
-            id="songGuess"
-            placeholder="Type the song title..."
-            autocomplete="off"
-        >
+        <div class="autocompleteWrapper">
 
-        <div
-            id="autocompleteSongList"
-            class="autocomplete-items"
-        ></div>
+            <input
+                type="text"
+                id="songGuess"
+                placeholder="Type the song title..."
+                autocomplete="off"
+            >
+
+            <div
+                id="autocompleteSongList"
+                class="autocomplete-items">
+            </div>
+
+        </div>
 
     </div>
 
 
-    <!-- Song Information -->
+    <!-- =========================
+         SONG INFORMATION
+    ========================== -->
 
     <div id="songInfo">
 
@@ -152,33 +200,42 @@
 
     </div>
 
-    
-<div class="miniProfile">
 
-    <span class="profileUsername">
-        Loading...
-    </span>
+    <!-- =========================
+         MINI PROFILE
+    ========================== -->
 
-    <span class="miniProfileDivider">
-        •
-    </span>
+    <div class="miniProfile">
 
-    <span class="profilePoints">
-        0
-    </span>
+        <span class="profileUsername">
+            Loading...
+        </span>
 
-    <span>
-        Points
-    </span>
+        <span class="miniProfileDivider">
+            •
+        </span>
+
+        <span class="profilePoints">
+            0
+        </span>
+
+        <span>
+            Points
+        </span>
+
+    </div>
 
 </div>
 
-</div>
+
+<!-- =========================
+     SCRIPTS
+========================== -->
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
 <script src="js/supabase.js"></script>
 <script src="js/points.js"></script>
-
 <script src="js/profile.js"></script>
 <script src="js/songs.js"></script>
 <script src="js/ui.js"></script>
